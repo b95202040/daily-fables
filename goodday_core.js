@@ -14,40 +14,47 @@ const DATA_URL = BASE + "goodday.json";
 // 2× 母圖（Mac 端依設計師 mockup 規格渲染），手機端重採樣到精確點尺寸
 const IMG_NAME = { small: "goodday_s2.jpg", medium: "goodday_m2.jpg", large: "goodday_l2.jpg" };
 
-// 各機型 widget 點尺寸（依 simonbs/ios-widget-sizes；key = 直向螢幕寬 pt，取最近值）
-const WIDGET_PT = {
-  430: { small: [170, 170], medium: [364, 170], large: [364, 382] },
-  428: { small: [170, 170], medium: [364, 170], large: [364, 382] },
-  414: { small: [169, 169], medium: [360, 169], large: [360, 379] },
-  402: { small: [162, 162], medium: [344, 162], large: [344, 366] },
-  393: { small: [158, 158], medium: [338, 158], large: [338, 354] },
-  390: { small: [158, 158], medium: [338, 158], large: [338, 354] },
-  375: { small: [155, 155], medium: [329, 155], large: [329, 345] },
-  360: { small: [155, 155], medium: [329, 155], large: [329, 345] },
-  320: { small: [141, 141], medium: [292, 141], large: [292, 311] },
+// 各機型 widget「實測像素」尺寸（mzeryck 透明背景 widget 實測表；key = 螢幕高 px）。
+// ⚠️ 不能用「點數 × scale」推算：實測 15/16 系 medium 是 1017px、點數推算 1014px，
+// 差這 3px 就會整面重採樣 → 糊。
+const WIDGET_PX = {
+  2868: { small: [510, 510], medium: [1092, 510], large: [1092, 1146] }, // 16 Pro Max
+  2796: { small: [510, 510], medium: [1092, 510], large: [1092, 1146] }, // 16+/15+/15PM/14PM
+  2622: { small: [486, 486], medium: [1032, 486], large: [1032, 1098] }, // 16 Pro
+  2556: { small: [474, 474], medium: [1017, 474], large: [1017, 1062] }, // 16/15/15P/14P
+  2778: { small: [510, 510], medium: [1092, 510], large: [1092, 1146] }, // 14+/13PM/12PM
+  2688: { small: [507, 507], medium: [1080, 507], large: [1080, 1137] }, // 11PM/XS Max
+  2532: { small: [474, 474], medium: [1014, 474], large: [1014, 1062] }, // 14/13/13P/12/12P
+  2436: { small: [465, 465], medium: [987, 465], large: [987, 1035] },   // mini/11P/XS/X
+  2208: { small: [471, 471], medium: [1044, 471], large: [1044, 1071] }, // Plus 舊機
+  2001: { small: [444, 444], medium: [963, 444], large: [963, 972] },    // Plus Zoom
+  1792: { small: [338, 338], medium: [720, 338], large: [720, 758] },    // 11/XR
+  1624: { small: [310, 310], medium: [658, 310], large: [658, 690] },    // 11/XR Zoom
+  1334: { small: [296, 296], medium: [642, 296], large: [642, 648] },    // SE2/SE3
+  1136: { small: [282, 282], medium: [584, 282], large: [584, 622] },    // SE1
 };
 
-function widgetPt(fam) {
-  const sz = Device.screenSize();
-  const w = Math.round(Math.min(sz.width, sz.height));
+function widgetPx(fam) {
+  const r = Device.screenResolution();
+  const hpx = Math.round(Math.max(r.width, r.height));
   let best = null, bd = 1e9;
-  for (const k in WIDGET_PT) {
-    const dlt = Math.abs(w - Number(k));
-    if (dlt < bd) { bd = dlt; best = WIDGET_PT[k]; }
+  for (const k in WIDGET_PX) {
+    const dlt = Math.abs(hpx - Number(k));
+    if (dlt < bd) { bd = dlt; best = WIDGET_PX[k]; }
   }
   return best[fam] || best.medium;
 }
 
-// 糊圖解法：把 2× 母圖畫進「該機型 widget 精確點尺寸 + respectScreenScale」的 DrawContext，
-// 產出的圖帶正確 scale 標記 → WidgetKit 1:1 像素渲染，不再被當 1x 縮放。
+// 糊圖解法（照透明背景 widget 的已驗證配方）：DrawContext 開「像素」尺寸、
+// respectScreenScale 維持 false，把 2× 母圖畫滿 → 像素精確圖直接給 backgroundImage
+// → WidgetKit 1:1 渲染。
 function sharpCard(master, fam) {
   try {
-    const pt = widgetPt(fam);
+    const px = widgetPx(fam);
     const ctx = new DrawContext();
     ctx.opaque = true;
-    ctx.respectScreenScale = true;
-    ctx.size = new Size(pt[0], pt[1]);
-    ctx.drawImageInRect(master, new Rect(0, 0, pt[0], pt[1]));
+    ctx.size = new Size(px[0], px[1]);
+    ctx.drawImageInRect(master, new Rect(0, 0, px[0], px[1]));
     return ctx.getImage();
   } catch (e) { return master; }
 }
@@ -443,7 +450,10 @@ module.exports.run = async function () {
   const t = await weatherSelfTest();
   const a = new Alert();
   a.title = t.ok ? "天氣功能正常 ✓" : "天氣還不能用";
-  a.message = t.msg;
+  const res = Device.screenResolution();
+  const mpx = widgetPx("medium");
+  a.message = t.msg + "\n\n〔診斷〕螢幕 " + Math.round(res.width) + "×" + Math.round(res.height)
+    + "px・medium 卡面重採為 " + mpx[0] + "×" + mpx[1] + "px・scale " + Device.screenScale();
   if (data && data.ig_url) a.addAction("開今天的主文");
   a.addCancelAction("關閉");
   const idx = await a.presentAlert();
