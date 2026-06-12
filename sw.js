@@ -1,5 +1,5 @@
 // 學術寓言 PWA service worker：外殼 cache-first、fables.json network-first（拿最新故事，離線退回快取）
-const CACHE = "fable-v1";
+const CACHE = "fable-v2";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest"];
 
 self.addEventListener("install", e => {
