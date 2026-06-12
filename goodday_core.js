@@ -11,7 +11,46 @@
 
 const BASE = "https://raw.githubusercontent.com/b95202040/daily-fables/main/";
 const DATA_URL = BASE + "goodday.json";
-const IMG_NAME = { small: "goodday_s.jpg", medium: "goodday_m.jpg", large: "goodday_l.jpg" };
+// 2× 母圖（Mac 端依設計師 mockup 規格渲染），手機端重採樣到精確點尺寸
+const IMG_NAME = { small: "goodday_s2.jpg", medium: "goodday_m2.jpg", large: "goodday_l2.jpg" };
+
+// 各機型 widget 點尺寸（依 simonbs/ios-widget-sizes；key = 直向螢幕寬 pt，取最近值）
+const WIDGET_PT = {
+  430: { small: [170, 170], medium: [364, 170], large: [364, 382] },
+  428: { small: [170, 170], medium: [364, 170], large: [364, 382] },
+  414: { small: [169, 169], medium: [360, 169], large: [360, 379] },
+  402: { small: [162, 162], medium: [344, 162], large: [344, 366] },
+  393: { small: [158, 158], medium: [338, 158], large: [338, 354] },
+  390: { small: [158, 158], medium: [338, 158], large: [338, 354] },
+  375: { small: [155, 155], medium: [329, 155], large: [329, 345] },
+  360: { small: [155, 155], medium: [329, 155], large: [329, 345] },
+  320: { small: [141, 141], medium: [292, 141], large: [292, 311] },
+};
+
+function widgetPt(fam) {
+  const sz = Device.screenSize();
+  const w = Math.round(Math.min(sz.width, sz.height));
+  let best = null, bd = 1e9;
+  for (const k in WIDGET_PT) {
+    const dlt = Math.abs(w - Number(k));
+    if (dlt < bd) { bd = dlt; best = WIDGET_PT[k]; }
+  }
+  return best[fam] || best.medium;
+}
+
+// 糊圖解法：把 2× 母圖畫進「該機型 widget 精確點尺寸 + respectScreenScale」的 DrawContext，
+// 產出的圖帶正確 scale 標記 → WidgetKit 1:1 像素渲染，不再被當 1x 縮放。
+function sharpCard(master, fam) {
+  try {
+    const pt = widgetPt(fam);
+    const ctx = new DrawContext();
+    ctx.opaque = true;
+    ctx.respectScreenScale = true;
+    ctx.size = new Size(pt[0], pt[1]);
+    ctx.drawImageInRect(master, new Rect(0, 0, pt[0], pt[1]));
+    return ctx.getImage();
+  } catch (e) { return master; }
+}
 
 const fm = FileManager.local();
 const dir = fm.joinPath(fm.documentsDirectory(), "goodday_widget");
@@ -277,11 +316,11 @@ function cardTextWidget(d, fam, useJf, assets) {
   right.addSpacer(large ? 26 : 18);
   if (assets.logo) {
     const li = right.addImage(assets.logo);
-    li.imageSize = new Size(large ? 41 : 34, large ? 12 : 10); // 中文字標比例 3.40
+    li.imageSize = new Size(large ? 110 : 92, large ? 12 : 10); // 完整 lockup 比例 9.18
     li.tintColor = C(pal.fade);
     li.leftAlignImage();
   } else {
-    const brand = right.addText("好日曆");
+    const brand = right.addText("好日曆 GOODAY™");
     brand.font = F.reg(large ? 11 : 9); brand.textColor = C(pal.fade);
   }
 
@@ -374,26 +413,24 @@ module.exports.run = async function () {
       t2.font = Font.systemFont(11); t2.textColor = new Color(PAL_DAY.fade);
     } else {
       const p = widgetParam();
-      const imgMode = p.indexOf("卡") >= 0 || p.toLowerCase().indexOf("img") >= 0;
+      // 預設＝設計師卡面（圖卡）；Parameter 含「文字」或 text → 原生文字模式
+      const textMode = p.indexOf("文字") >= 0 || p.toLowerCase().indexOf("text") >= 0;
       const useJf = p.indexOf("蘭") >= 0 || p.toLowerCase().indexOf("jf") >= 0;
       const wx = await loadWeatherWidget();
-      if (imgMode) {
-        const img = await loadCardImage(data.updated);
-        if (img) {
-          w = new ListWidget();
-          w.backgroundImage = img;
-          w.setPadding(10, 12, 10, 12);
-          // 天氣是手機端資訊，疊在卡面右上角
-          addWeatherRow(w, wx, isNightNow() ? PAL_NIGHT.fade : PAL_DAY.fade,
-                        (config.widgetFamily === "large") ? 12 : 11);
-          w.addSpacer();
-        } else {
-          const assets = { wx, logo: await loadAsset("goodday_logo_zh.png"), wm: await loadAsset("goodday_wm.png") };
-          w = cardTextWidget(data, config.widgetFamily || "medium", useJf, assets);
-        }
+      const fam2 = config.widgetFamily || "medium";
+      let master = null;
+      if (!textMode) master = await loadCardImage(data.updated);
+      if (master) {
+        w = new ListWidget();
+        w.backgroundImage = sharpCard(master, fam2);
+        w.setPadding(10, 12, 10, 12);
+        // 天氣是手機端資訊，疊在卡面右上角
+        addWeatherRow(w, wx, isNightNow() ? PAL_NIGHT.fade : PAL_DAY.fade,
+                      fam2 === "large" ? 12 : 11);
+        w.addSpacer();
       } else {
-        const assets = { wx, logo: await loadAsset("goodday_logo_zh.png"), wm: await loadAsset("goodday_wm.png") };
-        w = cardTextWidget(data, config.widgetFamily || "medium", useJf, assets);
+        const assets = { wx, logo: await loadAsset("goodday_logo_full.png"), wm: await loadAsset("goodday_wm.png") };
+        w = cardTextWidget(data, fam2, useJf, assets);
       }
       if (data.ig_url) w.url = data.ig_url; // 點磚直接開 IG 主文
     }
