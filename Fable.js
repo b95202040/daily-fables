@@ -40,7 +40,13 @@ async function loadData() {
 }
 
 function loadState() {
-  try { return JSON.parse(fm.readString(statePath)); } catch (e) { return { recent: [] }; }
+  try {
+    if (fm.fileExists(statePath)) {
+      const s = JSON.parse(fm.readString(statePath));
+      if (s && typeof s === "object") return { recent: Array.isArray(s.recent) ? s.recent : [] };
+    }
+  } catch (e) {}
+  return { recent: [] };
 }
 function saveState(s) { fm.writeString(statePath, JSON.stringify(s)); }
 
