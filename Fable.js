@@ -67,8 +67,13 @@ function drawFable(fables, state) {
   return f;
 }
 
+function currentFilter() {
+  if (args.widgetParameter) return String(args.widgetParameter).trim();
+  if (args.queryParameters && args.queryParameters.p) return String(args.queryParameters.p).trim();
+  return "";
+}
 function applyDomainFilter(fables) {
-  const p = args.widgetParameter ? String(args.widgetParameter).trim() : "";
+  const p = currentFilter();
   if (!p) return fables;
   const f2 = fables.filter(x => x.domain === p);
   return f2.length ? f2 : fables;
@@ -81,6 +86,10 @@ function buildWidget(f) {
   w.backgroundColor = Color.dynamic(new Color("#ffffff"), new Color("#1b1b1d"));
   w.setPadding(14, 16, 14, 16);
   w.refreshAfterDate = new Date(Date.now() + 60 * 60 * 1000);
+  // 點磚 → 直接跑本 script，並帶上磚上這一則的 id（讓點進去就是同一則）
+  w.url = "scriptable:///run?scriptName=" + encodeURIComponent(Script.name())
+        + "&id=" + encodeURIComponent(f.id)
+        + "&p=" + encodeURIComponent(args.widgetParameter ? String(args.widgetParameter).trim() : "");
 
   const pill = w.addText(f.domain);
   pill.font = Font.mediumSystemFont(small ? 10 : 12);
@@ -181,17 +190,20 @@ if (!data) {
     Script.setWidget(buildWidget(dailyFable(fables)));
     Script.complete();
   } else {
-    // 在 App 內（點開）：抽一則 → 讀 → 再抽一則的迴圈
+    // 在 App 內（點開）：先給磚面那一則（用帶過來的 id），再進「再抽一則」迴圈
     const state = loadState();
+    const startId = (args.queryParameters && args.queryParameters.id) || null;
+    let f = (startId && fables.find(x => x.id === startId)) || dailyFable(fables);
+    state.recent = [...(state.recent || []), f.id];
     let again = true;
     while (again) {
-      const f = drawFable(fables, state);
       await presentReader(f);
       const a = new Alert();
       a.title = "再抽一則？";
       a.addAction("好，再來");
       a.addCancelAction("夠了");
       again = (await a.presentAlert()) === 0;
+      if (again) f = drawFable(fables, state);
     }
     Script.complete();
   }
