@@ -88,62 +88,68 @@ function wxSymbolName(code) {
   return s;
 }
 
-async function loadWeather() {
-  const path = fm.joinPath(dir, "weather.json");
+const wxPath = fm.joinPath(dir, "weather.json");
+const locPath = fm.joinPath(dir, "location.json");
+
+function readJSON(path) {
   try {
-    if (fm.fileExists(path)) {
-      const c = JSON.parse(fm.readString(path));
-      if (Date.now() - c.ts < 30 * 60 * 1000) return c; // 30 分鐘快取
-    }
+    if (fm.fileExists(path)) return JSON.parse(fm.readString(path));
   } catch (e) {}
-  try {
-    Location.setAccuracyToKilometer();
-    const loc = await Location.current();
-    const u = "https://api.open-meteo.com/v1/forecast?latitude=" + loc.latitude.toFixed(3)
-      + "&longitude=" + loc.longitude.toFixed(3) + "&current=temperature_2m,weather_code&timezone=auto";
-    const req = new Request(u);
-    req.timeoutInterval = 6;
-    const j = await req.loadJSON();
-    const c = {
-      ts: Date.now(),
-      temp: Math.round(j.current.temperature_2m),
-      code: j.current.weather_code,
-    };
-    fm.writeString(path, JSON.stringify(c));
-    return c;
-  } catch (e) {}
-  // 過期快取也比沒有好
-  try { if (fm.fileExists(path)) return JSON.parse(fm.readString(path)); } catch (e) {}
   return null;
 }
 
-// App 內手動執行時的天氣自我檢測：首次會觸發 iOS 定位權限詢問（widget 內跳不出來）
+// 把可能卡死的 promise 包上時限（定位被拒時 Location.current() 會 hang 不返回）
+function withTimeout(promise, ms) {
+  return new Promise((resolve) => {
+    let done = false;
+    Timer.schedule(ms, false, () => { if (!done) { done = true; resolve(null); } });
+    promise.then((v) => { if (!done) { done = true; resolve(v); } })
+      .catch(() => { if (!done) { done = true; resolve(null); } });
+  });
+}
+
+async function fetchWeatherByCoords(lat, lon, timeoutSec) {
+  const u = "https://api.open-meteo.com/v1/forecast?latitude=" + lat.toFixed(3)
+    + "&longitude=" + lon.toFixed(3) + "&current=temperature_2m,weather_code&timezone=auto";
+  const req = new Request(u);
+  req.timeoutInterval = timeoutSec;
+  const j = await req.loadJSON();
+  const c = {
+    ts: Date.now(),
+    temp: Math.round(j.current.temperature_2m),
+    code: j.current.weather_code,
+  };
+  fm.writeString(wxPath, JSON.stringify(c));
+  return c;
+}
+
+// widget 專用：⚠️ 絕不呼叫定位（widget 內定位會 hang 到 script timeout）。
+// 用 App 內檢測存下的座標查天氣；沒做過檢測 → 不顯示天氣。
+async function loadWeatherWidget() {
+  const c = readJSON(wxPath);
+  if (c && Date.now() - c.ts < 30 * 60 * 1000) return c; // 30 分鐘快取
+  const loc = readJSON(locPath);
+  if (!loc) return c;
+  try { return await fetchWeatherByCoords(loc.lat, loc.lon, 4); } catch (e) {}
+  return c; // 過期快取也比沒有好
+}
+
+// App 內手動執行的自我檢測：唯一會要定位的地方（首次觸發 iOS 權限詢問），座標存給 widget 用
 async function weatherSelfTest() {
-  let loc;
-  try {
-    Location.setAccuracyToKilometer();
-    loc = await Location.current();
-  } catch (e) {
+  Location.setAccuracyToKilometer();
+  const loc = await withTimeout(Location.current(), 12000);
+  if (!loc) {
     return {
       ok: false,
-      msg: "拿不到定位。請到 設定 → 隱私權與安全性 → 定位服務 → Scriptable，改成「使用 App 期間」後再跑一次。\n(" + e + ")",
+      msg: "定位逾時或被拒（12 秒內拿不到）。請檢查：設定 → 隱私權與安全性 → 定位服務 → 最上面總開關要開 → 列表找 Scriptable → 改「使用 App 期間」。改完把 Scriptable 滑掉重開、再跑一次。",
     };
   }
+  fm.writeString(locPath, JSON.stringify({ lat: loc.latitude, lon: loc.longitude, ts: Date.now() }));
   try {
-    const u = "https://api.open-meteo.com/v1/forecast?latitude=" + loc.latitude.toFixed(3)
-      + "&longitude=" + loc.longitude.toFixed(3) + "&current=temperature_2m,weather_code&timezone=auto";
-    const req = new Request(u);
-    req.timeoutInterval = 8;
-    const j = await req.loadJSON();
-    const c = {
-      ts: Date.now(),
-      temp: Math.round(j.current.temperature_2m),
-      code: j.current.weather_code,
-    };
-    fm.writeString(fm.joinPath(dir, "weather.json"), JSON.stringify(c));
-    return { ok: true, msg: "定位＋天氣都正常：現在 " + c.temp + "°（" + wxSymbolName(c.code) + "）。\n磚面右上角下次刷新就會顯示。" };
+    const c = await fetchWeatherByCoords(loc.latitude, loc.longitude, 8);
+    return { ok: true, msg: "定位＋天氣都正常：現在 " + c.temp + "°（" + wxSymbolName(c.code) + "）。\n磚面右上角下次刷新就會顯示；換城市時再跑一次本檢測即可更新定位。" };
   } catch (e) {
-    return { ok: false, msg: "定位成功，但天氣服務連不上，稍後會自動再試。\n(" + e + ")" };
+    return { ok: false, msg: "定位成功，但天氣服務連不上，widget 稍後會自動再試。\n(" + e + ")" };
   }
 }
 
@@ -359,7 +365,7 @@ module.exports.run = async function () {
       const p = widgetParam();
       const imgMode = p.indexOf("卡") >= 0 || p.toLowerCase().indexOf("img") >= 0;
       const useJf = p.indexOf("蘭") >= 0 || p.toLowerCase().indexOf("jf") >= 0;
-      const wx = await loadWeather();
+      const wx = await loadWeatherWidget();
       if (imgMode) {
         const img = await loadCardImage(data.updated);
         if (img) {
