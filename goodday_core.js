@@ -345,10 +345,7 @@ function cardTextWidget(d, fam, useJf, assets) {
 
 // ---------- 圖片卡模式（Parameter「卡面」/「img」啟用） ----------
 
-async function loadCardImage(ver) {
-  const fam = config.widgetFamily || "medium";
-  let name = IMG_NAME[fam] || IMG_NAME.medium;
-  if (isNightNow()) name = name.replace(".jpg", "_night.jpg");
+async function fetchCard(name, ver) {
   const path = fm.joinPath(dir, name);
   try {
     const req = new Request(BASE + name + "?v=" + encodeURIComponent(ver || "0"));
@@ -360,6 +357,21 @@ async function loadCardImage(ver) {
     try { return fm.readImage(path); } catch (e) {}
   }
   return null;
+}
+
+// 卡面載入：medium 先試「像素精確 PNG」（Mac 端 LANCZOS 直出該機型尺寸 → 手機零縮放，最銳）；
+// 沒有對應尺寸或抓不到 → 2× 母圖 + sharpCard 重採樣
+async function loadCard(fam, ver) {
+  const night = isNightNow() ? "_night" : "";
+  if (fam === "medium") {
+    const px = widgetPx("medium");
+    const exact = await fetchCard("goodday_m_" + px[0] + "x" + px[1] + night + ".png", ver);
+    if (exact) return exact;
+  }
+  let name = IMG_NAME[fam] || IMG_NAME.medium;
+  if (night) name = name.replace(".jpg", "_night.jpg");
+  const master = await fetchCard(name, ver);
+  return master ? sharpCard(master, fam) : null;
 }
 
 // ---------- 鎖定畫面（iOS 16+） ----------
@@ -425,11 +437,11 @@ module.exports.run = async function () {
       const useJf = p.indexOf("蘭") >= 0 || p.toLowerCase().indexOf("jf") >= 0;
       const wx = await loadWeatherWidget();
       const fam2 = config.widgetFamily || "medium";
-      let master = null;
-      if (!textMode) master = await loadCardImage(data.updated);
-      if (master) {
+      let card = null;
+      if (!textMode) card = await loadCard(fam2, data.updated);
+      if (card) {
         w = new ListWidget();
-        w.backgroundImage = sharpCard(master, fam2);
+        w.backgroundImage = card;
         w.setPadding(10, 12, 10, 12);
         // 天氣是手機端資訊，疊在卡面右上角
         addWeatherRow(w, wx, isNightNow() ? PAL_NIGHT.fade : PAL_DAY.fade,
