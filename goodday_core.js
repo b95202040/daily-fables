@@ -103,8 +103,9 @@ function cardTextWidget(d, fam, useJf, logoImg) {
     return w;
   }
 
-  // medium / large：左日期欄 ＋ 分隔線 ＋ 右文眼內文
+  // medium / large：左日期欄 ＋ 分隔線 ＋ 右文眼內文（整組垂直置中）
   w.setPadding(large ? 18 : 12, 16, large ? 18 : 12, 14);
+  w.addSpacer();
   const outer = w.addStack();
   outer.layoutHorizontally();
   outer.centerAlignContent();
@@ -153,7 +154,8 @@ function cardTextWidget(d, fam, useJf, logoImg) {
   quote.font = F.reg(large ? 16 : 13); quote.textColor = C(pal.soft);
   quote.lineLimit = large ? 9 : 4; quote.minimumScaleFactor = 0.8;
 
-  right.addSpacer();
+  // 品牌字標緊跟在內文下方（固定間距，不推到底）
+  right.addSpacer(large ? 14 : 10);
   if (logoImg) {
     const li = right.addImage(logoImg);
     li.imageSize = new Size(large ? 110 : 92, large ? 12 : 10); // lockup 比例 9.18
@@ -164,6 +166,7 @@ function cardTextWidget(d, fam, useJf, logoImg) {
     brand.font = F.reg(large ? 11 : 9); brand.textColor = C(pal.fade);
   }
 
+  w.addSpacer();
   return w;
 }
 
