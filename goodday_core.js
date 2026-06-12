@@ -14,7 +14,8 @@ async function loadData() {
     const req = new Request(DATA_URL + "?t=" + Date.now());
     req.timeoutInterval = 8;
     const data = await req.loadJSON();
-    if (data && data.wenyan) {
+    // 防空：遠端內容壞掉/空白 → 視同抓取失敗，退回本地快取
+    if (data && ((data.wenyan || "").trim() || (data.quote || "").trim())) {
       fm.writeString(cachePath, JSON.stringify(data));
       return data;
     }
@@ -53,20 +54,28 @@ function buildWidget(d) {
 
   w.addSpacer(small ? 6 : 9);
 
-  // 文眼
-  const yan = w.addText(d.wenyan || "");
-  yan.font = Font.boldSystemFont(small ? 16 : large ? 24 : 20);
-  yan.textColor = accent;
-  yan.lineLimit = small ? 2 : 2;
-  yan.minimumScaleFactor = 0.7;
+  const yanText = (d.wenyan || "").trim();
+  const quoteText = (d.quote || "").trim();
 
-  w.addSpacer(small ? 5 : 8);
+  // 文眼（空則略過，金句放大補位）
+  if (yanText) {
+    const yan = w.addText(yanText);
+    yan.font = Font.boldSystemFont(small ? 16 : large ? 24 : 20);
+    yan.textColor = accent;
+    yan.lineLimit = 2;
+    yan.minimumScaleFactor = 0.7;
+    if (quoteText) w.addSpacer(small ? 5 : 8);
+  }
 
-  // 金句
-  const quote = w.addText((d.quote || "").trim());
-  quote.font = Font.systemFont(small ? 12 : large ? 17 : 14);
-  quote.textColor = fg;
-  quote.lineLimit = small ? 3 : large ? 9 : 4;
+  // 金句（空則只顯示文眼）
+  if (quoteText) {
+    const quote = w.addText(quoteText);
+    quote.font = yanText
+      ? Font.systemFont(small ? 12 : large ? 17 : 14)
+      : Font.boldSystemFont(small ? 14 : large ? 20 : 17);
+    quote.textColor = yanText ? fg : accent;
+    quote.lineLimit = yanText ? (small ? 3 : large ? 9 : 4) : (small ? 4 : large ? 10 : 5);
+  }
 
   w.addSpacer();
 
