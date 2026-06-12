@@ -2,10 +2,16 @@
   "date": "2026-06-12",
   "display_date": "6/12",
   "weekday": "星期五",
-  "wenyan": "宜都會過去的\n忌跟自己過不去",
+  "wenyan": "宜都會過去的",
+  "wenyan_full": "宜都會過去的\n忌跟自己過不去",
   "quote": "沒有不會淡的疤沒有不會好的傷沒有不會停下來的絕望",
+  "quote_lines": [
+    "沒有不會淡的疤",
+    "沒有不會好的傷",
+    "沒有不會停下來的絕望"
+  ],
   "ig_url": "https://www.instagram.com/p/DZdpe9EmVGr/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-06-12T14:15:45+08:00"
+  "updated": "2026-06-12T14:45:04+08:00"
 }
