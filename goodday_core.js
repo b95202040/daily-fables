@@ -1,6 +1,8 @@
 // 好日曆 widget core —— 由 loader 自動抓最新版執行。
-// 預設「文字模式」：手機原生渲染（銳利），仿日曆卡排版（左日期欄＋分隔線＋文眼＋呼吸分行內文＋農曆節氣），
-// 21:00–05:00 自動換深色暖燭配色。點磚 → 直接開 IG 當天最新主文。
+// 預設「文字模式」：手機原生渲染（銳利），仿日曆卡排版（左日期欄＋分隔線＋文眼＋呼吸分行內文＋農曆節氣
+// ＋右緣 GOODAY 直排浮水印＋好日曆中文字標），21:00–05:00 自動換深色暖燭配色。
+// 右上角小天氣：手機端定位 + open-meteo（免金鑰），30 分鐘快取；抓不到就不顯示。
+// 點磚 → 直接開 IG 當天最新主文。
 //
 // Widget Parameter（長按 widget → 編輯 → Parameter）：
 //   留空        = 文字模式，宋體（Songti TC，iOS 內建）
@@ -17,10 +19,10 @@ if (!fm.fileExists(dir)) fm.createDirectory(dir);
 const cachePath = fm.joinPath(dir, "goodday.json");
 
 const PAL_DAY = {
-  bg: "#F4EFE5", ink: "#2E2C28", soft: "#4A463E", fade: "#8A8578", line: "#3E3C36",
+  bg: "#F4EFE5", ink: "#2E2C28", soft: "#4A463E", fade: "#8A8578", line: "#3E3C36", wm: "#D8D3C6",
 };
 const PAL_NIGHT = {
-  bg: "#2B2824", ink: "#EDE4D2", soft: "#C9BCA4", fade: "#877E6C", line: "#A89C85",
+  bg: "#2B2824", ink: "#EDE4D2", soft: "#C9BCA4", fade: "#877E6C", line: "#A89C85", wm: "#3C3832",
 };
 
 // 晚安模式：21:00–05:00 深色暖燭配色（內容相同）
@@ -50,23 +52,89 @@ async function loadData() {
   return null;
 }
 
-// ---------- 文字模式（預設） ----------
-
-// 官方 logo lockup（好日曆＋GOODAY＋TM，黑+透明，顯示時染品牌淡色）。
-// 靜態檔 cache-first：抓過一次就用本地，logo 更新時改檔名即可。
-async function loadLogoImage() {
-  const path = fm.joinPath(dir, "goodday_logo.png");
+// 靜態資產 cache-first：抓過一次就用本地（更新時改檔名）
+async function loadAsset(name) {
+  const path = fm.joinPath(dir, name);
   if (fm.fileExists(path)) {
     try { return fm.readImage(path); } catch (e) {}
   }
   try {
-    const req = new Request(BASE + "goodday_logo.png");
+    const req = new Request(BASE + name);
     req.timeoutInterval = 6;
     const img = await req.loadImage();
     if (img) { fm.writeImage(path, img); return img; }
   } catch (e) {}
   return null;
 }
+
+// ---------- 天氣（手機本地） ----------
+
+const WX_SYMBOL = {
+  0: "sun.max", 1: "sun.max", 2: "cloud.sun", 3: "cloud",
+  45: "cloud.fog", 48: "cloud.fog",
+  51: "cloud.drizzle", 53: "cloud.drizzle", 55: "cloud.drizzle",
+  56: "cloud.sleet", 57: "cloud.sleet",
+  61: "cloud.rain", 63: "cloud.rain", 65: "cloud.heavyrain",
+  66: "cloud.sleet", 67: "cloud.sleet",
+  71: "cloud.snow", 73: "cloud.snow", 75: "cloud.snow", 77: "cloud.snow",
+  80: "cloud.rain", 81: "cloud.rain", 82: "cloud.heavyrain",
+  85: "cloud.snow", 86: "cloud.snow",
+  95: "cloud.bolt", 96: "cloud.bolt.rain", 99: "cloud.bolt.rain",
+};
+
+function wxSymbolName(code) {
+  let s = WX_SYMBOL[code] || "cloud";
+  if (isNightNow() && (code === 0 || code === 1)) s = "moon.stars";
+  return s;
+}
+
+async function loadWeather() {
+  const path = fm.joinPath(dir, "weather.json");
+  try {
+    if (fm.fileExists(path)) {
+      const c = JSON.parse(fm.readString(path));
+      if (Date.now() - c.ts < 30 * 60 * 1000) return c; // 30 分鐘快取
+    }
+  } catch (e) {}
+  try {
+    Location.setAccuracyToKilometer();
+    const loc = await Location.current();
+    const u = "https://api.open-meteo.com/v1/forecast?latitude=" + loc.latitude.toFixed(3)
+      + "&longitude=" + loc.longitude.toFixed(3) + "&current=temperature_2m,weather_code&timezone=auto";
+    const req = new Request(u);
+    req.timeoutInterval = 6;
+    const j = await req.loadJSON();
+    const c = {
+      ts: Date.now(),
+      temp: Math.round(j.current.temperature_2m),
+      code: j.current.weather_code,
+    };
+    fm.writeString(path, JSON.stringify(c));
+    return c;
+  } catch (e) {}
+  // 過期快取也比沒有好
+  try { if (fm.fileExists(path)) return JSON.parse(fm.readString(path)); } catch (e) {}
+  return null;
+}
+
+function addWeatherRow(w, wx, colorHex, pt) {
+  if (!wx) return;
+  const row = w.addStack();
+  row.layoutHorizontally();
+  row.centerAlignContent();
+  row.addSpacer();
+  const sym = SFSymbol.named(wxSymbolName(wx.code));
+  sym.applyFont(Font.systemFont(pt));
+  const ic = row.addImage(sym.image);
+  ic.imageSize = new Size(pt + 2, pt + 2);
+  ic.tintColor = new Color(colorHex);
+  row.addSpacer(3);
+  const t = row.addText(String(wx.temp) + "°");
+  t.font = Font.mediumSystemFont(pt - 1);
+  t.textColor = new Color(colorHex);
+}
+
+// ---------- 文字模式（預設） ----------
 
 function makeFonts(useJf) {
   // 字體名不存在時 Scriptable 自動退系統字型，不會壞
@@ -76,7 +144,7 @@ function makeFonts(useJf) {
   };
 }
 
-function cardTextWidget(d, fam, useJf, logoImg) {
+function cardTextWidget(d, fam, useJf, assets) {
   const night = isNightNow();
   const pal = night ? PAL_NIGHT : PAL_DAY;
   const F = makeFonts(useJf);
@@ -87,7 +155,9 @@ function cardTextWidget(d, fam, useJf, logoImg) {
   w.backgroundColor = C(pal.bg);
 
   if (fam === "small") {
-    w.setPadding(12, 12, 12, 12);
+    w.setPadding(10, 12, 12, 12);
+    addWeatherRow(w, assets.wx, pal.fade, 10);
+    w.addSpacer(2);
     const top = w.addText(`${d.display_date}　${d.weekday}`);
     top.font = F.reg(11); top.textColor = C(pal.fade); top.centerAlignText();
     w.addSpacer();
@@ -103,23 +173,25 @@ function cardTextWidget(d, fam, useJf, logoImg) {
     return w;
   }
 
-  // medium / large：左日期欄 ＋ 分隔線 ＋ 右文眼內文（整組垂直置中）
-  w.setPadding(large ? 18 : 12, 16, large ? 18 : 12, 14);
+  // medium / large：左日期欄 ＋ 分隔線（偏左） ＋ 右文眼內文 ＋ 右緣浮水印
+  w.setPadding(large ? 12 : 8, 16, large ? 16 : 10, 10);
+  addWeatherRow(w, assets.wx, pal.fade, large ? 12 : 11);
   w.addSpacer();
   const outer = w.addStack();
   outer.layoutHorizontally();
   outer.centerAlignContent();
 
-  const colW = large ? 104 : 92;
+  const colW = large ? 92 : 78;
   const left = outer.addStack();
   left.layoutVertically();
   left.size = new Size(colW, 0);
 
   const ym = left.addText(`${(d.date || "").slice(0, 4)} 年 ${(d.date || "").slice(5, 7)} 月`);
   ym.font = F.reg(large ? 12 : 10); ym.textColor = C(pal.ink); ym.centerAlignText();
+  ym.lineLimit = 1; ym.minimumScaleFactor = 0.75;
   left.addSpacer(large ? 8 : 4);
   const day = left.addText(String(parseInt((d.date || "--").slice(8, 10), 10) || ""));
-  day.font = F.bold(large ? 56 : 42); day.textColor = C(pal.ink); day.centerAlignText();
+  day.font = F.bold(large ? 54 : 40); day.textColor = C(pal.ink); day.centerAlignText();
   left.addSpacer(large ? 8 : 4);
   const wd = left.addText(d.weekday || "");
   wd.font = F.reg(large ? 14 : 12); wd.textColor = C(pal.ink); wd.centerAlignText();
@@ -134,11 +206,11 @@ function cardTextWidget(d, fam, useJf, logoImg) {
     }
   }
 
-  outer.addSpacer(large ? 16 : 12);
+  outer.addSpacer(large ? 14 : 10);
   const rule = outer.addStack();
   rule.backgroundColor = C(pal.line);
   rule.size = new Size(1, large ? 280 : 116);
-  outer.addSpacer(large ? 18 : 13);
+  outer.addSpacer(large ? 20 : 16);
 
   const right = outer.addStack();
   right.layoutVertically();
@@ -151,19 +223,27 @@ function cardTextWidget(d, fam, useJf, logoImg) {
   const lines = (d.quote_lines && d.quote_lines.length)
     ? d.quote_lines : [(d.quote || "").trim()];
   const quote = right.addText(lines.slice(0, large ? 8 : 4).join("\n"));
-  quote.font = F.reg(large ? 16 : 13); quote.textColor = C(pal.soft);
+  quote.font = F.reg(large ? 16 : 12); quote.textColor = C(pal.soft);
   quote.lineLimit = large ? 9 : 4; quote.minimumScaleFactor = 0.8;
 
-  // 品牌字標緊跟在內文下方（固定間距，不推到底）
-  right.addSpacer(large ? 14 : 10);
-  if (logoImg) {
-    const li = right.addImage(logoImg);
-    li.imageSize = new Size(large ? 110 : 92, large ? 12 : 10); // lockup 比例 9.18
+  // 好日曆中文字標：與內文拉開距離（再往下移）
+  right.addSpacer(large ? 26 : 18);
+  if (assets.logo) {
+    const li = right.addImage(assets.logo);
+    li.imageSize = new Size(large ? 41 : 34, large ? 12 : 10); // 中文字標比例 3.40
     li.tintColor = C(pal.fade);
     li.leftAlignImage();
   } else {
-    const brand = right.addText("好日曆 GOODAY™");
+    const brand = right.addText("好日曆");
     brand.font = F.reg(large ? 11 : 9); brand.textColor = C(pal.fade);
+  }
+
+  // 右緣 GOODAY 直排浮水印（官方英文字標）
+  outer.addSpacer();
+  if (assets.wm) {
+    const wm = outer.addImage(assets.wm);
+    wm.imageSize = large ? new Size(34, 262) : new Size(16, 123); // 條比例 0.13
+    wm.tintColor = C(pal.wm);
   }
 
   w.addSpacer();
@@ -249,17 +329,24 @@ module.exports.run = async function () {
       const p = widgetParam();
       const imgMode = p.indexOf("卡") >= 0 || p.toLowerCase().indexOf("img") >= 0;
       const useJf = p.indexOf("蘭") >= 0 || p.toLowerCase().indexOf("jf") >= 0;
+      const wx = await loadWeather();
       if (imgMode) {
         const img = await loadCardImage(data.updated);
         if (img) {
           w = new ListWidget();
           w.backgroundImage = img;
-          w.setPadding(0, 0, 0, 0);
+          w.setPadding(10, 12, 10, 12);
+          // 天氣是手機端資訊，疊在卡面右上角
+          addWeatherRow(w, wx, isNightNow() ? PAL_NIGHT.fade : PAL_DAY.fade,
+                        (config.widgetFamily === "large") ? 12 : 11);
+          w.addSpacer();
         } else {
-          w = cardTextWidget(data, config.widgetFamily || "medium", useJf, await loadLogoImage());
+          const assets = { wx, logo: await loadAsset("goodday_logo_zh.png"), wm: await loadAsset("goodday_wm.png") };
+          w = cardTextWidget(data, config.widgetFamily || "medium", useJf, assets);
         }
       } else {
-        w = cardTextWidget(data, config.widgetFamily || "medium", useJf, await loadLogoImage());
+        const assets = { wx, logo: await loadAsset("goodday_logo_zh.png"), wm: await loadAsset("goodday_wm.png") };
+        w = cardTextWidget(data, config.widgetFamily || "medium", useJf, assets);
       }
       if (data.ig_url) w.url = data.ig_url; // 點磚直接開 IG 主文
     }
