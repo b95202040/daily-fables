@@ -52,6 +52,22 @@ async function loadData() {
 
 // ---------- 文字模式（預設） ----------
 
+// 官方 logo lockup（好日曆＋GOODAY＋TM，黑+透明，顯示時染品牌淡色）。
+// 靜態檔 cache-first：抓過一次就用本地，logo 更新時改檔名即可。
+async function loadLogoImage() {
+  const path = fm.joinPath(dir, "goodday_logo.png");
+  if (fm.fileExists(path)) {
+    try { return fm.readImage(path); } catch (e) {}
+  }
+  try {
+    const req = new Request(BASE + "goodday_logo.png");
+    req.timeoutInterval = 6;
+    const img = await req.loadImage();
+    if (img) { fm.writeImage(path, img); return img; }
+  } catch (e) {}
+  return null;
+}
+
 function makeFonts(useJf) {
   // 字體名不存在時 Scriptable 自動退系統字型，不會壞
   return {
@@ -60,7 +76,7 @@ function makeFonts(useJf) {
   };
 }
 
-function cardTextWidget(d, fam, useJf) {
+function cardTextWidget(d, fam, useJf, logoImg) {
   const night = isNightNow();
   const pal = night ? PAL_NIGHT : PAL_DAY;
   const F = makeFonts(useJf);
@@ -138,8 +154,15 @@ function cardTextWidget(d, fam, useJf) {
   quote.lineLimit = large ? 9 : 4; quote.minimumScaleFactor = 0.8;
 
   right.addSpacer();
-  const brand = right.addText("好日曆 GOODAY™");
-  brand.font = F.reg(large ? 11 : 9); brand.textColor = C(pal.fade);
+  if (logoImg) {
+    const li = right.addImage(logoImg);
+    li.imageSize = new Size(large ? 110 : 92, large ? 12 : 10); // lockup 比例 9.18
+    li.tintColor = C(pal.fade);
+    li.leftAlignImage();
+  } else {
+    const brand = right.addText("好日曆 GOODAY™");
+    brand.font = F.reg(large ? 11 : 9); brand.textColor = C(pal.fade);
+  }
 
   return w;
 }
@@ -230,10 +253,10 @@ module.exports.run = async function () {
           w.backgroundImage = img;
           w.setPadding(0, 0, 0, 0);
         } else {
-          w = cardTextWidget(data, config.widgetFamily || "medium", useJf);
+          w = cardTextWidget(data, config.widgetFamily || "medium", useJf, await loadLogoImage());
         }
       } else {
-        w = cardTextWidget(data, config.widgetFamily || "medium", useJf);
+        w = cardTextWidget(data, config.widgetFamily || "medium", useJf, await loadLogoImage());
       }
       if (data.ig_url) w.url = data.ig_url; // 點磚直接開 IG 主文
     }
