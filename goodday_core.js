@@ -1,6 +1,11 @@
 // 好日曆 widget core —— 由 loader 自動抓最新版執行。
-// 磚面＝Mac 端用蘭陽明體渲染好的日曆卡（goodday_s/m/l.jpg），手機免裝字體。
-// 點磚 → 直接開 IG 當天最新主文。改這支、跑 deploy_core.sh push，手機下次刷新生效。
+// 預設「文字模式」：手機原生渲染（銳利），仿日曆卡排版（左日期欄＋分隔線＋文眼＋呼吸分行內文＋農曆節氣），
+// 21:00–05:00 自動換深色暖燭配色。點磚 → 直接開 IG 當天最新主文。
+//
+// Widget Parameter（長按 widget → 編輯 → Parameter）：
+//   留空        = 文字模式，宋體（Songti TC，iOS 內建）
+//   蘭陽 或 jf  = 文字模式，蘭陽明體（需先用 AnyFont 等安裝 fonts/ 內兩個 OTF）
+//   卡面 或 img = 圖片卡模式（Mac 端蘭陽明體渲染圖，解析度受 iOS widget 縮放限制）
 
 const BASE = "https://raw.githubusercontent.com/b95202040/daily-fables/main/";
 const DATA_URL = BASE + "goodday.json";
@@ -10,6 +15,23 @@ const fm = FileManager.local();
 const dir = fm.joinPath(fm.documentsDirectory(), "goodday_widget");
 if (!fm.fileExists(dir)) fm.createDirectory(dir);
 const cachePath = fm.joinPath(dir, "goodday.json");
+
+const PAL_DAY = {
+  bg: "#F4EFE5", ink: "#2E2C28", soft: "#4A463E", fade: "#8A8578", line: "#3E3C36",
+};
+const PAL_NIGHT = {
+  bg: "#2B2824", ink: "#EDE4D2", soft: "#C9BCA4", fade: "#877E6C", line: "#A89C85",
+};
+
+// 晚安模式：21:00–05:00 深色暖燭配色（內容相同）
+function isNightNow() {
+  const h = new Date().getHours();
+  return h >= 21 || h < 5;
+}
+
+function widgetParam() {
+  return args.widgetParameter ? String(args.widgetParameter).trim() : "";
+}
 
 async function loadData() {
   try {
@@ -28,11 +50,101 @@ async function loadData() {
   return null;
 }
 
-// 晚安模式：21:00–05:00 換深色暖燭卡（內容相同、只換配色）
-function isNightNow() {
-  const h = new Date().getHours();
-  return h >= 21 || h < 5;
+// ---------- 文字模式（預設） ----------
+
+function makeFonts(useJf) {
+  // 字體名不存在時 Scriptable 自動退系統字型，不會壞
+  return {
+    bold: (s) => new Font(useJf ? "jf-lanyangming-1.0-SemiBold" : "STSongti-TC-Bold", s),
+    reg: (s) => new Font(useJf ? "jf-lanyangming-1.0-Book" : "STSongti-TC-Regular", s),
+  };
 }
+
+function cardTextWidget(d, fam, useJf) {
+  const night = isNightNow();
+  const pal = night ? PAL_NIGHT : PAL_DAY;
+  const F = makeFonts(useJf);
+  const C = (hex) => new Color(hex);
+  const large = fam === "large";
+
+  const w = new ListWidget();
+  w.backgroundColor = C(pal.bg);
+
+  if (fam === "small") {
+    w.setPadding(12, 12, 12, 12);
+    const top = w.addText(`${d.display_date}　${d.weekday}`);
+    top.font = F.reg(11); top.textColor = C(pal.fade); top.centerAlignText();
+    w.addSpacer();
+    const yan = w.addText(d.wenyan || "");
+    yan.font = F.bold(20); yan.textColor = C(pal.ink);
+    yan.lineLimit = 3; yan.minimumScaleFactor = 0.7; yan.centerAlignText();
+    w.addSpacer();
+    if (d.lunar) {
+      const lu = w.addText(d.lunar + (d.term ? "・" + d.term : ""));
+      lu.font = F.reg(9); lu.textColor = C(pal.fade);
+      lu.lineLimit = 1; lu.minimumScaleFactor = 0.7; lu.centerAlignText();
+    }
+    return w;
+  }
+
+  // medium / large：左日期欄 ＋ 分隔線 ＋ 右文眼內文
+  w.setPadding(large ? 18 : 12, 16, large ? 18 : 12, 14);
+  const outer = w.addStack();
+  outer.layoutHorizontally();
+  outer.centerAlignContent();
+
+  const colW = large ? 104 : 92;
+  const left = outer.addStack();
+  left.layoutVertically();
+  left.size = new Size(colW, 0);
+
+  const ym = left.addText(`${(d.date || "").slice(0, 4)} 年 ${(d.date || "").slice(5, 7)} 月`);
+  ym.font = F.reg(large ? 12 : 10); ym.textColor = C(pal.ink); ym.centerAlignText();
+  left.addSpacer(large ? 8 : 4);
+  const day = left.addText(String(parseInt((d.date || "--").slice(8, 10), 10) || ""));
+  day.font = F.bold(large ? 56 : 42); day.textColor = C(pal.ink); day.centerAlignText();
+  left.addSpacer(large ? 8 : 4);
+  const wd = left.addText(d.weekday || "");
+  wd.font = F.reg(large ? 14 : 12); wd.textColor = C(pal.ink); wd.centerAlignText();
+  if (d.lunar) {
+    left.addSpacer(large ? 8 : 5);
+    const lu = left.addText(d.lunar);
+    lu.font = F.reg(large ? 11 : 9); lu.textColor = C(pal.fade); lu.centerAlignText();
+    if (d.term) {
+      const te = left.addText(d.term);
+      te.font = F.reg(large ? 11 : 9); te.textColor = C(pal.fade); te.centerAlignText();
+      te.lineLimit = 1; te.minimumScaleFactor = 0.7;
+    }
+  }
+
+  outer.addSpacer(large ? 16 : 12);
+  const rule = outer.addStack();
+  rule.backgroundColor = C(pal.line);
+  rule.size = new Size(1, large ? 280 : 116);
+  outer.addSpacer(large ? 18 : 13);
+
+  const right = outer.addStack();
+  right.layoutVertically();
+
+  const yan = right.addText(d.wenyan || "");
+  yan.font = F.bold(large ? 27 : 19); yan.textColor = C(pal.ink);
+  yan.lineLimit = large ? 2 : 1; yan.minimumScaleFactor = 0.62;
+  right.addSpacer(large ? 12 : 6);
+
+  const lines = (d.quote_lines && d.quote_lines.length)
+    ? d.quote_lines : [(d.quote || "").trim()];
+  const quote = right.addText(lines.slice(0, large ? 8 : 4).join("\n"));
+  quote.font = F.reg(large ? 16 : 13); quote.textColor = C(pal.soft);
+  quote.lineLimit = large ? 9 : 4; quote.minimumScaleFactor = 0.8;
+
+  right.addSpacer();
+  const brand = right.addText("好日曆 GOODAY™");
+  brand.font = F.reg(large ? 11 : 9); brand.textColor = C(pal.fade);
+
+  return w;
+}
+
+// ---------- 圖片卡模式（Parameter「卡面」/「img」啟用） ----------
 
 async function loadCardImage(ver) {
   const fam = config.widgetFamily || "medium";
@@ -51,49 +163,8 @@ async function loadCardImage(ver) {
   return null;
 }
 
-// 文字版 fallback（圖抓不到且無快取時，維持紙感配色）
-function textWidget(d) {
-  const fam = config.widgetFamily || "medium";
-  const small = fam === "small";
-  const w = new ListWidget();
-  w.backgroundColor = new Color("#F4EFE5");
-  w.setPadding(16, 18, 16, 18);
-  const ink = new Color("#2E2C28");
-  const soft = new Color("#4A463E");
-  const fade = new Color("#8A8578");
+// ---------- 鎖定畫面（iOS 16+） ----------
 
-  const head = w.addStack();
-  head.centerAlignContent();
-  const brand = head.addText("好日曆");
-  brand.font = Font.mediumSystemFont(small ? 10 : 12);
-  brand.textColor = fade;
-  head.addSpacer();
-  const dateTxt = head.addText(`${d.display_date} ${d.weekday}`);
-  dateTxt.font = Font.mediumSystemFont(small ? 10 : 12);
-  dateTxt.textColor = fade;
-  w.addSpacer(small ? 6 : 9);
-
-  const yanText = (d.wenyan || "").trim();
-  const quoteText = (d.quote_lines || []).join("\n") || (d.quote || "").trim();
-  if (yanText) {
-    const yan = w.addText(yanText);
-    yan.font = Font.boldSystemFont(small ? 17 : fam === "large" ? 26 : 21);
-    yan.textColor = ink;
-    yan.lineLimit = 2;
-    yan.minimumScaleFactor = 0.7;
-    if (quoteText) w.addSpacer(small ? 5 : 8);
-  }
-  if (quoteText && !small) {
-    const quote = w.addText(quoteText);
-    quote.font = Font.systemFont(fam === "large" ? 17 : 14);
-    quote.textColor = soft;
-    quote.lineLimit = fam === "large" ? 9 : 4;
-  }
-  w.addSpacer();
-  return w;
-}
-
-// 鎖定畫面（iOS 16+）：accessoryRectangular / accessoryInline / accessoryCircular
 function accessoryWidget(d, fam) {
   const w = new ListWidget();
   w.addAccessoryWidgetBackground = true;
@@ -141,21 +212,28 @@ module.exports.run = async function () {
     return;
   }
   if (config.runsInWidget) {
-    const w0 = new ListWidget();
-    let w = w0;
+    let w;
     if (!data) {
-      w.backgroundColor = new Color("#F4EFE5");
-      const t1 = w.addText("好日曆"); t1.textColor = new Color("#2E2C28");
+      w = new ListWidget();
+      w.backgroundColor = new Color(PAL_DAY.bg);
+      const t1 = w.addText("好日曆"); t1.textColor = new Color(PAL_DAY.ink);
       const t2 = w.addText("第一次請連網路開一次");
-      t2.font = Font.systemFont(11); t2.textColor = new Color("#8A8578");
+      t2.font = Font.systemFont(11); t2.textColor = new Color(PAL_DAY.fade);
     } else {
-      const img = await loadCardImage(data.updated);
-      if (img) {
-        w = new ListWidget();
-        w.backgroundImage = img;
-        w.setPadding(0, 0, 0, 0);
+      const p = widgetParam();
+      const imgMode = p.indexOf("卡") >= 0 || p.toLowerCase().indexOf("img") >= 0;
+      const useJf = p.indexOf("蘭") >= 0 || p.toLowerCase().indexOf("jf") >= 0;
+      if (imgMode) {
+        const img = await loadCardImage(data.updated);
+        if (img) {
+          w = new ListWidget();
+          w.backgroundImage = img;
+          w.setPadding(0, 0, 0, 0);
+        } else {
+          w = cardTextWidget(data, config.widgetFamily || "medium", useJf);
+        }
       } else {
-        w = textWidget(data);
+        w = cardTextWidget(data, config.widgetFamily || "medium", useJf);
       }
       if (data.ig_url) w.url = data.ig_url; // 點磚直接開 IG 主文
     }
