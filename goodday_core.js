@@ -28,9 +28,16 @@ async function loadData() {
   return null;
 }
 
+// 晚安模式：21:00–05:00 換深色暖燭卡（內容相同、只換配色）
+function isNightNow() {
+  const h = new Date().getHours();
+  return h >= 21 || h < 5;
+}
+
 async function loadCardImage(ver) {
   const fam = config.widgetFamily || "medium";
-  const name = IMG_NAME[fam] || IMG_NAME.medium;
+  let name = IMG_NAME[fam] || IMG_NAME.medium;
+  if (isNightNow()) name = name.replace(".jpg", "_night.jpg");
   const path = fm.joinPath(dir, name);
   try {
     const req = new Request(BASE + name + "?v=" + encodeURIComponent(ver || "0"));
@@ -86,8 +93,53 @@ function textWidget(d) {
   return w;
 }
 
+// 鎖定畫面（iOS 16+）：accessoryRectangular / accessoryInline / accessoryCircular
+function accessoryWidget(d, fam) {
+  const w = new ListWidget();
+  w.addAccessoryWidgetBackground = true;
+  if (d.ig_url) w.url = d.ig_url;
+  if (fam === "accessoryInline") {
+    w.addText("好日曆・" + (d.wenyan || ""));
+    return w;
+  }
+  if (fam === "accessoryCircular") {
+    const t = w.addText((d.wenyan || "宜").charAt(0));
+    t.font = Font.boldSystemFont(26);
+    t.centerAlignText();
+    return w;
+  }
+  // accessoryRectangular
+  w.setPadding(2, 6, 2, 6);
+  const top = w.addText(`${d.display_date} ${d.weekday}` + (d.lunar ? "・" + d.lunar : ""));
+  top.font = Font.mediumSystemFont(11);
+  top.lineLimit = 1;
+  top.minimumScaleFactor = 0.8;
+  w.addSpacer(2);
+  const yan = w.addText(d.wenyan || "");
+  yan.font = Font.boldSystemFont(16);
+  yan.lineLimit = 2;
+  yan.minimumScaleFactor = 0.8;
+  w.addSpacer();
+  return w;
+}
+
 module.exports.run = async function () {
   const data = await loadData();
+  const fam = config.widgetFamily || "";
+  if (config.runsInWidget && fam.indexOf("accessory") === 0) {
+    let w;
+    if (data) {
+      w = accessoryWidget(data, fam);
+    } else {
+      w = new ListWidget();
+      w.addAccessoryWidgetBackground = true;
+      w.addText("好日曆");
+    }
+    w.refreshAfterDate = new Date(Date.now() + 30 * 60 * 1000);
+    Script.setWidget(w);
+    Script.complete();
+    return;
+  }
   if (config.runsInWidget) {
     const w0 = new ListWidget();
     let w = w0;
