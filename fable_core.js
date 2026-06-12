@@ -13,6 +13,7 @@ const cachePath = fm.joinPath(dir, "fables.json");
 const DOMAIN_COLOR = {
   "經濟與賽局": "#1D9E75", "數學與物理": "#378ADD", "生物與演化": "#639922",
   "心理與認知": "#D4537E", "資訊與計算": "#7F77DD", "哲學與邏輯": "#BA7517",
+  "社會與行為": "#D85A30", "歷史與地理": "#5F5E5A",
 };
 function accentFor(d) { return new Color(DOMAIN_COLOR[d] || "#888780"); }
 
