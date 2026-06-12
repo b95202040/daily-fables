@@ -222,22 +222,33 @@ function cardTextWidget(d, fam, useJf, assets) {
   left.layoutVertically();
   left.size = new Size(colW, 0);
 
-  const ym = left.addText(`${(d.date || "").slice(0, 4)} 年 ${(d.date || "").slice(5, 7)} 月`);
-  ym.font = F.reg(large ? 12 : 10); ym.textColor = C(pal.ink); ym.centerAlignText();
+  // 左欄每行用前後彈性 spacer 包起來 → 在欄寬內真・水平置中
+  // （窄欄裡 centerAlignText 不可靠，文字元素會貼左）
+  const addCentered = (str) => {
+    const row = left.addStack();
+    row.layoutHorizontally();
+    row.addSpacer();
+    const t = row.addText(str);
+    row.addSpacer();
+    return t;
+  };
+
+  const ym = addCentered(`${(d.date || "").slice(0, 4)} 年 ${(d.date || "").slice(5, 7)} 月`);
+  ym.font = F.reg(large ? 12 : 10); ym.textColor = C(pal.ink);
   ym.lineLimit = 1; ym.minimumScaleFactor = 0.75;
   left.addSpacer(large ? 8 : 4);
-  const day = left.addText(String(parseInt((d.date || "--").slice(8, 10), 10) || ""));
-  day.font = F.bold(large ? 54 : 40); day.textColor = C(pal.ink); day.centerAlignText();
+  const day = addCentered(String(parseInt((d.date || "--").slice(8, 10), 10) || ""));
+  day.font = F.bold(large ? 54 : 40); day.textColor = C(pal.ink);
   left.addSpacer(large ? 8 : 4);
-  const wd = left.addText(d.weekday || "");
-  wd.font = F.reg(large ? 14 : 12); wd.textColor = C(pal.ink); wd.centerAlignText();
+  const wd = addCentered(d.weekday || "");
+  wd.font = F.reg(large ? 14 : 12); wd.textColor = C(pal.ink);
   if (d.lunar) {
     left.addSpacer(large ? 8 : 5);
-    const lu = left.addText(d.lunar);
-    lu.font = F.reg(large ? 11 : 9); lu.textColor = C(pal.fade); lu.centerAlignText();
+    const lu = addCentered(d.lunar);
+    lu.font = F.reg(large ? 11 : 9); lu.textColor = C(pal.fade);
     if (d.term) {
-      const te = left.addText(d.term);
-      te.font = F.reg(large ? 11 : 9); te.textColor = C(pal.fade); te.centerAlignText();
+      const te = addCentered(d.term);
+      te.font = F.reg(large ? 11 : 9); te.textColor = C(pal.fade);
       te.lineLimit = 1; te.minimumScaleFactor = 0.7;
     }
   }
