@@ -40,11 +40,7 @@
   .tag{ font-size:13px; font-weight:600; }
   h1{ font-size:27px; font-weight:700; line-height:1.3; margin:6px 0 18px; }
   .story p{ font-size:18px; margin:0 0 16px; }
-  .revealBtn{ display:flex; align-items:center; justify-content:center; gap:8px;
-    width:100%; margin:10px 0 4px; padding:16px; border:none; border-radius:14px;
-    font-size:17px; font-weight:600; color:#fff; }
-  .revealHint{ text-align:center; color:var(--hint); font-size:13px; margin:8px 0 0; }
-  #reveal{ display:none; }
+  .sep{ text-align:center; color:var(--hint); font-size:13px; letter-spacing:.2em; margin:30px 0 14px; }
   .card{ background:var(--card); border-radius:16px; padding:18px 18px 8px; margin-top:10px; }
   .lbl{ font-size:12px; font-weight:600; letter-spacing:.06em; margin-bottom:6px; }
   .concept{ font-size:20px; font-weight:700; margin-bottom:10px; line-height:1.4; }
@@ -123,24 +119,15 @@ function render(){
     <div class="tag" style="color:${hex}">${esc(f.domain)}</div>
     <h1>${esc(f.title)}</h1>
     <div class="story">${story}</div>
-    <button class="revealBtn" id="rb" style="background:${hex}">🔓 揭曉這是什麼概念</button>
-    <div class="revealHint" id="rh">先想想，再揭曉</div>
-    <div id="reveal">
-      <div class="card">
-        <div class="lbl" style="color:${hex}">這是什麼</div>
-        <div class="concept">${esc(f.concept)}</div>
-        <div class="revealText">${esc(f.reveal_concept)}</div>
-        <div class="lbl" style="color:${hex};margin-top:14px">故事 → 學理</div>
-        ${maps}
-      </div>
-      <div class="punch">${esc(f.punchline)}</div>
-    </div>`;
-  document.getElementById("rb").onclick = ()=>{
-    document.getElementById("reveal").style.display="block";
-    document.getElementById("rb").style.display="none";
-    document.getElementById("rh").style.display="none";
-    document.getElementById("reveal").scrollIntoView({behavior:"smooth", block:"start"});
-  };
+    <div class="sep">· · ·　往下是揭曉　· · ·</div>
+    <div class="card">
+      <div class="lbl" style="color:${hex}">這是什麼</div>
+      <div class="concept">${esc(f.concept)}</div>
+      <div class="revealText">${esc(f.reveal_concept)}</div>
+      <div class="lbl" style="color:${hex};margin-top:14px">故事 → 學理</div>
+      ${maps}
+    </div>
+    <div class="punch">${esc(f.punchline)}</div>`;
   document.querySelector(".next").style.background = hex;
   const seen = LS.get("seenCount",0);
   document.getElementById("counter").textContent = `共 ${ALL.length} 則`;
