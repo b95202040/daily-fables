@@ -1,8 +1,10 @@
 // 好日曆 widget core —— 由 loader 自動抓最新版執行。
-// 改這支、跑 deploy_core.sh push 到 repo，手機下次刷新就是新版。
-// 磚面：日期 + 文眼 + 金句（來自 Sheet 當日真源）。點磚 → 直接開 IG 當天最新主文。
+// 磚面＝Mac 端用蘭陽明體渲染好的日曆卡（goodday_s/m/l.jpg），手機免裝字體。
+// 點磚 → 直接開 IG 當天最新主文。改這支、跑 deploy_core.sh push，手機下次刷新生效。
 
-const DATA_URL = "https://raw.githubusercontent.com/b95202040/daily-fables/main/goodday.json";
+const BASE = "https://raw.githubusercontent.com/b95202040/daily-fables/main/";
+const DATA_URL = BASE + "goodday.json";
+const IMG_NAME = { small: "goodday_s.jpg", medium: "goodday_m.jpg", large: "goodday_l.jpg" };
 
 const fm = FileManager.local();
 const dir = fm.joinPath(fm.documentsDirectory(), "goodday_widget");
@@ -26,78 +28,87 @@ async function loadData() {
   return null;
 }
 
-function buildWidget(d) {
+async function loadCardImage(ver) {
+  const fam = config.widgetFamily || "medium";
+  const name = IMG_NAME[fam] || IMG_NAME.medium;
+  const path = fm.joinPath(dir, name);
+  try {
+    const req = new Request(BASE + name + "?v=" + encodeURIComponent(ver || "0"));
+    req.timeoutInterval = 8;
+    const img = await req.loadImage();
+    if (img) { fm.writeImage(path, img); return img; }
+  } catch (e) {}
+  if (fm.fileExists(path)) {
+    try { return fm.readImage(path); } catch (e) {}
+  }
+  return null;
+}
+
+// 文字版 fallback（圖抓不到且無快取時，維持紙感配色）
+function textWidget(d) {
   const fam = config.widgetFamily || "medium";
   const small = fam === "small";
-  const large = fam === "large";
-
   const w = new ListWidget();
-  w.backgroundColor = Color.dynamic(new Color("#fffdf8"), new Color("#1b1b1d"));
-  w.setPadding(14, 16, 14, 16);
-  w.refreshAfterDate = new Date(Date.now() + 30 * 60 * 1000);
-  if (d.ig_url) w.url = d.ig_url; // 點磚直接開 IG 主文
+  w.backgroundColor = new Color("#F4EFE5");
+  w.setPadding(16, 18, 16, 18);
+  const ink = new Color("#2E2C28");
+  const soft = new Color("#4A463E");
+  const fade = new Color("#8A8578");
 
-  const accent = Color.dynamic(new Color("#B8433A"), new Color("#E0766E"));
-  const fg = Color.dynamic(new Color("#1c1c1e"), new Color("#f5f5f7"));
-  const muted = Color.dynamic(new Color("#5a5a5e"), new Color("#c0c0c6"));
-
-  // 頂列：品牌 + 日期
   const head = w.addStack();
   head.centerAlignContent();
   const brand = head.addText("好日曆");
   brand.font = Font.mediumSystemFont(small ? 10 : 12);
-  brand.textColor = muted;
+  brand.textColor = fade;
   head.addSpacer();
   const dateTxt = head.addText(`${d.display_date} ${d.weekday}`);
   dateTxt.font = Font.mediumSystemFont(small ? 10 : 12);
-  dateTxt.textColor = muted;
-
+  dateTxt.textColor = fade;
   w.addSpacer(small ? 6 : 9);
 
   const yanText = (d.wenyan || "").trim();
-  const quoteText = (d.quote || "").trim();
-
-  // 文眼（空則略過，金句放大補位）
+  const quoteText = (d.quote_lines || []).join("\n") || (d.quote || "").trim();
   if (yanText) {
     const yan = w.addText(yanText);
-    yan.font = Font.boldSystemFont(small ? 16 : large ? 24 : 20);
-    yan.textColor = accent;
+    yan.font = Font.boldSystemFont(small ? 17 : fam === "large" ? 26 : 21);
+    yan.textColor = ink;
     yan.lineLimit = 2;
     yan.minimumScaleFactor = 0.7;
     if (quoteText) w.addSpacer(small ? 5 : 8);
   }
-
-  // 金句（空則只顯示文眼）
-  if (quoteText) {
+  if (quoteText && !small) {
     const quote = w.addText(quoteText);
-    quote.font = yanText
-      ? Font.systemFont(small ? 12 : large ? 17 : 14)
-      : Font.boldSystemFont(small ? 14 : large ? 20 : 17);
-    quote.textColor = yanText ? fg : accent;
-    quote.lineLimit = yanText ? (small ? 3 : large ? 9 : 4) : (small ? 4 : large ? 10 : 5);
+    quote.font = Font.systemFont(fam === "large" ? 17 : 14);
+    quote.textColor = soft;
+    quote.lineLimit = fam === "large" ? 9 : 4;
   }
-
   w.addSpacer();
-
-  if (!small) {
-    const foot = w.addText("點一下 · 看今天的主文");
-    foot.font = Font.systemFont(11);
-    foot.textColor = Color.gray();
-  }
   return w;
 }
 
 module.exports.run = async function () {
   const data = await loadData();
   if (config.runsInWidget) {
+    const w0 = new ListWidget();
+    let w = w0;
     if (!data) {
-      const w = new ListWidget();
-      w.addText("好日曆");
-      const t = w.addText("第一次請連網路開一次"); t.font = Font.systemFont(11);
-      Script.setWidget(w);
+      w.backgroundColor = new Color("#F4EFE5");
+      const t1 = w.addText("好日曆"); t1.textColor = new Color("#2E2C28");
+      const t2 = w.addText("第一次請連網路開一次");
+      t2.font = Font.systemFont(11); t2.textColor = new Color("#8A8578");
     } else {
-      Script.setWidget(buildWidget(data));
+      const img = await loadCardImage(data.updated);
+      if (img) {
+        w = new ListWidget();
+        w.backgroundImage = img;
+        w.setPadding(0, 0, 0, 0);
+      } else {
+        w = textWidget(data);
+      }
+      if (data.ig_url) w.url = data.ig_url; // 點磚直接開 IG 主文
     }
+    w.refreshAfterDate = new Date(Date.now() + 30 * 60 * 1000);
+    Script.setWidget(w);
     Script.complete();
     return;
   }
