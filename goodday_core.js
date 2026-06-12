@@ -117,6 +117,36 @@ async function loadWeather() {
   return null;
 }
 
+// App 內手動執行時的天氣自我檢測：首次會觸發 iOS 定位權限詢問（widget 內跳不出來）
+async function weatherSelfTest() {
+  let loc;
+  try {
+    Location.setAccuracyToKilometer();
+    loc = await Location.current();
+  } catch (e) {
+    return {
+      ok: false,
+      msg: "拿不到定位。請到 設定 → 隱私權與安全性 → 定位服務 → Scriptable，改成「使用 App 期間」後再跑一次。\n(" + e + ")",
+    };
+  }
+  try {
+    const u = "https://api.open-meteo.com/v1/forecast?latitude=" + loc.latitude.toFixed(3)
+      + "&longitude=" + loc.longitude.toFixed(3) + "&current=temperature_2m,weather_code&timezone=auto";
+    const req = new Request(u);
+    req.timeoutInterval = 8;
+    const j = await req.loadJSON();
+    const c = {
+      ts: Date.now(),
+      temp: Math.round(j.current.temperature_2m),
+      code: j.current.weather_code,
+    };
+    fm.writeString(fm.joinPath(dir, "weather.json"), JSON.stringify(c));
+    return { ok: true, msg: "定位＋天氣都正常：現在 " + c.temp + "°（" + wxSymbolName(c.code) + "）。\n磚面右上角下次刷新就會顯示。" };
+  } catch (e) {
+    return { ok: false, msg: "定位成功，但天氣服務連不上，稍後會自動再試。\n(" + e + ")" };
+  }
+}
+
 function addWeatherRow(w, wx, colorHex, pt) {
   if (!wx) return;
   const row = w.addStack();
@@ -355,11 +385,14 @@ module.exports.run = async function () {
     Script.complete();
     return;
   }
-  // 在 App 內手動執行：直接開 IG 主文
-  if (data && data.ig_url) {
-    Safari.open(data.ig_url);
-  } else {
-    const a = new Alert(); a.title = "讀不到資料"; a.message = "請確認網路後再試。"; a.addAction("好"); await a.presentAlert();
-  }
+  // 在 App 內手動執行：先做天氣自我檢測（首次觸發定位權限詢問）→ 再選擇開 IG 主文
+  const t = await weatherSelfTest();
+  const a = new Alert();
+  a.title = t.ok ? "天氣功能正常 ✓" : "天氣還不能用";
+  a.message = t.msg;
+  if (data && data.ig_url) a.addAction("開今天的主文");
+  a.addCancelAction("關閉");
+  const idx = await a.presentAlert();
+  if (idx === 0 && data && data.ig_url) Safari.open(data.ig_url);
   Script.complete();
 };
