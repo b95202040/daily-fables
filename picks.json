@@ -5,7 +5,14 @@
     "domain": "心理與認知",
     "title": "綁成一袋的人",
     "ts": "2026-06-13T13:48:40.547Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "邱吉爾（Winston Churchill）",
+      "era": "1915 起（40 歲，加里波利慘敗後）",
+      "fact": "他把憂鬱叫『黑狗』。政壇失意的荒野歲月，靠繪畫與寫作撐住自己，說『要不是畫畫，我活不下去』。當政治家這個身分垮了，畫家／作家這些『其他的我』接住了他。",
+      "source": "https://winstonchurchill.hillsdale.edu/churchill-and-depression/",
+      "status": "verified"
+    }
   },
   {
     "id": "f031",
@@ -13,7 +20,14 @@
     "domain": "心理與認知",
     "title": "滿屋的盡頭",
     "ts": "2026-06-13T13:50:11.845Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "摩西奶奶（Grandma Moses, Anna Mary Robertson Moses）",
+      "era": "1860–1961；約 76–78 歲才開始畫畫",
+      "fact": "務農持家一輩子，七十多歲因關節炎拿不動繡針，改拿畫筆——一畫成名，一生創作逾 1500 幅，88 歲還被選為年度女性。你以為定型的那一刻，人生才剛要改寫。",
+      "source": "https://time.com/4482257/grandma-moses-history/",
+      "status": "verified"
+    }
   },
   {
     "id": "f037",
@@ -21,7 +35,14 @@
     "domain": "社會與行為",
     "title": "國王的湯",
     "ts": "2026-06-13T13:51:34.600Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "1989 東歐變革（經濟學家 Timur Kuran 的經典分析）",
+      "era": "1989",
+      "fact": "東歐人私下普遍厭惡政權，卻因看到別人表面順從、以為只有自己反對，於是繼續沉默，維持了一個沒人想要的局面——直到恐懼的臨界點被突破，骨牌式崩解，連學者都被『突如其來』嚇到。",
+      "source": "https://www.cambridge.org/core/journals/world-politics/article/abs/now-out-of-never-the-element-of-surprise-in-the-east-european-revolution-of-1989/B947420222BF565D0B2D93099E704BF2",
+      "status": "verified"
+    }
   },
   {
     "id": "f046",
@@ -29,6 +50,13 @@
     "domain": "心理與認知",
     "title": "差一步的人",
     "ts": "2026-06-13T13:52:20.874Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "1992 巴塞隆納奧運獎牌得主（Medvec, Madey & Gilovich 1995 研究）",
+      "era": "研究 1995／賽事 1992",
+      "fact": "研究分析頒獎台表情：銅牌得主普遍比銀牌得主更快樂。銀牌的反事實是『差點金牌』(往上比、近錯之痛)，銅牌的是『差點沒牌』(往下比、慶幸)。贏得越接近，痛得越深。",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/7473022/",
+      "status": "verified"
+    }
   }
 ]
