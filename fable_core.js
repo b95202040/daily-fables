@@ -4,6 +4,7 @@
 // 點進去：一頁式 WebView —— 故事 → 往下捲即揭曉概念與對照 → 頁內「再抽一則」。
 
 const DATA_URL = "https://raw.githubusercontent.com/b95202040/daily-fables/main/fables.json";
+const PICK_ENDPOINT = "https://fable-pick.b95202040.workers.dev"; // 「寫文題材」按鈕送這裡
 
 const fm = FileManager.local();
 const dir = fm.joinPath(fm.documentsDirectory(), "fable_widget");
@@ -89,6 +90,7 @@ function deckHTML(fables, startId) {
   const dataJson = JSON.stringify(fables).replace(/</g, "\\u003c");
   const startJson = JSON.stringify(startId || "");
   const colorJson = JSON.stringify(DOMAIN_COLOR);
+  const epJson = JSON.stringify(PICK_ENDPOINT || "");
   return `<!DOCTYPE html><html lang="zh-Hant"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>
@@ -114,17 +116,34 @@ function deckHTML(fables, startId) {
   .map .c{ flex:1.15; font-size:15px; color:var(--muted); }
   .punch{ font-size:17px; font-weight:600; line-height:1.7; margin:22px 2px 8px; }
   .bar{ position:sticky; bottom:0; padding:12px 20px calc(14px + env(safe-area-inset-bottom));
-        background:linear-gradient(to top, var(--bg) 72%, transparent); }
-  .next{ width:100%; padding:16px; border:none; border-radius:14px; font-size:17px; font-weight:600; color:#fff; }
-  .next:active{ opacity:.75; }
+        background:linear-gradient(to top, var(--bg) 80%, transparent); display:flex; gap:10px; }
+  .btn{ padding:16px; border:none; border-radius:14px; font-size:16px; font-weight:600; }
+  .btn:active{ opacity:.75; }
+  .pick{ flex:0 0 auto; background:var(--card); color:var(--fg); border:1px solid var(--line); }
+  .next{ flex:1; color:#fff; }
+  #toast{ position:fixed; left:50%; bottom:92px; transform:translateX(-50%); background:#111; color:#fff;
+          padding:10px 16px; border-radius:10px; font-size:14px; opacity:0; transition:opacity .2s; pointer-events:none; z-index:9; }
+  #toast.show{ opacity:.92; }
 </style></head><body>
-<div id="wrap"><main id="m"></main><div class="bar"><button class="next" id="next">再抽一則</button></div></div>
+<div id="wrap"><main id="m"></main>
+<div class="bar">
+  <button class="btn pick" id="pick">✎ 寫文題材</button>
+  <button class="btn next" id="next">再抽一則</button>
+</div></div>
+<div id="toast"></div>
 <script>
 const FABLES = ${dataJson};
 const COLORS = ${colorJson};
+const PICK_ENDPOINT = ${epJson};
 let START = ${startJson};
 let recent = [];
+let CURRENT = null;
 function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+let toastTimer;
+function toast(msg){
+  const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("show"),1700);
+}
 function pick(startId){
   if(startId){ const f = FABLES.find(x=>x.id===startId); if(f) return f; }
   let pool = FABLES.filter(f=>!recent.includes(f.id));
@@ -132,7 +151,7 @@ function pick(startId){
   return pool[Math.floor(Math.random()*pool.length)];
 }
 function show(f){
-  recent.push(f.id);
+  recent.push(f.id); CURRENT = f.id;
   const cap = Math.max(1, Math.floor(FABLES.length*0.7));
   while(recent.length > cap) recent.shift();
   const hex = COLORS[f.domain] || "#888780";
@@ -152,9 +171,22 @@ function show(f){
     '</div>'+
     '<div class="punch">'+esc(f.punchline)+'</div>';
   document.getElementById("next").style.background = hex;
+  const pb=document.getElementById("pick"); pb.textContent="✎ 寫文題材"; pb.disabled=false;
   window.scrollTo(0,0);
 }
+async function savePick(){
+  if(!PICK_ENDPOINT){ toast("尚未設定端點"); return; }
+  if(!CURRENT) return;
+  const pb=document.getElementById("pick"); pb.disabled=true; pb.textContent="存…";
+  try{
+    const r=await fetch(PICK_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:CURRENT})});
+    const j=await r.json();
+    if(j&&j.ok){ toast(j.already?"已在題材清單裡":"已存進寫文題材 ✓"); pb.textContent="✓ 已收"; }
+    else { toast("存取失敗"); pb.textContent="✎ 寫文題材"; pb.disabled=false; }
+  }catch(e){ toast("離線，稍後再試"); pb.textContent="✎ 寫文題材"; pb.disabled=false; }
+}
 document.getElementById("next").onclick = ()=> show(pick(null));
+document.getElementById("pick").onclick = savePick;
 show(pick(START)); START="";
 </script></body></html>`;
 }
