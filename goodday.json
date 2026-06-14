@@ -1,19 +1,20 @@
 {
-  "date": "2026-06-14",
-  "display_date": "6/14",
-  "weekday": "星期日",
-  "lunar": "",
-  "term": "",
-  "wenyan": "忌想太多",
-  "wenyan_full": "忌想太多／宜餵飽自己",
-  "quote": "吃點好吃的、讀本好書，心情多少就會放晴一些",
+  "date": "2026-06-15",
+  "display_date": "6/15",
+  "weekday": "星期一",
+  "lunar": "五月初一",
+  "term": "芒種後十日",
+  "wenyan": "宜被自己接住",
+  "wenyan_full": "宜被自己接住／忌硬撐到底",
+  "quote": "我們每個人，都是好幾個人，是許多人，是自我的繁衍",
   "quote_lines": [
-    "吃點好吃的",
-    "讀本好書",
-    "心情多少就會放晴一些"
+    "我們每個人",
+    "都是好幾個人",
+    "是許多人",
+    "是自我的繁衍"
   ],
   "ig_url": "https://www.instagram.com/p/DZizIUhmfwj/",
-  "ig_matched": true,
+  "ig_matched": false,
   "is_today": true,
-  "updated": "2026-06-14T07:01:11+08:00"
+  "updated": "2026-06-15T00:28:04+08:00"
 }
