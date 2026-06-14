@@ -405,6 +405,27 @@ function accessoryWidget(d, fam) {
   return w;
 }
 
+// 下一個刷新時刻：對齊內容/配色變動點（早文 07:05、補跑 12:35、轉夜 21:00、轉日 05:00、換日 00:00），
+// 但維持至多 30 分鐘一刷的既有節奏。給 iOS 精確的「下一個該更新的時間」而非死板的 +30 分。
+// ⚠️ iOS 對 widget 刷新有預算節流，refreshAfterDate 只是「建議」非保證——精準準點只有原生 App 能做到。
+function nextRefreshDate() {
+  const now = new Date();
+  const mk = (dayOffset, h, m) => {
+    const d = new Date(now);
+    d.setDate(d.getDate() + dayOffset);
+    d.setHours(h, m, 0, 0);
+    return d;
+  };
+  const bounds = [
+    mk(0, 5, 0), mk(0, 7, 5), mk(0, 12, 35), mk(0, 21, 0),
+    mk(1, 0, 0), mk(1, 5, 0), mk(1, 7, 5),
+  ];
+  const next = bounds.find((d) => d.getTime() > now.getTime() + 30000) || mk(1, 7, 5);
+  const boundary = next.getTime() + 60000;          // 邊界 +1 分緩衝（等資料到位）
+  const cadence = now.getTime() + 30 * 60 * 1000;   // 維持 30 分鐘節奏
+  return new Date(Math.min(boundary, cadence));
+}
+
 module.exports.run = async function () {
   const data = await loadData();
   const fam = config.widgetFamily || "";
@@ -417,7 +438,7 @@ module.exports.run = async function () {
       w.addAccessoryWidgetBackground = true;
       w.addText("好日曆");
     }
-    w.refreshAfterDate = new Date(Date.now() + 30 * 60 * 1000);
+    w.refreshAfterDate = nextRefreshDate();
     Script.setWidget(w);
     Script.complete();
     return;
@@ -453,7 +474,7 @@ module.exports.run = async function () {
       }
       if (data.ig_url) w.url = data.ig_url; // 點磚直接開 IG 主文
     }
-    w.refreshAfterDate = new Date(Date.now() + 30 * 60 * 1000);
+    w.refreshAfterDate = nextRefreshDate();
     Script.setWidget(w);
     Script.complete();
     return;
