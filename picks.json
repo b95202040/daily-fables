@@ -83,5 +83,13 @@
     "title": "沒人穿的衣服",
     "ts": "2026-06-17T07:42:14.288Z",
     "enriched": false
+  },
+  {
+    "id": "f134",
+    "concept": "最速降線問題（Brachistochrone Problem）",
+    "domain": "數學與物理",
+    "title": "彎路先到的信差",
+    "ts": "2026-06-18T05:59:47.714Z",
+    "enriched": false
   }
 ]
