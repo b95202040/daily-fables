@@ -1,19 +1,19 @@
 {
-  "date": "2026-06-17",
-  "display_date": "6/17",
-  "weekday": "星期三",
-  "lunar": "五月初三",
-  "term": "芒種後十二日",
-  "wenyan": "宜素顏的愛",
-  "wenyan_full": "宜素顏的愛",
-  "quote": "家，是任何有你在的地方。Home is wherever I'm with you.",
+  "date": "2026-06-19",
+  "display_date": "6/19",
+  "weekday": "星期五",
+  "lunar": "五月初五",
+  "term": "芒種後十四日",
+  "wenyan": "宜休息",
+  "wenyan_full": "宜休息",
+  "quote": "在不停移動的時代，靜靜坐著，反而最迫切",
   "quote_lines": [
-    "家",
-    "是任何有你在的地方",
-    "Home is wherever I'm with you."
+    "在不停移動的時代",
+    "靜靜坐著",
+    "反而最迫切"
   ],
-  "ig_url": "https://www.instagram.com/p/DZtGRgamQx3/",
-  "ig_matched": false,
-  "is_today": false,
-  "updated": "2026-06-18T07:01:10+08:00"
+  "ig_url": "https://www.instagram.com/p/DZvrEj6GX7V/",
+  "ig_matched": true,
+  "is_today": true,
+  "updated": "2026-06-19T07:01:11+08:00"
 }
