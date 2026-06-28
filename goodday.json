@@ -1,18 +1,20 @@
 {
-  "date": "2026-06-28",
-  "display_date": "6/28",
-  "weekday": "星期日",
-  "lunar": "五月十四",
-  "term": "夏至後七日",
-  "wenyan": "宜放過彼此",
-  "wenyan_full": "宜放過彼此",
-  "quote": "我不是為了滿足你的期望而活，你，也不是為了滿足我的期望而存在。",
+  "date": "2026-06-29",
+  "display_date": "6/29",
+  "weekday": "星期一",
+  "lunar": "五月十五",
+  "term": "夏至後八日",
+  "wenyan": "忌成為自己討厭的大人",
+  "wenyan_full": "忌成為自己討厭的大人",
+  "quote": "與惡龍纏鬥過久，自身亦成為惡龍；凝視深淵過久，深淵將回以凝視。",
   "quote_lines": [
-    "我不是為了滿足你的期望而活你",
-    "也不是為了滿足我的期望而存在"
+    "與惡龍纏鬥過久",
+    "自身亦成為惡龍",
+    "凝視深淵過久",
+    "深淵將回以凝視"
   ],
-  "ig_url": "https://www.instagram.com/p/DaHGNWtGRKR/",
-  "ig_matched": false,
+  "ig_url": "https://www.instagram.com/p/DaJbAp-mQON/",
+  "ig_matched": true,
   "is_today": true,
-  "updated": "2026-06-28T12:32:12+08:00"
+  "updated": "2026-06-29T07:01:10+08:00"
 }
