@@ -1,19 +1,19 @@
 {
-  "date": "2026-07-02",
-  "display_date": "7/2",
-  "weekday": "星期四",
-  "lunar": "五月十八",
-  "term": "夏至後十一日",
-  "wenyan": "宜相信自己的累積",
-  "wenyan_full": "宜相信自己的累積",
-  "quote": "它會越來越容易的，每一天都會再容易一點點，只是你得每天都去走一遍",
+  "date": "2026-07-03",
+  "display_date": "7/3",
+  "weekday": "星期五",
+  "lunar": "五月十九",
+  "term": "夏至後十二日",
+  "wenyan": "忌自己嚇自己",
+  "wenyan_full": "忌自己嚇自己",
+  "quote": "當你意識到別人其實很少想到你，你就不會再那麼在意他們怎麼想你了",
   "quote_lines": [
-    "它會越來越容易的",
-    "每一天都會再容易一點點",
-    "只是你得每天都去走一遍"
+    "當你意識到別人其實很少想到你",
+    "你就不會再那麼在",
+    "意他們怎麼想你了"
   ],
   "ig_url": "https://www.instagram.com/p/DaRJe60Ga3g/",
-  "ig_matched": true,
+  "ig_matched": false,
   "is_today": true,
-  "updated": "2026-07-02T07:01:10+08:00"
+  "updated": "2026-07-03T07:03:13+08:00"
 }
