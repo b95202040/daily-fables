@@ -74,7 +74,14 @@
     "domain": "心理與認知",
     "title": "沒人看見的污漬",
     "ts": "2026-06-17T07:38:34.167Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "Thomas Gilovich 研究團隊（康乃爾大學）",
+      "era": "2000 年",
+      "fact": "Barry Manilow T 恤實驗：讓學生穿上經前測公認最尷尬的歌手頭像 T 恤走進滿是同學的教室，穿的人以為約一半的人注意到了，實際只有約 23%——想像中的觀眾，是真實觀眾的兩倍大。",
+      "source": "https://www.researchgate.net/publication/12609065_The_Spotlight_Effect_in_Social_Judgment_An_Egocentric_Bias_in_Estimates_of_the_Salience_of_One's_Own_Actions_and_Appearance",
+      "status": "verified"
+    }
   },
   {
     "id": "f034",
