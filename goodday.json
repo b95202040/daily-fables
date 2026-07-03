@@ -1,19 +1,20 @@
 {
-  "date": "2026-07-03",
-  "display_date": "7/3",
-  "weekday": "星期五",
-  "lunar": "五月十九",
-  "term": "夏至後十二日",
-  "wenyan": "忌自己嚇自己",
-  "wenyan_full": "忌自己嚇自己",
-  "quote": "當你意識到別人其實很少想到你，你就不會再那麼在意他們怎麼想你了",
+  "date": "2026-07-04",
+  "display_date": "7/4",
+  "weekday": "星期六",
+  "lunar": "五月二十",
+  "term": "夏至後十三日",
+  "wenyan": "宜停下來看看地圖",
+  "wenyan_full": "宜停下來看看地圖",
+  "quote": "只要持續整理、不放棄的話，人生就會自行朝向更美好的方向發展。",
   "quote_lines": [
-    "當你意識到別人其實很少想到你",
-    "你就不會再那麼在",
-    "意他們怎麼想你了"
+    "只要持續整理",
+    "不放棄的話",
+    "人生就會自行朝向更美好的",
+    "方向發展"
   ],
-  "ig_url": "https://www.instagram.com/p/DaUBGh9mTdB/",
-  "ig_matched": false,
+  "ig_url": "https://www.instagram.com/p/DaWS-lvmUhG/",
+  "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-03T12:32:13+08:00"
+  "updated": "2026-07-04T07:01:11+08:00"
 }
