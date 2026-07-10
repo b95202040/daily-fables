@@ -1,18 +1,21 @@
 {
-  "date": "2026-07-10",
-  "display_date": "7/10",
-  "weekday": "星期五",
-  "lunar": "五月廿六",
-  "term": "小暑後三日",
-  "wenyan": "宜捨不得",
-  "wenyan_full": "宜捨不得",
-  "quote": "我最喜歡的，是變出一片花田的魔法",
+  "date": "2026-07-11",
+  "display_date": "7/11",
+  "weekday": "星期六",
+  "lunar": "五月廿七",
+  "term": "小暑後四日",
+  "wenyan": "忌自我消耗",
+  "wenyan_full": "忌自我消耗",
+  "quote": "人生苦短，對自己應該更慈悲一些，無須為了維持表面的假和諧而硬撐場面，那太讓人疲倦。",
   "quote_lines": [
-    "我最喜歡的",
-    "是變出一片花田的魔法"
+    "人生苦短",
+    "對自己應該更慈悲一些",
+    "無須為了維持表面的",
+    "假和諧而硬撐場面",
+    "那太讓人疲倦"
   ],
-  "ig_url": "https://www.instagram.com/p/DalvwhYkuTV/",
+  "ig_url": "https://www.instagram.com/p/DaoUpKGmTvb/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-10T07:01:11+08:00"
+  "updated": "2026-07-11T07:01:12+08:00"
 }
