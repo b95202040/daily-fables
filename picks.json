@@ -28,7 +28,9 @@
       "fact": "務農持家一輩子，七十多歲因關節炎拿不動繡針，改拿畫筆——一畫成名，一生創作逾 1500 幅，88 歲還被選為年度女性。你以為定型的那一刻，人生才剛要改寫。",
       "source": "https://time.com/4482257/grandma-moses-history/",
       "status": "verified"
-    }
+    },
+    "used": "2024-10-04",
+    "note": "摩西奶奶故事 2024-10-04〈宜無所畏懼〉整篇講過"
   },
   {
     "id": "f037",
@@ -66,7 +68,15 @@
     "domain": "心理與認知",
     "title": "記不住的帳",
     "ts": "2026-06-15T06:46:19.500Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "Bluma Zeigarnik（布魯瑪·蔡格尼）與其師 Kurt Lewin",
+      "era": "1927",
+      "fact": "Lewin 觀察維也納咖啡館侍者能記住未結帳的點單、結帳即忘；學生蔡格尼以實驗驗證並於 1927 年發表——被中斷任務的記憶度比已完成的高約九成。",
+      "source": "https://en.wikipedia.org/wiki/Zeigarnik_effect",
+      "status": "verified"
+    },
+    "note": "⚠️ 概念 2026-04-03〈宜翻頁〉已用過，回鍋需差異化"
   },
   {
     "id": "f130",
@@ -81,7 +91,8 @@
       "fact": "Barry Manilow T 恤實驗：讓學生穿上經前測公認最尷尬的歌手頭像 T 恤走進滿是同學的教室，穿的人以為約一半的人注意到了，實際只有約 23%——想像中的觀眾，是真實觀眾的兩倍大。",
       "source": "https://www.researchgate.net/publication/12609065_The_Spotlight_Effect_in_Social_Judgment_An_Egocentric_Bias_in_Estimates_of_the_Salience_of_One's_Own_Actions_and_Appearance",
       "status": "verified"
-    }
+    },
+    "used": "2026-07-03"
   },
   {
     "id": "f034",
@@ -105,7 +116,14 @@
     "domain": "心理與認知",
     "title": "借來的那張臉",
     "ts": "2026-06-19T06:16:56.322Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "Charles Horton Cooley（查爾斯·霍頓·庫利）",
+      "era": "1902",
+      "fact": "美國社會學家庫利在《人性與社會秩序》提出鏡中自我：自我概念經由「想像自己在他人眼中的樣子→想像對方的評價→據此產生對自己的感受」三步長出——身分需要一個社會性的他者才成立。",
+      "source": "https://en.wikipedia.org/wiki/Looking-glass_self",
+      "status": "verified"
+    }
   },
   {
     "id": "f027",
@@ -113,7 +131,14 @@
     "domain": "心理與認知",
     "title": "越走越快的商隊",
     "ts": "2026-06-19T06:19:15.586Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "Clark L. Hull（克拉克·赫爾）",
+      "era": "1932",
+      "fact": "行為心理學家赫爾在《心理學評論》發表目標漸近假說：用裝電子計時接點的直線跑道量測，老鼠越接近終點的食物跑得越快——動機強度隨著與目標的距離縮短而升高。",
+      "source": "https://psycnet.apa.org/record/1932-01362-001",
+      "status": "verified"
+    }
   },
   {
     "id": "f020",
@@ -153,6 +178,13 @@
     "domain": "數學與物理",
     "title": "橋還沒塌之前",
     "ts": "2026-06-22T06:44:25.662Z",
-    "enriched": false
+    "enriched": true,
+    "historical": {
+      "figure": "Marten Scheffer 與 van de Leemput 團隊",
+      "era": "2009／2014",
+      "fact": "謝弗 2009 年《自然》提出臨界轉變預警訊號：系統逼近臨界點時，受擾動後回彈復原的速度會越來越慢；2014 年《PNAS》證實人的情緒同樣適用——憂鬱發作與復原前，心理系統的回彈先變慢。",
+      "source": "https://www.pnas.org/doi/10.1073/pnas.1312114110",
+      "status": "verified"
+    }
   }
 ]
