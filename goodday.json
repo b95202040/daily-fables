@@ -1,26 +1,27 @@
 {
-  "date": "2026-07-15",
-  "display_date": "7/15",
-  "weekday": "星期三",
-  "lunar": "六月初二",
-  "term": "小暑後八日",
-  "wenyan": "宜眼中的全世界",
-  "wenyan_full": "宜眼中的全世界",
-  "quote": "他看見的，就是我原本的樣子，每一次、每一天，見到我，都是開心的",
+  "date": "2026-07-16",
+  "display_date": "7/16",
+  "weekday": "星期四",
+  "lunar": "六月初三",
+  "term": "小暑後九日",
+  "wenyan": "宜站在自己這邊",
+  "wenyan_full": "宜站在自己這邊",
+  "quote": "我想做這件事嗎？不，我不想。\n我會做嗎？會，我會做。\n我正在做嗎？是，我正在做。\n何不呢？這對我的身體好，也對我的心靈好。",
   "quote_lines": [
-    "他看見的，就是我原本的樣子",
-    "每一次、每一天",
-    "見到我，都是開心的"
+    "我想做這件事嗎？不，我不想",
+    "我會做嗎？會，我會做",
+    "我正在做嗎？是，我正在做",
+    "何不呢？這對我的身體好，也對我的心靈好"
   ],
-  "source": "電影《水底情深》",
-  "source_work": "電影《水底情深》",
-  "source_author": "電影《水底情深》",
+  "source": "挪威足球員／Erling Haaland",
+  "source_work": "",
+  "source_author": "挪威足球員／Erling Haaland",
   "excerpt": {
-    "hook": "《週三告白日》在我的手機相簿裡，無論你是低調的、狼狽的、華麗的、閃閃發光的，每一個你，都是我最寶貝的獨家記憶",
-    "teaser": "網路上偶爾會有看到有人在抱怨說"
+    "hook": "〈沒有動力的時候，我可以怎麼辦？〉\n如果凡事都得要等到心情對了才開始，那麼我們最終真正能完成的，恐怕會很少很少",
+    "teaser": "你是否也曾經有這樣毫無動力的一天呢？"
   },
-  "ig_url": "https://www.instagram.com/p/DaynwsYmdcd/",
+  "ig_url": "https://www.instagram.com/p/Da1MmwcGfIp/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-15T18:38:51+08:00"
+  "updated": "2026-07-16T07:01:11+08:00"
 }
