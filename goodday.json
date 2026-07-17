@@ -1,27 +1,26 @@
 {
-  "date": "2026-07-16",
-  "display_date": "7/16",
-  "weekday": "星期四",
-  "lunar": "六月初三",
-  "term": "小暑後九日",
-  "wenyan": "宜站在自己這邊",
-  "wenyan_full": "宜站在自己這邊",
-  "quote": "我想做這件事嗎？不，我不想。\n我會做嗎？會，我會做。\n我正在做嗎？是，我正在做。\n何不呢？這對我的身體好，也對我的心靈好。",
+  "date": "2026-07-17",
+  "display_date": "7/17",
+  "weekday": "星期五",
+  "lunar": "六月初四",
+  "term": "小暑後十日",
+  "wenyan": "宜謝謝你在",
+  "wenyan_full": "宜謝謝你在",
+  "quote": "有時候，我們心裡的光熄滅了是與另一個人的相遇，讓它重新亮起我們都該深深感謝那些曾經點亮我們的人",
   "quote_lines": [
-    "我想做這件事嗎？不，我不想",
-    "我會做嗎？會，我會做",
-    "我正在做嗎？是，我正在做",
-    "何不呢？這對我的身體好，也對我的心靈好"
+    "有時候，我們心裡的光熄滅了",
+    "是與另一個人的相遇",
+    "讓它重新亮起我們都該深深感謝那些曾經點亮我們的人"
   ],
-  "source": "挪威足球員／Erling Haaland",
-  "source_work": "",
-  "source_author": "挪威足球員／Erling Haaland",
+  "source": "史懷哲《我的童年生活》",
+  "source_work": "我的童年生活",
+  "source_author": "史懷哲",
   "excerpt": {
-    "hook": "〈沒有動力的時候，我可以怎麼辦？〉\n如果凡事都得要等到心情對了才開始，那麼我們最終真正能完成的，恐怕會很少很少",
-    "teaser": "你是否也曾經有這樣毫無動力的一天呢？"
+    "hook": "一個人對世界的溫柔，都不會只停在原地；你為了別人開口的一句話，一定也會帶著你自己，走到很遠很遠",
+    "teaser": "你還記得在社群上曾經有隻很紅的"
   },
-  "ig_url": "https://www.instagram.com/p/Da1MmwcGfIp/",
+  "ig_url": "https://www.instagram.com/p/Da3xWHKmeXv/",
   "ig_matched": true,
-  "is_today": true,
-  "updated": "2026-07-16T07:01:11+08:00"
+  "is_today": false,
+  "updated": "2026-07-18T07:01:11+08:00"
 }
