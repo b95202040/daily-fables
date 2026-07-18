@@ -1,26 +1,24 @@
 {
-  "date": "2026-07-17",
-  "display_date": "7/17",
-  "weekday": "星期五",
-  "lunar": "六月初四",
-  "term": "小暑後十日",
-  "wenyan": "宜謝謝你在",
-  "wenyan_full": "宜謝謝你在",
-  "quote": "有時候，我們心裡的光熄滅了是與另一個人的相遇，讓它重新亮起我們都該深深感謝那些曾經點亮我們的人",
+  "date": "2026-07-18",
+  "display_date": "7/18",
+  "weekday": "星期六",
+  "lunar": "六月初五",
+  "term": "小暑後十一日",
+  "wenyan": "宜允許自己慢下來",
+  "wenyan_full": "宜允許自己慢下來",
+  "quote": "有時候空白反而意味著最大的可能",
   "quote_lines": [
-    "有時候，我們心裡的光熄滅了",
-    "是與另一個人的相遇",
-    "讓它重新亮起我們都該深深感謝那些曾經點亮我們的人"
+    "有時候空白反而意味著最大的可能"
   ],
-  "source": "史懷哲《我的童年生活》",
-  "source_work": "我的童年生活",
-  "source_author": "史懷哲",
+  "source": "派特森",
+  "source_work": "派特森",
+  "source_author": "",
   "excerpt": {
-    "hook": "一個人對世界的溫柔，都不會只停在原地；你為了別人開口的一句話，一定也會帶著你自己，走到很遠很遠",
-    "teaser": "你還記得在社群上曾經有隻很紅的"
+    "hook": "〈進度落後的話，也沒有關係〉\n\n七月代表的是一年剛好過了一半\n你會不會也正偷偷焦慮著\n好多計劃還沒完成、又是不是落後了呢？\n\n今天的客座計劃\n讓好日曆繼續陪你做年中回顧\n\n前兩週，我們盤點了年初的願望\n也聊了怎麼成為不太一樣的自己\n這一週，邀請到了天天想和我們聊聊\n\n那些還沒完成、好像慢了半拍的事\n其實，一點也沒有關係",
+    "teaser": "Guest post feat. 天天戀愛成長札記"
   },
-  "ig_url": "https://www.instagram.com/p/Da3xWHKmeXv/",
+  "ig_url": "https://www.instagram.com/p/Da6WL26EndB/",
   "ig_matched": true,
-  "is_today": false,
-  "updated": "2026-07-18T07:01:11+08:00"
+  "is_today": true,
+  "updated": "2026-07-18T12:30:10+08:00"
 }
