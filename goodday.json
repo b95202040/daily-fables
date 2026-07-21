@@ -1,24 +1,25 @@
 {
-  "date": "2026-07-21",
-  "display_date": "7/21",
-  "weekday": "星期二",
-  "lunar": "六月初八",
-  "term": "小暑後十四日",
-  "wenyan": "宜劃下句點",
-  "wenyan_full": "宜劃下句點",
-  "quote": "當情太深而緣太淺至少要好好說再見",
+  "date": "2026-07-22",
+  "display_date": "7/22",
+  "weekday": "星期三",
+  "lunar": "六月初九",
+  "term": "小暑後十五日",
+  "wenyan": "宜非你不可",
+  "wenyan_full": "宜非你不可",
+  "quote": "我一直以為我喜歡一個人吃飯，其實是沒有人願意陪我一起吃。",
   "quote_lines": [
-    "當情太深而緣太淺至少要好好說再見"
+    "我一直以為我喜歡一個人吃飯",
+    "其實是沒有人願意陪我一起吃"
   ],
-  "source": "陶喆《好好說再見》",
-  "source_work": "好好說再見",
-  "source_author": "陶喆",
+  "source": "金城武《喜歡你》",
+  "source_work": "喜歡你",
+  "source_author": "金城武",
   "excerpt": {
-    "hook": "〈週二樹洞信箱〉關於被愛，它從來就不該是一場要考到高分才能通過的考試。當下此刻原原本本的你，本來就已經值得被愛",
-    "teaser": "「親愛的樹洞，謝謝你聽我說"
+    "hook": "〈週三告白日〉無論今天是什麼狀態，是開心或難過、是精緻或潦草，我都只想和你一起，好好吃完這頓飯",
+    "teaser": "在被工作蹂躪了一整天以後"
   },
-  "ig_url": "https://www.instagram.com/p/DbCEisGGa3Z/",
+  "ig_url": "https://www.instagram.com/p/DbEpXdlGWmU/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-21T07:01:12+08:00"
+  "updated": "2026-07-22T07:01:09+08:00"
 }
