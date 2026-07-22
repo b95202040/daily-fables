@@ -1,25 +1,27 @@
 {
-  "date": "2026-07-22",
-  "display_date": "7/22",
-  "weekday": "星期三",
-  "lunar": "六月初九",
-  "term": "小暑後十五日",
-  "wenyan": "宜非你不可",
-  "wenyan_full": "宜非你不可",
-  "quote": "我一直以為我喜歡一個人吃飯，其實是沒有人願意陪我一起吃。",
+  "date": "2026-07-23",
+  "display_date": "7/23",
+  "weekday": "星期四",
+  "lunar": "六月初十",
+  "term": "大暑",
+  "wenyan": "忌數羊",
+  "wenyan_full": "忌數羊",
+  "quote": "在自己什麼都做不好的時候\n就當是上天賜給的一個長假\n不要勉強，不要焦躁\n更不要無謂的努力",
   "quote_lines": [
-    "我一直以為我喜歡一個人吃飯",
-    "其實是沒有人願意陪我一起吃"
+    "在自己什麼都做不好的時候",
+    "就當是上天賜給的一個長假",
+    "不要勉強，不要焦躁",
+    "更不要無謂的努力"
   ],
-  "source": "金城武《喜歡你》",
-  "source_work": "喜歡你",
-  "source_author": "金城武",
+  "source": "日劇《悠長假期》",
+  "source_work": "悠長假期",
+  "source_author": "日劇《悠長假期》",
   "excerpt": {
-    "hook": "〈週三告白日〉無論今天是什麼狀態，是開心或難過、是精緻或潦草，我都只想和你一起，好好吃完這頓飯",
-    "teaser": "在被工作蹂躪了一整天以後"
+    "hook": "〈睡不著的時候，我可以怎麼辦〉\n好好睡上一覺，說不定，就像是人生一樣；越是太過用力的，就越是難以得到",
+    "teaser": "你有沒有過這樣的夜晚呢？"
   },
-  "ig_url": "https://www.instagram.com/p/DbEpXdlGWmU/",
+  "ig_url": "https://www.instagram.com/p/DbHOIo9khv1/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-22T07:01:09+08:00"
+  "updated": "2026-07-23T07:01:10+08:00"
 }
