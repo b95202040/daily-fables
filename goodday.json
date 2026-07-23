@@ -1,27 +1,26 @@
 {
-  "date": "2026-07-23",
-  "display_date": "7/23",
-  "weekday": "星期四",
-  "lunar": "六月初十",
-  "term": "大暑",
-  "wenyan": "忌數羊",
-  "wenyan_full": "忌數羊",
-  "quote": "在自己什麼都做不好的時候\n就當是上天賜給的一個長假\n不要勉強，不要焦躁\n更不要無謂的努力",
+  "date": "2026-07-24",
+  "display_date": "7/24",
+  "weekday": "星期五",
+  "lunar": "六月十一",
+  "term": "大暑後一日",
+  "wenyan": "宜找回想要的生活",
+  "wenyan_full": "宜找回想要的生活",
+  "quote": "我想要準時下班\n喝啤酒、追劇、和喜歡的人聊天\n這是我人生最大的幸福",
   "quote_lines": [
-    "在自己什麼都做不好的時候",
-    "就當是上天賜給的一個長假",
-    "不要勉強，不要焦躁",
-    "更不要無謂的努力"
+    "我想要準時下班",
+    "喝啤酒、追劇、和喜歡的人聊天",
+    "這是我人生最大的幸福"
   ],
-  "source": "日劇《悠長假期》",
-  "source_work": "悠長假期",
-  "source_author": "日劇《悠長假期》",
+  "source": "日劇《我要準時下班》",
+  "source_work": "我要準時下班",
+  "source_author": "日劇《我要準時下班》",
   "excerpt": {
-    "hook": "〈睡不著的時候，我可以怎麼辦〉\n好好睡上一覺，說不定，就像是人生一樣；越是太過用力的，就越是難以得到",
-    "teaser": "你有沒有過這樣的夜晚呢？"
+    "hook": "不管是和別人見面，還是和自己約會，把星期五的今天下班後，完整地留給你自己吧",
+    "teaser": "一天 24 小時"
   },
-  "ig_url": "https://www.instagram.com/p/DbHOIo9khv1/",
+  "ig_url": "https://www.instagram.com/p/DbJy6yzGX1o/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-23T07:01:10+08:00"
+  "updated": "2026-07-24T07:01:11+08:00"
 }
