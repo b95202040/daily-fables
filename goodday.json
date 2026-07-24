@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-24",
-  "display_date": "7/24",
-  "weekday": "星期五",
-  "lunar": "六月十一",
-  "term": "大暑後一日",
-  "wenyan": "宜找回想要的生活",
-  "wenyan_full": "宜找回想要的生活",
-  "quote": "我想要準時下班\n喝啤酒、追劇、和喜歡的人聊天\n這是我人生最大的幸福",
+  "date": "2026-07-25",
+  "display_date": "7/25",
+  "weekday": "星期六",
+  "lunar": "六月十二",
+  "term": "大暑後二日",
+  "wenyan": "宜多給熱情一點時間",
+  "wenyan_full": "宜多給熱情一點時間",
+  "quote": "成功需要時間。\n即使你已具備一切，\n仍需投入一段不確定的時間。",
   "quote_lines": [
-    "我想要準時下班",
-    "喝啤酒、追劇、和喜歡的人聊天",
-    "這是我人生最大的幸福"
+    "成功需要時間",
+    "即使你已具備一切",
+    "仍需投入一段不確定的時間"
   ],
-  "source": "日劇《我要準時下班》",
-  "source_work": "我要準時下班",
-  "source_author": "日劇《我要準時下班》",
+  "source": "納瓦爾寶典",
+  "source_work": "納瓦爾寶典",
+  "source_author": "",
   "excerpt": {
-    "hook": "不管是和別人見面，還是和自己約會，把星期五的今天下班後，完整地留給你自己吧",
-    "teaser": "一天 24 小時"
+    "hook": "〈剩下的半年，我想這樣過〉\n想做的事情一直在變，並不代表三分鐘熱度。那很有可能是你在一次又一次心動中，慢慢清楚描出自己輪廓的過程",
+    "teaser": "Guest post feat. 啃"
   },
-  "ig_url": "https://www.instagram.com/p/DbJy6yzGX1o/",
+  "ig_url": "https://www.instagram.com/p/DbMXuz0GcIo/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-24T07:01:11+08:00"
+  "updated": "2026-07-25T07:01:12+08:00"
 }
