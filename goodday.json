@@ -1,26 +1,25 @@
 {
-  "date": "2026-07-26",
-  "display_date": "7/26",
-  "weekday": "星期日",
-  "lunar": "六月十三",
-  "term": "大暑後三日",
-  "wenyan": "宜關機一天",
-  "wenyan_full": "宜關機一天",
-  "quote": "別加油\n既然我們倒下了\n那就休息一下吧",
+  "date": "2026-07-27",
+  "display_date": "7/27",
+  "weekday": "星期一",
+  "lunar": "六月十四",
+  "term": "大暑後四日",
+  "wenyan": "宜相信過程",
+  "wenyan_full": "宜相信過程",
+  "quote": "失敗只是生命\n試著把我們帶往另一個方向",
   "quote_lines": [
-    "別加油",
-    "既然我們倒下了",
-    "那就休息一下吧"
+    "失敗只是生命",
+    "試著把我們帶往另一個方向"
   ],
-  "source": "低谷醫生",
-  "source_work": "低谷醫生",
-  "source_author": "",
+  "source": "主持人／Oprah Winfrey《哈佛大學畢業演說（2013）》",
+  "source_work": "哈佛大學畢業演說（2013）",
+  "source_author": "主持人／Oprah Winfrey",
   "excerpt": {
-    "hook": "人累到某個程度的時候呀，再怎麼替自己打氣，就都是沒有用的了",
-    "teaser": "最近的你，還好嗎？"
+    "hook": "有些人事物，只有繞過路的你才能夠獲得；那些看起來多花的時間，都是你的獨一無二",
+    "teaser": "人生中會遇見的所有事情"
   },
-  "ig_url": "https://www.instagram.com/p/DbO8fzymZHU/",
+  "ig_url": "https://www.instagram.com/p/DbRhTTWGcCF/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-26T07:01:09+08:00"
+  "updated": "2026-07-27T07:01:14+08:00"
 }
