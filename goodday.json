@@ -1,25 +1,24 @@
 {
-  "date": "2026-07-28",
-  "display_date": "7/28",
-  "weekday": "星期二",
-  "lunar": "六月十五",
-  "term": "大暑後五日",
-  "wenyan": "忌有毒關係",
-  "wenyan_full": "忌有毒關係",
-  "quote": "痛苦在你身上留下了傷痕\n但這些傷痕，不是為了讓你拿來責備自己",
+  "date": "2026-07-29",
+  "display_date": "7/29",
+  "weekday": "星期三",
+  "lunar": "六月十六",
+  "term": "大暑後六日",
+  "wenyan": "宜一起走到世界盡頭",
+  "wenyan_full": "宜一起走到世界盡頭",
+  "quote": "有些事，一萬年也不會變。",
   "quote_lines": [
-    "痛苦在你身上留下了傷痕",
-    "但這些傷痕，不是為了讓你拿來責備自己"
+    "有些事，一萬年也不會變"
   ],
-  "source": "林晨曦（許瑋甯 飾）影集《她和她的她》",
-  "source_work": "影集《她和她的她》",
-  "source_author": "林晨曦（許瑋甯 飾）",
+  "source": "月老",
+  "source_work": "月老",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈週二樹洞信箱〉沒有任何一段過去，能成為別人自由傷害你的權利。會讓你不停責備自己的，絕對不是愛",
-    "teaser": "「親愛的樹洞，謝謝你聽我說"
+    "hook": "〈週三告白日〉即使今天不是什麼特別的日子，我也還是很想告訴你：現在的我們，真的已經很好很好了。我愛你",
+    "teaser": "昨天下班剛回到家"
   },
-  "ig_url": "https://www.instagram.com/p/DbUGEzImZPC/",
+  "ig_url": "https://www.instagram.com/p/DbWq6_CGXBi/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-28T07:01:08+08:00"
+  "updated": "2026-07-29T07:01:13+08:00"
 }
