@@ -1,24 +1,25 @@
 {
-  "date": "2026-07-29",
-  "display_date": "7/29",
-  "weekday": "星期三",
-  "lunar": "六月十六",
-  "term": "大暑後六日",
-  "wenyan": "宜一起走到世界盡頭",
-  "wenyan_full": "宜一起走到世界盡頭",
-  "quote": "有些事，一萬年也不會變。",
+  "date": "2026-07-31",
+  "display_date": "7/31",
+  "weekday": "星期五",
+  "lunar": "六月十八",
+  "term": "大暑後八日",
+  "wenyan": "宜接住自己",
+  "wenyan_full": "宜接住自己",
+  "quote": "只要是人會有的感受，都是可以說出口的\n而說得出口的，就會變得能夠承受",
   "quote_lines": [
-    "有些事，一萬年也不會變"
+    "只要是人會有的感受，都是可以說出口的",
+    "而說得出口的，就會變得能夠承受"
   ],
-  "source": "月老",
-  "source_work": "月老",
-  "source_author": "",
+  "source": "Fred Rogers《You Are Special》",
+  "source_work": "You Are Special",
+  "source_author": "Fred Rogers",
   "excerpt": {
-    "hook": "〈週三告白日〉即使今天不是什麼特別的日子，我也還是很想告訴你：現在的我們，真的已經很好很好了。我愛你",
-    "teaser": "昨天下班剛回到家"
+    "hook": "所有改變，都得從了解開始。光是能將自己的心看得更清楚，就已經是件很了不起的事了",
+    "teaser": "我偶爾會覺得"
   },
-  "ig_url": "https://www.instagram.com/p/DbWq6_CGXBi/",
+  "ig_url": "https://www.instagram.com/p/Dbb0dOrkkj_/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-07-29T07:01:13+08:00"
+  "updated": "2026-07-31T07:01:11+08:00"
 }
