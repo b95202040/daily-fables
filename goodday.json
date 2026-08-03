@@ -1,26 +1,25 @@
 {
-  "date": "2026-08-03",
-  "display_date": "8/3",
-  "weekday": "星期一",
-  "lunar": "六月廿一",
-  "term": "大暑後十一日",
-  "wenyan": "忌這樣就好",
-  "wenyan_full": "忌這樣就好",
-  "quote": "沒有人能發現新的土地\n除非他甘願先有好長一段時間\n看不見任何海岸",
+  "date": "2026-08-04",
+  "display_date": "8/4",
+  "weekday": "星期二",
+  "lunar": "六月廿二",
+  "term": "大暑後十二日",
+  "wenyan": "宜重生",
+  "wenyan_full": "宜重生",
+  "quote": "哭著吃過飯的人\n是可以堅強活下去的",
   "quote_lines": [
-    "沒有人能發現新的土地",
-    "除非他甘願先有好長一段時間",
-    "看不見任何海岸"
+    "哭著吃過飯的人",
+    "是可以堅強活下去的"
   ],
-  "source": "安德烈・紀德《偽幣製造者》",
-  "source_work": "《偽幣製造者》",
-  "source_author": "安德烈・紀德",
+  "source": "坂元裕二日劇《四重奏》",
+  "source_work": "日劇《四重奏》",
+  "source_author": "坂元裕二",
   "excerpt": {
-    "hook": "習慣可以很舒適，但卻不一定代表更好。這句話就像廢話，可是停在原地，真的是去不了任何新地方的喔",
-    "teaser": "你的心裡偶爾也會有這樣的小小聲音嗎？"
+    "hook": "〈週二樹洞信箱〉就算日子被突然打翻，你想去的那些地方，也都依然會在。只是這一次要先回過頭，把人生的地基穩穩重新蓋好",
+    "teaser": "「親愛的樹洞，謝謝你聽我說"
   },
-  "ig_url": "https://www.instagram.com/p/Dbji4_UGSdi/",
+  "ig_url": "https://www.instagram.com/p/DbmHnjHGSxv/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-03T07:01:10+08:00"
+  "updated": "2026-08-04T07:01:12+08:00"
 }
