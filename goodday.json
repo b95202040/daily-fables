@@ -1,25 +1,26 @@
 {
-  "date": "2026-08-04",
-  "display_date": "8/4",
-  "weekday": "星期二",
-  "lunar": "六月廿二",
-  "term": "大暑後十二日",
-  "wenyan": "宜重生",
-  "wenyan_full": "宜重生",
-  "quote": "哭著吃過飯的人\n是可以堅強活下去的",
+  "date": "2026-08-05",
+  "display_date": "8/5",
+  "weekday": "星期三",
+  "lunar": "六月廿三",
+  "term": "大暑後十三日",
+  "wenyan": "宜每個細胞都愛你",
+  "wenyan_full": "宜每個細胞都愛你",
+  "quote": "謝謝你成為了我的幾分之幾\n如果我又更完整一點\n也是因為你",
   "quote_lines": [
-    "哭著吃過飯的人",
-    "是可以堅強活下去的"
+    "謝謝你成為了我的幾分之幾",
+    "如果我又更完整一點",
+    "也是因為你"
   ],
-  "source": "坂元裕二日劇《四重奏》",
-  "source_work": "日劇《四重奏》",
-  "source_author": "坂元裕二",
+  "source": "盧廣仲《幾分之幾》",
+  "source_work": "《幾分之幾》",
+  "source_author": "盧廣仲",
   "excerpt": {
-    "hook": "〈週二樹洞信箱〉就算日子被突然打翻，你想去的那些地方，也都依然會在。只是這一次要先回過頭，把人生的地基穩穩重新蓋好",
-    "teaser": "「親愛的樹洞，謝謝你聽我說"
+    "hook": "〈週三告白日〉喜歡你，從來都不只是留在心裡而已；從身上每一寸肌膚，到身體每一個臟器，它們都比我還誠實地吶喊著：我好想你",
+    "teaser": "最近，又到了一年一度"
   },
-  "ig_url": "https://www.instagram.com/p/DbmHnjHGSxv/",
+  "ig_url": "https://www.instagram.com/p/DboseuqGanf/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-04T07:01:12+08:00"
+  "updated": "2026-08-05T07:01:07+08:00"
 }
