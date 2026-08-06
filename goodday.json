@@ -1,26 +1,27 @@
 {
-  "date": "2026-08-06",
-  "display_date": "8/6",
-  "weekday": "星期四",
-  "lunar": "六月廿四",
-  "term": "大暑後十四日",
-  "wenyan": "宜炸毛",
-  "wenyan_full": "宜炸毛",
-  "quote": "我們不要就這樣算了，好不好？\n很多事情不能就這樣算了，\n如果這樣的話，人就會慢慢地死掉。",
+  "date": "2026-08-07",
+  "display_date": "8/7",
+  "weekday": "星期五",
+  "lunar": "六月廿五",
+  "term": "立秋",
+  "wenyan": "宜揮霍今天",
+  "wenyan_full": "宜揮霍今天",
+  "quote": "終有一天，你將告別這個世界\nOne day, you'll leave this world behind\n\n所以，過個值得紀念的人生\nSo live a life you will remember",
   "quote_lines": [
-    "我們不要就這樣算了，好不好？",
-    "很多事情不能就這樣算了",
-    "如果這樣的話，人就會慢慢地死掉"
+    "終有一天，你將告別這個世界",
+    "One day, you'll leave this world behind",
+    "所以，過個值得紀念的人生",
+    "So live a life you will remember"
   ],
-  "source": "翁文方《人選之人—造浪者》",
-  "source_work": "《人選之人—造浪者》",
-  "source_author": "翁文方",
+  "source": "Avicii《The Nights》",
+  "source_work": "《The Nights》",
+  "source_author": "Avicii",
   "excerpt": {
-    "hook": "〈當感到憤怒時，我可以怎麼辦〉\n生氣的感受並沒有錯，它本來就是為了保護心裡重要的界線而存在。不過怎麼回應和表現，那就是另外一個課題了",
-    "teaser": "你有注意到、或者發現過"
+    "hook": "有些日子，過完就沒有了；有些日子，卻會在你腦海重播一輩子",
+    "teaser": "前陣子久違的"
   },
-  "ig_url": "https://www.instagram.com/p/DbrRPcxGZcJ/",
+  "ig_url": "https://www.instagram.com/p/Dbt2CcpkgSZ/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-06T07:01:13+08:00"
+  "updated": "2026-08-07T07:01:10+08:00"
 }
