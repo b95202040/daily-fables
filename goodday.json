@@ -1,27 +1,25 @@
 {
-  "date": "2026-08-07",
-  "display_date": "8/7",
-  "weekday": "星期五",
-  "lunar": "六月廿五",
-  "term": "立秋",
-  "wenyan": "宜揮霍今天",
-  "wenyan_full": "宜揮霍今天",
-  "quote": "終有一天，你將告別這個世界\nOne day, you'll leave this world behind\n\n所以，過個值得紀念的人生\nSo live a life you will remember",
+  "date": "2026-08-08",
+  "display_date": "8/8",
+  "weekday": "星期六",
+  "lunar": "六月廿六",
+  "term": "立秋後一日",
+  "wenyan": "宜父親節快樂",
+  "wenyan_full": "宜父親節快樂",
+  "quote": "只有用心才能看清楚，\n真正重要的東西，用眼睛是看不見的。",
   "quote_lines": [
-    "終有一天，你將告別這個世界",
-    "One day, you'll leave this world behind",
-    "所以，過個值得紀念的人生",
-    "So live a life you will remember"
+    "只有用心才能看清楚",
+    "真正重要的東西，用眼睛是看不見的"
   ],
-  "source": "Avicii《The Nights》",
-  "source_work": "《The Nights》",
-  "source_author": "Avicii",
+  "source": "安東尼・聖修伯里《小王子》",
+  "source_work": "《小王子》",
+  "source_author": "安東尼・聖修伯里",
   "excerpt": {
-    "hook": "有些日子，過完就沒有了；有些日子，卻會在你腦海重播一輩子",
-    "teaser": "前陣子久違的"
+    "hook": "〈父親節快樂〉謝謝爸爸，把愛藏進了責任中，把溫柔放進了歲月裡",
+    "teaser": "Guest post feat. 天天"
   },
-  "ig_url": "https://www.instagram.com/p/Dbt2CcpkgSZ/",
+  "ig_url": "https://www.instagram.com/p/Dbwa2krGVAy/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-07T07:01:10+08:00"
+  "updated": "2026-08-08T07:01:14+08:00"
 }
