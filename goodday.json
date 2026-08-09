@@ -1,25 +1,25 @@
 {
-  "date": "2026-08-09",
-  "display_date": "8/9",
-  "weekday": "星期日",
-  "lunar": "六月廿七",
-  "term": "立秋後二日",
-  "wenyan": "宜清理一個角落",
-  "wenyan_full": "宜清理一個角落",
-  "quote": "當我們把周圍一切變得井然有序，\n同時也把自己變得井然有序。",
+  "date": "2026-08-10",
+  "display_date": "8/10",
+  "weekday": "星期一",
+  "lunar": "六月廿八",
+  "term": "立秋後三日",
+  "wenyan": "宜靠自己",
+  "wenyan_full": "宜靠自己",
+  "quote": "我想憑自己的力量存在，\n像太陽一樣，發出光，不吸收光。",
   "quote_lines": [
-    "當我們把周圍一切變得井然有序",
-    "同時也把自己變得井然有序"
+    "我想憑自己的力量存在",
+    "像太陽一樣，發出光，不吸收光"
   ],
-  "source": "多明妮克・洛羅《理想的簡單生活》",
-  "source_work": "《理想的簡單生活》",
-  "source_author": "多明妮克・洛羅",
+  "source": "榮格《紅書》",
+  "source_work": "《紅書》",
+  "source_author": "榮格",
   "excerpt": {
-    "hook": "心煩意亂、什麼事情都沒辦法繼續的時候，就從整理眼前開始；那是你和生命可控的秩序，距離最近的一小步",
-    "teaser": "如果說我們所存在的環境"
+    "hook": "你還記得，上一次睜開眼就對今天充滿期待，是什麼時候的事了嗎？",
+    "teaser": "明明補了眠，卻覺得怎樣都睡不飽"
   },
-  "ig_url": "https://www.instagram.com/p/Dby_o9dGWwx/",
+  "ig_url": "https://www.instagram.com/p/Db1kZ6amRP_/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-09T07:01:08+08:00"
+  "updated": "2026-08-10T07:01:12+08:00"
 }
