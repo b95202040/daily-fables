@@ -1,24 +1,26 @@
 {
-  "date": "2026-08-12",
-  "display_date": "8/12",
-  "weekday": "星期三",
-  "lunar": "六月三十",
-  "term": "立秋後五日",
-  "wenyan": "宜就決定是你了",
-  "wenyan_full": "宜就決定是你了",
-  "quote": "我一無所有，只有愛可以給你。",
+  "date": "2026-08-14",
+  "display_date": "8/14",
+  "weekday": "星期五",
+  "lunar": "七月初二",
+  "term": "立秋後七日",
+  "wenyan": "宜飛航模式",
+  "wenyan_full": "宜飛航模式",
+  "quote": "讓行李就躺在地上\n脹痛的腳晾在床上\n只想在自己房間虛度 時光",
   "quote_lines": [
-    "我一無所有，只有愛可以給你"
+    "讓行李就躺在地上",
+    "脹痛的腳晾在床上",
+    "只想在自己房間虛度 時光"
   ],
-  "source": "《派特的幸福劇本》",
-  "source_work": "《派特的幸福劇本》",
-  "source_author": "",
+  "source": "田馥甄〈自己的房間〉",
+  "source_work": "〈自己的房間〉",
+  "source_author": "田馥甄",
   "excerpt": {
-    "hook": "《週三告白日》關於我自己的一切，我總是有許許多多的懷疑；唯獨永遠愛你，我從來不曾猶豫",
-    "teaser": "即使在一起這麼長的一段時間"
+    "hook": "〈週五推歌〉今晚，先不要再急著想成為更好的人；把自己關在房間裡，盡情享受一個人獨處的快樂",
+    "teaser": "依照慣例，星期五的晚上"
   },
-  "ig_url": "https://www.instagram.com/p/Db6t-RBmWhQ/",
+  "ig_url": "https://www.instagram.com/p/Db_3mBDme7R/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-12T07:01:12+08:00"
+  "updated": "2026-08-14T07:01:09+08:00"
 }
