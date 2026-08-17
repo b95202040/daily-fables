@@ -1,25 +1,26 @@
 {
-  "date": "2026-08-17",
-  "display_date": "8/17",
-  "weekday": "星期一",
-  "lunar": "七月初五",
-  "term": "立秋後十日",
-  "wenyan": "忌討好",
-  "wenyan_full": "忌討好",
-  "quote": "妳總是忍耐、諒解和讓步\n也許就是如此才累壞了自己",
+  "date": "2026-08-18",
+  "display_date": "8/18",
+  "weekday": "星期二",
+  "lunar": "七月初六",
+  "term": "立秋後十一日",
+  "wenyan": "宜許下心願",
+  "wenyan_full": "宜許下心願",
+  "quote": "從今以後，我們活在一個人類登上過月球的世界。\n那不是來自奇蹟，那是來自我們決定要去。",
   "quote_lines": [
-    "妳總是忍耐、諒解和讓步",
-    "也許就是如此才累壞了自己"
+    "從今以後，我們活在",
+    "一個人類登上過月球的世界",
+    "那不是來自奇蹟，那是來自我們決定要去"
   ],
-  "source": "正宇《低谷醫生》",
-  "source_work": "《低谷醫生》",
-  "source_author": "正宇",
+  "source": "吉姆・洛維爾《阿波羅 13》",
+  "source_work": "《阿波羅 13》",
+  "source_author": "吉姆・洛維爾",
   "excerpt": {
-    "hook": "你本來就不需要被全世界所有人喜歡。你的體貼和溫柔，都只要留給值得的人就好",
-    "teaser": "你曾經在面對衝突的時候"
+    "hook": "《好日曆與你的 2027》天上的星星從來不趕路，每一顆都有自己的時間；就像你走過的每一步，也都正在連成屬於你的星軌",
+    "teaser": "你知道嗎？我們每天晚上"
   },
-  "ig_url": "https://www.instagram.com/p/DcHmB55GTfm/",
+  "ig_url": "https://www.instagram.com/p/DcKKzz-ks8X/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-17T07:01:11+08:00"
+  "updated": "2026-08-18T07:01:08+08:00"
 }
