@@ -1,26 +1,27 @@
 {
-  "date": "2026-08-18",
-  "display_date": "8/18",
-  "weekday": "星期二",
-  "lunar": "七月初六",
-  "term": "立秋後十一日",
-  "wenyan": "宜許下心願",
-  "wenyan_full": "宜許下心願",
-  "quote": "從今以後，我們活在一個人類登上過月球的世界。\n那不是來自奇蹟，那是來自我們決定要去。",
+  "date": "2026-08-19",
+  "display_date": "8/19",
+  "weekday": "星期三",
+  "lunar": "七月初七",
+  "term": "立秋後十二日",
+  "wenyan": "宜以後都是你",
+  "wenyan_full": "宜以後都是你",
+  "quote": "我喜歡在夜裡睡前\n最後一個想說話的人是你\n\nAnd I love that you are the last person\nI want to talk to before I go to sleep at night",
   "quote_lines": [
-    "從今以後，我們活在",
-    "一個人類登上過月球的世界",
-    "那不是來自奇蹟，那是來自我們決定要去"
+    "我喜歡在夜裡睡前",
+    "最後一個想說話的人是你",
+    "And I love that you are the last person",
+    "I want to talk to before I go to sleep at night"
   ],
-  "source": "吉姆・洛維爾《阿波羅 13》",
-  "source_work": "《阿波羅 13》",
-  "source_author": "吉姆・洛維爾",
+  "source": "哈利《當哈利碰上莎莉》",
+  "source_work": "《當哈利碰上莎莉》",
+  "source_author": "哈利",
   "excerpt": {
-    "hook": "天上的星星從來不趕路，每一顆都有自己的時間；就像你走過的每一步，也都正在連成屬於你的星軌",
-    "teaser": "你知道嗎？我們每天晚上"
+    "hook": "〈週三告白日〉我不知道將來的人生，最終會變成什麼樣子；但我知道，那裡面永遠會有我們兩個。七夕情人節快樂！",
+    "teaser": "在一起久了以後"
   },
-  "ig_url": "https://www.instagram.com/p/DcKKzz-ks8X/",
+  "ig_url": "https://www.instagram.com/p/DcMvlMKGUQQ/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-18T12:30:09+08:00"
+  "updated": "2026-08-19T07:01:09+08:00"
 }
