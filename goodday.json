@@ -1,25 +1,25 @@
 {
-  "date": "2026-08-21",
-  "display_date": "8/21",
-  "weekday": "星期五",
-  "lunar": "七月初九",
-  "term": "立秋後十四日",
-  "wenyan": "宜見上一面",
-  "wenyan_full": "宜見上一面",
-  "quote": "來年陌生的 是昨日最親的某某\n總好於那日我沒有 沒有遇過某某",
+  "date": "2026-08-22",
+  "display_date": "8/22",
+  "weekday": "星期六",
+  "lunar": "七月初十",
+  "term": "立秋後十五日",
+  "wenyan": "宜用力暫停一次",
+  "wenyan_full": "宜用力暫停一次",
+  "quote": "為什麼我們要工作 40 年才退休一次？\n人生中有無數美好時刻值得體驗。",
   "quote_lines": [
-    "來年陌生的 是昨日最親的某某",
-    "總好於那日我沒有 沒有遇過某某"
+    "為什麼我們要工作 40 年才退休一次？",
+    "人生中有無數美好時刻值得體驗"
   ],
-  "source": "陳奕迅《最佳損友》",
-  "source_work": "《最佳損友》",
-  "source_author": "陳奕迅",
+  "source": "吉莉安．強思若德《迷你退休》",
+  "source_work": "《迷你退休》",
+  "source_author": "吉莉安．強思若德",
   "excerpt": {
-    "hook": "〈週五聽歌〉忙起來的時候，最先被放掉的，總是那些最挺你的朋友；可是在你最累、最辛苦時會站出來把你撐住的，卻也正是這些最容易被遺忘的可愛的人。謝謝你，我的朋友",
-    "teaser": "最近的幾個月"
+    "hook": "成為大人，難道只能上班下班，適應著生活的失去，適應著可能性消逝？這樣的日子，會有完結的一天嗎？",
+    "teaser": "Guest Post ft. 些云"
   },
-  "ig_url": "https://www.instagram.com/p/DcR5JOsGYu_/",
+  "ig_url": "https://www.instagram.com/p/DcUeCKIGSHq/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-21T07:01:12+08:00"
+  "updated": "2026-08-22T07:01:13+08:00"
 }
