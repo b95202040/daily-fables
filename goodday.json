@@ -1,25 +1,26 @@
 {
-  "date": "2026-08-22",
-  "display_date": "8/22",
-  "weekday": "星期六",
-  "lunar": "七月初十",
-  "term": "立秋後十五日",
-  "wenyan": "宜用力暫停一次",
-  "wenyan_full": "宜用力暫停一次",
-  "quote": "為什麼我們要工作 40 年才退休一次？\n人生中有無數美好時刻值得體驗。",
+  "date": "2026-08-23",
+  "display_date": "8/23",
+  "weekday": "星期日",
+  "lunar": "七月十一",
+  "term": "處暑",
+  "wenyan": "宜感受身旁的小事",
+  "wenyan_full": "宜感受身旁的小事",
+  "quote": "沒有人真正看見一朵花，\n它太小了，我們沒有時間。\n而看見是需要時間的。",
   "quote_lines": [
-    "為什麼我們要工作 40 年才退休一次？",
-    "人生中有無數美好時刻值得體驗"
+    "沒有人真正看見一朵花",
+    "它太小了，我們沒有時間",
+    "而看見是需要時間的"
   ],
-  "source": "吉莉安．強思若德《迷你退休》",
-  "source_work": "《迷你退休》",
-  "source_author": "吉莉安．強思若德",
+  "source": "畫家／喬治亞・歐姬芙",
+  "source_work": "",
+  "source_author": "畫家／喬治亞・歐姬芙",
   "excerpt": {
-    "hook": "成為大人，難道只能上班下班，適應著生活的失去，適應著可能性消逝？這樣的日子，會有完結的一天嗎？",
-    "teaser": "Guest Post ft. 些云"
+    "hook": "一天過完，其實也不代表你真的活過了這一天；就像日曆不撕不會自己翻，日子也需要真正去感受，才會成為你生命的一部分",
+    "teaser": "最近這一段時間"
   },
-  "ig_url": "https://www.instagram.com/p/DcUeCKIGSHq/",
+  "ig_url": "https://www.instagram.com/p/DcXCyBsmbVT/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-22T07:01:13+08:00"
+  "updated": "2026-08-23T07:01:09+08:00"
 }
