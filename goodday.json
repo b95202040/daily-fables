@@ -1,26 +1,25 @@
 {
-  "date": "2026-08-23",
-  "display_date": "8/23",
-  "weekday": "星期日",
-  "lunar": "七月十一",
-  "term": "處暑",
-  "wenyan": "宜感受身旁的小事",
-  "wenyan_full": "宜感受身旁的小事",
-  "quote": "沒有人真正看見一朵花，\n它太小了，我們沒有時間。\n而看見是需要時間的。",
+  "date": "2026-08-24",
+  "display_date": "8/24",
+  "weekday": "星期一",
+  "lunar": "七月十二",
+  "term": "處暑後一日",
+  "wenyan": "宜一次變好一點點",
+  "wenyan_full": "宜一次變好一點點",
+  "quote": "快樂又不是遙不可及的東西，\n你就先從小地方開始啊！",
   "quote_lines": [
-    "沒有人真正看見一朵花",
-    "它太小了，我們沒有時間",
-    "而看見是需要時間的"
+    "快樂又不是遙不可及的東西",
+    "你就先從小地方開始啊！"
   ],
-  "source": "畫家／喬治亞・歐姬芙",
-  "source_work": "",
-  "source_author": "畫家／喬治亞・歐姬芙",
+  "source": "韓劇《車貞淑醫生》",
+  "source_work": "韓劇《車貞淑醫生》",
+  "source_author": "",
   "excerpt": {
-    "hook": "一天過完，其實也不代表你真的活過了這一天；就像日曆不撕不會自己翻，日子也需要真正去感受，才會成為你生命的一部分",
-    "teaser": "最近這一段時間"
+    "hook": "想要改變真的實現，不只需要下定決心，更需要你為自己打造一個不容易失敗的環境",
+    "teaser": "在我們的生活當中"
   },
-  "ig_url": "https://www.instagram.com/p/DcXCyBsmbVT/",
+  "ig_url": "https://www.instagram.com/p/DcZniWKmThQ/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-23T07:01:09+08:00"
+  "updated": "2026-08-24T07:01:11+08:00"
 }
