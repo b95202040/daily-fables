@@ -1,25 +1,26 @@
 {
-  "date": "2026-08-24",
-  "display_date": "8/24",
-  "weekday": "星期一",
-  "lunar": "七月十二",
-  "term": "處暑後一日",
-  "wenyan": "宜一次變好一點點",
-  "wenyan_full": "宜一次變好一點點",
-  "quote": "快樂又不是遙不可及的東西，\n你就先從小地方開始啊！",
+  "date": "2026-08-25",
+  "display_date": "8/25",
+  "weekday": "星期二",
+  "lunar": "七月十三",
+  "term": "處暑後二日",
+  "wenyan": "忌懲罰自己",
+  "wenyan_full": "忌懲罰自己",
+  "quote": "我們不夠完美也沒關係\n有點笨拙也無所謂\n不用加油也無妨",
   "quote_lines": [
-    "快樂又不是遙不可及的東西",
-    "你就先從小地方開始啊！"
+    "我們不夠完美也沒關係",
+    "有點笨拙也無所謂",
+    "不用加油也無妨"
   ],
-  "source": "韓劇《車貞淑醫生》",
-  "source_work": "韓劇《車貞淑醫生》",
-  "source_author": "",
+  "source": "白洗嬉白洗嬉《雖然想死，但還是想吃辣炒年糕》",
+  "source_work": "白洗嬉《雖然想死，但還是想吃辣炒年糕》",
+  "source_author": "白洗嬉",
   "excerpt": {
-    "hook": "想要改變真的實現，不只需要下定決心，更需要你為自己打造一個不容易失敗的環境",
-    "teaser": "在我們的生活當中"
+    "hook": "〈週二樹洞信箱〉你所付出過的那些努力，不會因為沒有得到想要的結果就變得不存在；而且呀，還在半路上和失敗，才不一樣呢",
+    "teaser": "「親愛的樹洞，謝謝你聽我說"
   },
-  "ig_url": "https://www.instagram.com/p/DcZniWKmThQ/",
+  "ig_url": "https://www.instagram.com/p/DccMVoUEk_a/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-24T07:01:11+08:00"
+  "updated": "2026-08-25T07:01:13+08:00"
 }
