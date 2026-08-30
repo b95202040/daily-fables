@@ -1,25 +1,26 @@
 {
-  "date": "2026-08-30",
-  "display_date": "8/30",
-  "weekday": "星期日",
-  "lunar": "七月十八",
-  "term": "處暑後七日",
-  "wenyan": "忌不挑",
-  "wenyan_full": "忌不挑",
-  "quote": "世上重要的事情\n大都是很麻煩的",
+  "date": "2026-08-31",
+  "display_date": "8/31",
+  "weekday": "星期一",
+  "lunar": "七月十九",
+  "term": "處暑後八日",
+  "wenyan": "宜我可以",
+  "wenyan_full": "宜我可以",
+  "quote": "打這一分的時候，\n它就得是全世界最重要的事。\n但當它過去了，它就過去了。",
   "quote_lines": [
-    "世上重要的事情",
-    "大都是很麻煩的"
+    "打這一分的時候",
+    "它就得是全世界最重要的事",
+    "但當它過去了，它就過去了"
   ],
-  "source": "宮崎駿NHK 紀錄片《專業人士的作風》",
-  "source_work": "NHK 紀錄片《專業人士的作風》",
-  "source_author": "宮崎駿",
+  "source": "網球天王／費德勒《2024 達特茅斯畢業演說》",
+  "source_work": "2024 達特茅斯畢業演說",
+  "source_author": "網球天王／費德勒",
   "excerpt": {
-    "hook": "所謂人生，其實就是一次一次又一次，你為自己所做出的選擇",
-    "teaser": "這幾年來，我常常會在思考"
+    "hook": "在上場之前，你的實力有多少，早就已經決定了；與其擔心自己不夠強，不如把自己調整到最能發揮的狀態吧",
+    "teaser": "又是新一週的開始"
   },
-  "ig_url": "https://www.instagram.com/p/DcpESDQGX2z/",
+  "ig_url": "https://www.instagram.com/p/DcrpGphmUnz/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-08-30T07:01:11+08:00"
+  "updated": "2026-08-31T07:01:12+08:00"
 }
