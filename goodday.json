@@ -1,26 +1,24 @@
 {
-  "date": "2026-09-03",
-  "display_date": "9/3",
-  "weekday": "星期四",
-  "lunar": "七月廿二",
-  "term": "處暑後十一日",
-  "wenyan": "宜向內找尋",
-  "wenyan_full": "宜向內找尋",
-  "quote": "我們苦苦等待的\n釋放我們於痛苦深淵的那股力量\n原來在我們自己身上",
+  "date": "2026-09-04",
+  "display_date": "9/4",
+  "weekday": "星期五",
+  "lunar": "七月廿三",
+  "term": "處暑後十二日",
+  "wenyan": "宜不用勇敢的一天",
+  "wenyan_full": "宜不用勇敢的一天",
+  "quote": "",
   "quote_lines": [
-    "我們苦苦等待的",
-    "釋放我們於痛苦深淵的那股力量",
-    "原來在我們自己身上"
+    ""
   ],
-  "source": "作家／張曼娟《我輩中人》",
-  "source_work": "《我輩中人》",
-  "source_author": "作家／張曼娟",
+  "source": "閻奕格《也可以》",
+  "source_work": "《也可以》",
+  "source_author": "閻奕格",
   "excerpt": {
-    "hook": "〈覺得人生沒有意義的時候，我可以怎麼辦〉\n很多時候我們所需要的，也不是什麼多偉大的人生解答；就只是在努力了這麼多之後，能真切地感受到，這一切辛苦，都是值得的",
-    "teaser": "你是否也曾經歷過"
+    "hook": "〈給週五一首歌的時間〉\n因為要堅持、因為要勇敢、因為對自己有太多太多的期許，所以我們把生活過得好累好累，卻忘記了我們都只是人。真實、平凡、有感受、會疲倦的普通的人",
+    "teaser": "不知道是不是因為陰晴不定的天氣"
   },
-  "ig_url": "https://www.instagram.com/p/DczXgQvGTBD/",
+  "ig_url": "https://www.instagram.com/p/Dc18UKvmYyu/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-03T07:01:11+08:00"
+  "updated": "2026-09-04T07:01:13+08:00"
 }
