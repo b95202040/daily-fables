@@ -1,25 +1,26 @@
 {
-  "date": "2026-09-07",
-  "display_date": "9/7",
-  "weekday": "星期一",
-  "lunar": "七月廿六",
-  "term": "白露",
-  "wenyan": "宜給自己很棒的一天",
-  "wenyan_full": "宜給自己很棒的一天",
-  "quote": "人生，心想不一定事成，\n但只要好好度過今天，就能好好度過一生。",
+  "date": "2026-09-08",
+  "display_date": "9/8",
+  "weekday": "星期二",
+  "lunar": "七月廿七",
+  "term": "白露後一日",
+  "wenyan": "忌把愛推開",
+  "wenyan_full": "忌把愛推開",
+  "quote": "如果不想失去，\n就不可以從最重要的人身邊逃走。\n不管有多遜，多麼難看。",
   "quote_lines": [
-    "人生，心想不一定事成",
-    "但只要好好度過今天，就能好好度過一生"
+    "如果不想失去",
+    "就不可以從最重要的人身邊逃走",
+    "不管有多遜，多麼難看"
   ],
-  "source": "黃寶凜《歡迎光臨休南洞書店》",
-  "source_work": "《歡迎光臨休南洞書店》",
-  "source_author": "黃寶凜",
+  "source": "津崎平匡日劇《月薪嬌妻》",
+  "source_work": "日劇《月薪嬌妻》",
+  "source_author": "津崎平匡",
   "excerpt": {
-    "hook": "其實我們沒辦法只靠等待，就讓一切自動變好；所有你想要的好生活，都只能從今天的自己開始",
-    "teaser": "因為週一的早上總是最難熬"
+    "hook": "〈週二樹洞信箱〉太愛一個人的時候，我們常常會擔心自己不夠好；卻很少想到，對方要的，其實就只是單純的你",
+    "teaser": "「親愛的樹洞，謝謝你聽我說"
   },
-  "ig_url": "https://www.instagram.com/p/Dc9qtAFExC_/",
+  "ig_url": "https://www.instagram.com/p/DdAPg53GS-g/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-07T07:01:09+08:00"
+  "updated": "2026-09-08T07:01:13+08:00"
 }
