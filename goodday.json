@@ -1,26 +1,25 @@
 {
-  "date": "2026-09-09",
-  "display_date": "9/9",
-  "weekday": "星期三",
-  "lunar": "七月廿八",
-  "term": "白露後二日",
-  "wenyan": "宜一起笑點低",
-  "wenyan_full": "宜一起笑點低",
-  "quote": "我做了這麼多，就只是為了要逗妳笑而已。\n你想要真愛，這就是了，\n它並不完美，但這就是了。",
+  "date": "2026-09-10",
+  "display_date": "9/10",
+  "weekday": "星期四",
+  "lunar": "七月廿九",
+  "term": "白露後三日",
+  "wenyan": "宜一次做好一件事",
+  "wenyan_full": "宜一次做好一件事",
+  "quote": "每次只要能跨出一小步就很夠了；\n就算是一小步，也是進步。",
   "quote_lines": [
-    "我做了這麼多，就只是為了要逗妳笑而已",
-    "你想要真愛，這就是了",
-    "它並不完美，但這就是了"
+    "每次只要能跨出一小步就很夠了",
+    "就算是一小步，也是進步"
   ],
-  "source": "電影《愛在午夜希臘時 Before Midnight》",
-  "source_work": "電影《愛在午夜希臘時 Before Midnight》",
-  "source_author": "",
+  "source": "克拉拉．漢斯坦《親愛的焦慮，請閉嘴！》",
+  "source_work": "《親愛的焦慮，請閉嘴！》",
+  "source_author": "克拉拉．漢斯坦",
   "excerpt": {
-    "hook": "〈週三告白日〉和你一起的時候，好像連本來令人緊張擔心厭煩害怕的，都可以變得輕鬆好笑了。而我想就這樣，和你笑著過下去",
-    "teaser": "我其實還滿喜歡我們之間"
+    "hook": "〈面對陌生的全新挑戰時，我可以怎麼辦〉\n你還記得，自己上一次當個新來的，是什麼時候了嗎？那樣的第一天，又是怎麼度過的呢？",
+    "teaser": "這兩天，台北的天氣轉涼得好突然"
   },
-  "ig_url": "https://www.instagram.com/p/DdDDVKMmvQN/",
+  "ig_url": "https://www.instagram.com/p/DdFZFJ6mUUF/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-09T12:30:14+08:00"
+  "updated": "2026-09-10T07:01:11+08:00"
 }
