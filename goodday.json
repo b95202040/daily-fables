@@ -1,25 +1,27 @@
 {
-  "date": "2026-09-10",
-  "display_date": "9/10",
-  "weekday": "星期四",
-  "lunar": "七月廿九",
-  "term": "白露後三日",
-  "wenyan": "宜一次做好一件事",
-  "wenyan_full": "宜一次做好一件事",
-  "quote": "每次只要能跨出一小步就很夠了；\n就算是一小步，也是進步。",
+  "date": "2026-09-11",
+  "display_date": "9/11",
+  "weekday": "星期五",
+  "lunar": "八月初一",
+  "term": "白露後四日",
+  "wenyan": "宜跳舞",
+  "wenyan_full": "宜跳舞",
+  "quote": "Dancin’ in September\n在那九月的晚風中跳舞\nNever was a cloudy day\n在那回憶裡，永遠都是大晴天",
   "quote_lines": [
-    "每次只要能跨出一小步就很夠了",
-    "就算是一小步，也是進步"
+    "Dancin’ in September",
+    "在那九月的晚風中跳舞",
+    "Never was a cloudy day",
+    "在那回憶裡，永遠都是大晴天"
   ],
-  "source": "克拉拉．漢斯坦《親愛的焦慮，請閉嘴！》",
-  "source_work": "《親愛的焦慮，請閉嘴！》",
-  "source_author": "克拉拉．漢斯坦",
+  "source": "Earth, Wind & Fire《September》",
+  "source_work": "《September》",
+  "source_author": "Earth, Wind & Fire",
   "excerpt": {
-    "hook": "〈面對陌生的全新挑戰時，我可以怎麼辦〉\n你還記得，自己上一次當個新來的，是什麼時候了嗎？那樣的第一天，又是怎麼度過的呢？",
-    "teaser": "這兩天，台北的天氣轉涼得好突然"
+    "hook": "〈給週五一首歌的時間〉你知道嗎，快樂不一定要等到所有事情都變好了才開始喔！",
+    "teaser": "九月已經過了三分之一"
   },
-  "ig_url": "https://www.instagram.com/p/DdFZFJ6mUUF/",
+  "ig_url": "https://www.instagram.com/p/DdH95VDGZ2G/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-10T07:01:11+08:00"
+  "updated": "2026-09-11T07:01:10+08:00"
 }
