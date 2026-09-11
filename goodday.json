@@ -1,27 +1,25 @@
 {
-  "date": "2026-09-11",
-  "display_date": "9/11",
-  "weekday": "星期五",
-  "lunar": "八月初一",
-  "term": "白露後四日",
-  "wenyan": "宜跳舞",
-  "wenyan_full": "宜跳舞",
-  "quote": "Dancin’ in September\n在那九月的晚風中跳舞\nNever was a cloudy day\n在那回憶裡，永遠都是大晴天",
+  "date": "2026-09-12",
+  "display_date": "9/12",
+  "weekday": "星期六",
+  "lunar": "八月初二",
+  "term": "白露後五日",
+  "wenyan": "宜邊走邊找路",
+  "wenyan_full": "宜邊走邊找路",
+  "quote": "人生的點滴，往前走時無法連起來；\n只有回頭看，才會明白它們如何相連。",
   "quote_lines": [
-    "Dancin’ in September",
-    "在那九月的晚風中跳舞",
-    "Never was a cloudy day",
-    "在那回憶裡，永遠都是大晴天"
+    "人生的點滴，往前走時無法連起來",
+    "只有回頭看，才會明白它們如何相連"
   ],
-  "source": "Earth, Wind & Fire《September》",
-  "source_work": "《September》",
-  "source_author": "Earth, Wind & Fire",
+  "source": "Apple 創辦人／史蒂夫・賈伯斯",
+  "source_work": "",
+  "source_author": "Apple 創辦人／史蒂夫・賈伯斯",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉你知道嗎，快樂不一定要等到所有事情都變好了才開始喔！",
-    "teaser": "九月已經過了三分之一"
+    "hook": "〈初級大人的高級煩惱：工作幾年後，還是不知道自己適合什麼〉以為事業有成是高級大人的標準，但工作幾年後才發現，我連下一步的方向都沒有欸……",
+    "teaser": "大學畢業，進入本科相關的行業"
   },
-  "ig_url": "https://www.instagram.com/p/DdH95VDGZ2G/",
+  "ig_url": "https://www.instagram.com/p/DdKin2Amcc-/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-11T07:01:10+08:00"
+  "updated": "2026-09-12T07:01:10+08:00"
 }
