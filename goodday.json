@@ -1,25 +1,25 @@
 {
-  "date": "2026-09-13",
-  "display_date": "9/13",
-  "weekday": "星期日",
-  "lunar": "八月初三",
-  "term": "白露後六日",
-  "wenyan": "忌人善被人欺",
-  "wenyan_full": "忌人善被人欺",
-  "quote": "如果有人拿槍威脅她，\n她就會找一把更大的槍。",
+  "date": "2026-09-14",
+  "display_date": "9/14",
+  "weekday": "星期一",
+  "lunar": "八月初四",
+  "term": "白露後七日",
+  "wenyan": "忌晚上加班",
+  "wenyan_full": "忌晚上加班",
+  "quote": "我總是早早睡去 失眠就悄聲數星星\n答應我睡前的焦慮不交給明天的自己",
   "quote_lines": [
-    "如果有人拿槍威脅她",
-    "她就會找一把更大的槍"
+    "我總是早早睡去 失眠就悄聲數星星",
+    "答應我睡前的焦慮不交給明天的自己"
   ],
-  "source": "史迪格・拉森《玩火的女孩》",
-  "source_work": "《玩火的女孩》",
-  "source_author": "史迪格・拉森",
+  "source": "若離派《說晚安之後》",
+  "source_work": "《說晚安之後》",
+  "source_author": "若離派",
   "excerpt": {
-    "hook": "〈週日閱讀日〉人不是天生勇敢的，我們都需要在摸索界線後，學會為自己戰鬥",
-    "teaser": "她身高不到一百五十公分"
+    "hook": "好好睡一覺，總是被排在一天的最後面，所以也成了最容易被犧牲的；但換個角度來看，它其實是每天的第一件事情，而且本來就該是最重要的第一件事情",
+    "teaser": "最近的我，又在努力調整作息了"
   },
-  "ig_url": "https://www.instagram.com/p/DdNHfiAGWVQ/",
+  "ig_url": "https://www.instagram.com/p/DdPsPVZmQX5/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-13T07:01:12+08:00"
+  "updated": "2026-09-14T07:01:12+08:00"
 }
