@@ -1,26 +1,25 @@
 {
-  "date": "2026-09-18",
-  "display_date": "9/18",
-  "weekday": "星期五",
-  "lunar": "八月初八",
-  "term": "白露後十一日",
-  "wenyan": "宜先抱抱自己",
-  "wenyan_full": "宜先抱抱自己",
-  "quote": "當你覺得已經受夠了這樣的日子\n請再撐一下下，別就這樣鬆開了手\n每個人都會哭，每個人也都有痛的時候",
+  "date": "2026-09-19",
+  "display_date": "9/19",
+  "weekday": "星期六",
+  "lunar": "八月初九",
+  "term": "白露後十二日",
+  "wenyan": "宜感謝曾經相伴",
+  "wenyan_full": "宜感謝曾經相伴",
+  "quote": "人會走進你的生命，也會離開\n但令人安慰的是，你愛的人會一直留在你心裡",
   "quote_lines": [
-    "當你覺得已經受夠了這樣的日子",
-    "請再撐一下下，別就這樣鬆開了手",
-    "每個人都會哭，每個人也都有痛的時候"
+    "人會走進你的生命，也會離開",
+    "但令人安慰的是，你愛的人會一直留在你心裡"
   ],
-  "source": "R.E.M.〈Everybody Hurts〉",
-  "source_work": "〈Everybody Hurts〉",
-  "source_author": "R.E.M.",
+  "source": "影集《慾望城市》",
+  "source_work": "影集《慾望城市》",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉我們每個人，都是第一次來到這個世界上，學著、掙扎著、努力成長著。痛苦和掙扎，都並不丟臉，我們只是還需要更多時間搜集到足夠的勇氣",
-    "teaser": "你是不是也曾經有過"
+    "hook": "〈不是每段關係，都需要一個完美結局〉\n有些人沒能陪我們走到最後，但卻陪我們走過了一段很好的路。就算沒有好好道別，也可以被好好記得",
+    "teaser": "或許你也曾在某一天突然發現"
   },
-  "ig_url": "https://www.instagram.com/p/DdZ_br-GY-V/",
+  "ig_url": "https://www.instagram.com/p/DdckMMJmUZV/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-18T07:01:08+08:00"
+  "updated": "2026-09-19T07:01:08+08:00"
 }
