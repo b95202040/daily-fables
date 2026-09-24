@@ -1,26 +1,24 @@
 {
-  "date": "2026-09-24",
-  "display_date": "9/24",
-  "weekday": "星期四",
-  "lunar": "八月十四",
-  "term": "秋分後一日",
-  "wenyan": "忌自我懷疑",
-  "wenyan_full": "忌自我懷疑",
-  "quote": "我存在過的世界，和沒有我的世界，\n我相信一定會不同，也許是很小很小的差異，\n不過那就是我活過的證明。",
+  "date": "2026-09-25",
+  "display_date": "9/25",
+  "weekday": "星期五",
+  "lunar": "八月十五",
+  "term": "秋分後二日",
+  "wenyan": "宜好起來",
+  "wenyan_full": "宜好起來",
+  "quote": "",
   "quote_lines": [
-    "我存在過的世界，和沒有我的世界",
-    "我相信一定會不同，也許是很小很小的差異",
-    "不過那就是我活過的證明"
+    ""
   ],
-  "source": "電影《如果這世界貓消失了》",
-  "source_work": "電影《如果這世界貓消失了》",
-  "source_author": "",
+  "source": "Joy Oladokun〈look up〉",
+  "source_work": "〈look up〉",
+  "source_author": "Joy Oladokun",
   "excerpt": {
-    "hook": "如果心上的大石頭始終放不下，那就帶著它前進吧。或許走著走著，它也就不會像剛開始一樣那麼沉重了",
-    "teaser": "距離 2027，剩下不到 100 天了"
+    "hook": "〈給週五一首歌的時間〉你的生命中，其實存在著很多可以接住你的小小瞬間；而你要做的，就只是記得抬起頭去看見而已",
+    "teaser": "在忙碌的日子裡"
   },
-  "ig_url": "https://www.instagram.com/p/DdpcNatEuxR/",
+  "ig_url": "https://www.instagram.com/p/DdsBCH-GeA_/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-24T07:01:14+08:00"
+  "updated": "2026-09-25T07:01:11+08:00"
 }
