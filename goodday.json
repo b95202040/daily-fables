@@ -1,24 +1,26 @@
 {
-  "date": "2026-09-25",
-  "display_date": "9/25",
-  "weekday": "星期五",
-  "lunar": "八月十五",
-  "term": "秋分後二日",
-  "wenyan": "宜好起來",
-  "wenyan_full": "宜好起來",
-  "quote": "",
+  "date": "2026-09-26",
+  "display_date": "9/26",
+  "weekday": "星期六",
+  "lunar": "八月十六",
+  "term": "秋分後三日",
+  "wenyan": "宜等等自己",
+  "wenyan_full": "宜等等自己",
+  "quote": "你，總有一天必定會綻放。\n就算是比別人晚了一些，當你的花季來臨，\n必定也能展現不輸給任何一朵花的鮮艷風采。",
   "quote_lines": [
-    ""
+    "你，總有一天必定會綻放",
+    "就算是比別人晚了一些，當你的花季來臨",
+    "必定也能展現不輸給任何一朵花的鮮艷風采"
   ],
-  "source": "Joy Oladokun〈look up〉",
-  "source_work": "〈look up〉",
-  "source_author": "Joy Oladokun",
+  "source": "金蘭都《疼痛，才叫青春》",
+  "source_work": "《疼痛，才叫青春》",
+  "source_author": "金蘭都",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉你的生命中，其實存在著很多可以接住你的小小瞬間；而你要做的，就只是記得抬起頭去看見而已",
-    "teaser": "在忙碌的日子裡"
+    "hook": "從幾歲開始之後，我們開始害怕生命中的來不及呢？",
+    "teaser": "身而為人"
   },
-  "ig_url": "https://www.instagram.com/p/DdsBCH-GeA_/",
+  "ig_url": "https://www.instagram.com/p/DdulwbJmRsp/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-25T07:01:11+08:00"
+  "updated": "2026-09-26T07:01:10+08:00"
 }
