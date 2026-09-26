@@ -1,26 +1,26 @@
 {
-  "date": "2026-09-26",
-  "display_date": "9/26",
-  "weekday": "星期六",
-  "lunar": "八月十六",
-  "term": "秋分後三日",
-  "wenyan": "宜等等自己",
-  "wenyan_full": "宜等等自己",
-  "quote": "你，總有一天必定會綻放。\n就算是比別人晚了一些，當你的花季來臨，\n必定也能展現不輸給任何一朵花的鮮艷風采。",
+  "date": "2026-09-27",
+  "display_date": "9/27",
+  "weekday": "星期日",
+  "lunar": "八月十七",
+  "term": "秋分後四日",
+  "wenyan": "宜出門走走",
+  "wenyan_full": "宜出門走走",
+  "quote": "人生的歡樂，來自我們接觸新的經驗。\n因此再沒有比每天面對不斷變化的地平線，\n及不同的新太陽，更能令人喜悅。",
   "quote_lines": [
-    "你，總有一天必定會綻放",
-    "就算是比別人晚了一些，當你的花季來臨",
-    "必定也能展現不輸給任何一朵花的鮮艷風采"
+    "人生的歡樂，來自我們接觸新的經驗",
+    "因此再沒有比每天面對不斷變化的地平線",
+    "及不同的新太陽，更能令人喜悅"
   ],
-  "source": "金蘭都《疼痛，才叫青春》",
-  "source_work": "《疼痛，才叫青春》",
-  "source_author": "金蘭都",
+  "source": "Jon Krakauer《阿拉斯加之死》",
+  "source_work": "《阿拉斯加之死》",
+  "source_author": "Jon Krakauer",
   "excerpt": {
-    "hook": "從幾歲開始之後，我們開始害怕生命中的來不及呢？",
-    "teaser": "身而為人"
+    "hook": "讓你擁有的世界變大的方法，不一定要飛到很遠很遠。有時候只要換一條沒走過的路，就很足夠了",
+    "teaser": "遇到假日的時候"
   },
-  "ig_url": "https://www.instagram.com/p/DdulwbJmRsp/",
+  "ig_url": "https://www.instagram.com/p/DdxKjrlmZDu/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-26T07:01:10+08:00"
+  "updated": "2026-09-27T07:01:12+08:00"
 }
