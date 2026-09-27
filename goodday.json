@@ -1,26 +1,25 @@
 {
-  "date": "2026-09-27",
-  "display_date": "9/27",
-  "weekday": "星期日",
-  "lunar": "八月十七",
-  "term": "秋分後四日",
-  "wenyan": "宜出門走走",
-  "wenyan_full": "宜出門走走",
-  "quote": "人生的歡樂，來自我們接觸新的經驗。\n因此再沒有比每天面對不斷變化的地平線，\n及不同的新太陽，更能令人喜悅。",
+  "date": "2026-09-28",
+  "display_date": "9/28",
+  "weekday": "星期一",
+  "lunar": "八月十八",
+  "term": "秋分後五日",
+  "wenyan": "宜勇敢面對收假",
+  "wenyan_full": "宜勇敢面對收假",
+  "quote": "忘掉不好的，記住好的，\n人生還是要繼續向前。",
   "quote_lines": [
-    "人生的歡樂，來自我們接觸新的經驗",
-    "因此再沒有比每天面對不斷變化的地平線",
-    "及不同的新太陽，更能令人喜悅"
+    "忘掉不好的，記住好的",
+    "人生還是要繼續向前"
   ],
-  "source": "Jon Krakauer《阿拉斯加之死》",
-  "source_work": "《阿拉斯加之死》",
-  "source_author": "Jon Krakauer",
+  "source": "羽球選手／戴資穎《社群貼文（2020，Vogue Taiwan 語錄整理）》",
+  "source_work": "社群貼文（2020，Vogue Taiwan 語錄整理）",
+  "source_author": "羽球選手／戴資穎",
   "excerpt": {
-    "hook": "讓你擁有的世界變大的方法，不一定要飛到很遠很遠。有時候只要換一條沒走過的路，就很足夠了",
-    "teaser": "遇到假日的時候"
+    "hook": "再長的假期，都會有結束的一天；在停下來充飽電之後，你的日子，終究要翻向下一頁",
+    "teaser": "今天是教師節"
   },
-  "ig_url": "https://www.instagram.com/p/DdxKjrlmZDu/",
+  "ig_url": "https://www.instagram.com/p/DdzvWR1GdC8/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-27T07:01:12+08:00"
+  "updated": "2026-09-28T07:01:09+08:00"
 }
