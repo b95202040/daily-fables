@@ -1,25 +1,26 @@
 {
-  "date": "2026-09-28",
-  "display_date": "9/28",
-  "weekday": "星期一",
-  "lunar": "八月十八",
-  "term": "秋分後五日",
-  "wenyan": "宜勇敢面對收假",
-  "wenyan_full": "宜勇敢面對收假",
-  "quote": "忘掉不好的，記住好的，\n人生還是要繼續向前。",
+  "date": "2026-09-29",
+  "display_date": "9/29",
+  "weekday": "星期二",
+  "lunar": "八月十九",
+  "term": "秋分後六日",
+  "wenyan": "宜現在完成式",
+  "wenyan_full": "宜現在完成式",
+  "quote": "儘管知道了整個旅程，\n也知道它將把自己帶往何處，\n我仍然擁抱、並且迎接每一個瞬間。",
   "quote_lines": [
-    "忘掉不好的，記住好的",
-    "人生還是要繼續向前"
+    "儘管知道了整個旅程",
+    "也知道它將把自己帶往何處",
+    "我仍然擁抱、並且迎接每一個瞬間"
   ],
-  "source": "羽球選手／戴資穎《社群貼文（2020，Vogue Taiwan 語錄整理）》",
-  "source_work": "社群貼文（2020，Vogue Taiwan 語錄整理）",
-  "source_author": "羽球選手／戴資穎",
+  "source": "電影《異星入境 Arrival》",
+  "source_work": "電影《異星入境 Arrival》",
+  "source_author": "",
   "excerpt": {
-    "hook": "再長的假期，都會有結束的一天；在停下來充飽電之後，你的日子，終究要翻向下一頁",
-    "teaser": "今天是教師節"
+    "hook": "〈週二樹洞信箱〉一切曾經出現在你生命中的星星點點，都將在未來，成為重新點亮你的光",
+    "teaser": "「親愛的樹洞，謝謝你聽我說"
   },
-  "ig_url": "https://www.instagram.com/p/DdzvWR1GdC8/",
+  "ig_url": "https://www.instagram.com/p/Dd2UMtCGX5K/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-09-28T07:01:09+08:00"
+  "updated": "2026-09-29T07:01:12+08:00"
 }
