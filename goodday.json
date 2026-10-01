@@ -1,27 +1,24 @@
 {
-  "date": "2026-10-01",
-  "display_date": "10/1",
-  "weekday": "星期四",
-  "lunar": "八月廿一",
-  "term": "秋分後八日",
-  "wenyan": "宜重新開始",
-  "wenyan_full": "宜重新開始",
-  "quote": "結束這一天，然後就此放下。\n你已經盡力了。\n或許有些荒謬和失誤滲了進來，\n盡快忘掉它們，明天就是新的一天。",
+  "date": "2026-10-02",
+  "display_date": "10/2",
+  "weekday": "星期五",
+  "lunar": "八月廿二",
+  "term": "秋分後九日",
+  "wenyan": "宜勇敢去闖",
+  "wenyan_full": "宜勇敢去闖",
+  "quote": "",
   "quote_lines": [
-    "結束這一天，然後就此放下",
-    "你已經盡力了",
-    "或許有些荒謬和失誤滲了進來",
-    "盡快忘掉它們，明天就是新的一天"
+    ""
   ],
-  "source": "思想家／愛默生",
-  "source_work": "",
-  "source_author": "思想家／愛默生",
+  "source": "Harry Styles〈Sign of the Times〉",
+  "source_work": "〈Sign of the Times〉",
+  "source_author": "Harry Styles",
   "excerpt": {
-    "hook": "盡力過的昨天，就放心留在昨天；此時此刻的你，可以是全新的重新開始的你",
-    "teaser": "一轉眼，今天已經是十月的第一天"
+    "hook": "〈給週五一首歌的時間〉你已經穿越過很多很多的狂風暴雨了，所以這一次，也一定可以。去吧，勇敢去闖吧",
+    "teaser": "每天早上起床後，出門前"
   },
-  "ig_url": "https://www.instagram.com/p/Dd7dw4pkpRz/",
+  "ig_url": "https://www.instagram.com/p/Dd-Cj_rmXqK/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-01T07:01:07+08:00"
+  "updated": "2026-10-02T07:01:08+08:00"
 }
