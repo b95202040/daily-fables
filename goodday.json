@@ -1,24 +1,25 @@
 {
-  "date": "2026-10-02",
-  "display_date": "10/2",
-  "weekday": "星期五",
-  "lunar": "八月廿二",
-  "term": "秋分後九日",
-  "wenyan": "宜勇敢去闖",
-  "wenyan_full": "宜勇敢去闖",
-  "quote": "",
+  "date": "2026-10-03",
+  "display_date": "10/3",
+  "weekday": "星期六",
+  "lunar": "八月廿三",
+  "term": "秋分後十日",
+  "wenyan": "宜下次會更好",
+  "wenyan_full": "宜下次會更好",
+  "quote": "後悔過一次的事情，就不要讓它發生第二次。\n我想這就是後悔的意義吧。",
   "quote_lines": [
-    ""
+    "後悔過一次的事情，就不要讓它發生第二次",
+    "我想這就是後悔的意義吧"
   ],
-  "source": "Harry Styles〈Sign of the Times〉",
-  "source_work": "〈Sign of the Times〉",
-  "source_author": "Harry Styles",
+  "source": "動畫《多田君不戀愛》",
+  "source_work": "動畫《多田君不戀愛》",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉你已經穿越過很多很多的狂風暴雨了，所以這一次，也一定可以。去吧，勇敢去闖吧",
-    "teaser": "每天早上起床後，出門前"
+    "hook": "後悔並不可恥，但請記得，不要讓餘生都活在後悔裡",
+    "teaser": "小時候聽過一些優秀的大人說"
   },
-  "ig_url": "https://www.instagram.com/p/Dd-Cj_rmXqK/",
+  "ig_url": "https://www.instagram.com/p/DeAnUkwGdjt/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-02T07:01:08+08:00"
+  "updated": "2026-10-03T07:01:14+08:00"
 }
