@@ -1,193 +1,201 @@
 [
- {
-  "id": "f035",
-  "concept": "自我複雜性（Self-Complexity）",
-  "domain": "心理與認知",
-  "title": "綁成一袋的人",
-  "ts": "2026-06-13T13:48:40.547Z",
-  "enriched": true,
-  "historical": {
-   "figure": "邱吉爾（Winston Churchill）",
-   "era": "1915 起（40 歲，加里波利慘敗後）",
-   "fact": "他把憂鬱叫『黑狗』。政壇失意的荒野歲月，靠繪畫與寫作撐住自己，說『要不是畫畫，我活不下去』。當政治家這個身分垮了，畫家／作家這些『其他的我』接住了他。",
-   "source": "https://winstonchurchill.hillsdale.edu/churchill-and-depression/",
-   "status": "verified"
+  {
+    "id": "f035",
+    "concept": "自我複雜性（Self-Complexity）",
+    "domain": "心理與認知",
+    "title": "綁成一袋的人",
+    "ts": "2026-06-13T13:48:40.547Z",
+    "enriched": true,
+    "historical": {
+      "figure": "邱吉爾（Winston Churchill）",
+      "era": "1915 起（40 歲，加里波利慘敗後）",
+      "fact": "他把憂鬱叫『黑狗』。政壇失意的荒野歲月，靠繪畫與寫作撐住自己，說『要不是畫畫，我活不下去』。當政治家這個身分垮了，畫家／作家這些『其他的我』接住了他。",
+      "source": "https://winstonchurchill.hillsdale.edu/churchill-and-depression/",
+      "status": "verified"
+    },
+    "used": "2026-06-15"
   },
-  "used": "2026-06-15"
- },
- {
-  "id": "f031",
-  "concept": "終點歷史錯覺（End of History Illusion）",
-  "domain": "心理與認知",
-  "title": "滿屋的盡頭",
-  "ts": "2026-06-13T13:50:11.845Z",
-  "enriched": true,
-  "historical": {
-   "figure": "摩西奶奶（Grandma Moses, Anna Mary Robertson Moses）",
-   "era": "1860–1961；約 76–78 歲才開始畫畫",
-   "fact": "務農持家一輩子，七十多歲因關節炎拿不動繡針，改拿畫筆——一畫成名，一生創作逾 1500 幅，88 歲還被選為年度女性。你以為定型的那一刻，人生才剛要改寫。",
-   "source": "https://time.com/4482257/grandma-moses-history/",
-   "status": "verified"
+  {
+    "id": "f031",
+    "concept": "終點歷史錯覺（End of History Illusion）",
+    "domain": "心理與認知",
+    "title": "滿屋的盡頭",
+    "ts": "2026-06-13T13:50:11.845Z",
+    "enriched": true,
+    "historical": {
+      "figure": "摩西奶奶（Grandma Moses, Anna Mary Robertson Moses）",
+      "era": "1860–1961；約 76–78 歲才開始畫畫",
+      "fact": "務農持家一輩子，七十多歲因關節炎拿不動繡針，改拿畫筆——一畫成名，一生創作逾 1500 幅，88 歲還被選為年度女性。你以為定型的那一刻，人生才剛要改寫。",
+      "source": "https://time.com/4482257/grandma-moses-history/",
+      "status": "verified"
+    },
+    "used": "2024-10-04",
+    "note": "摩西奶奶故事 2024-10-04〈宜無所畏懼〉整篇講過"
   },
-  "used": "2024-10-04",
-  "note": "摩西奶奶故事 2024-10-04〈宜無所畏懼〉整篇講過"
- },
- {
-  "id": "f037",
-  "concept": "多數無知（Pluralistic Ignorance）",
-  "domain": "社會與行為",
-  "title": "國王的湯",
-  "ts": "2026-06-13T13:51:34.600Z",
-  "enriched": true,
-  "historical": {
-   "figure": "1989 東歐變革（經濟學家 Timur Kuran 的經典分析）",
-   "era": "1989",
-   "fact": "東歐人私下普遍厭惡政權，卻因看到別人表面順從、以為只有自己反對，於是繼續沉默，維持了一個沒人想要的局面——直到恐懼的臨界點被突破，骨牌式崩解，連學者都被『突如其來』嚇到。",
-   "source": "https://www.cambridge.org/core/journals/world-politics/article/abs/now-out-of-never-the-element-of-surprise-in-the-east-european-revolution-of-1989/B947420222BF565D0B2D93099E704BF2",
-   "status": "verified"
+  {
+    "id": "f037",
+    "concept": "多數無知（Pluralistic Ignorance）",
+    "domain": "社會與行為",
+    "title": "國王的湯",
+    "ts": "2026-06-13T13:51:34.600Z",
+    "enriched": true,
+    "historical": {
+      "figure": "1989 東歐變革（經濟學家 Timur Kuran 的經典分析）",
+      "era": "1989",
+      "fact": "東歐人私下普遍厭惡政權，卻因看到別人表面順從、以為只有自己反對，於是繼續沉默，維持了一個沒人想要的局面——直到恐懼的臨界點被突破，骨牌式崩解，連學者都被『突如其來』嚇到。",
+      "source": "https://www.cambridge.org/core/journals/world-politics/article/abs/now-out-of-never-the-element-of-surprise-in-the-east-european-revolution-of-1989/B947420222BF565D0B2D93099E704BF2",
+      "status": "verified"
+    }
+  },
+  {
+    "id": "f046",
+    "concept": "反事實思考與近錯後悔（Counterfactual Thinking / Near-miss Regret）",
+    "domain": "心理與認知",
+    "title": "差一步的人",
+    "ts": "2026-06-13T13:52:20.874Z",
+    "enriched": true,
+    "historical": {
+      "figure": "1992 巴塞隆納奧運獎牌得主（Medvec, Madey & Gilovich 1995 研究）",
+      "era": "研究 1995／賽事 1992",
+      "fact": "研究分析頒獎台表情：銅牌得主普遍比銀牌得主更快樂。銀牌的反事實是『差點金牌』(往上比、近錯之痛)，銅牌的是『差點沒牌』(往下比、慶幸)。贏得越接近，痛得越深。",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/7473022/",
+      "status": "verified"
+    },
+    "used": "2026-08-02"
+  },
+  {
+    "id": "f030",
+    "concept": "蔡格尼效應（Zeigarnik Effect）",
+    "domain": "心理與認知",
+    "title": "記不住的帳",
+    "ts": "2026-06-15T06:46:19.500Z",
+    "enriched": true,
+    "historical": {
+      "figure": "Bluma Zeigarnik（布魯瑪·蔡格尼）與其師 Kurt Lewin",
+      "era": "1927",
+      "fact": "Lewin 觀察維也納咖啡館侍者能記住未結帳的點單、結帳即忘；學生蔡格尼以實驗驗證並於 1927 年發表——被中斷任務的記憶度比已完成的高約九成。",
+      "source": "https://en.wikipedia.org/wiki/Zeigarnik_effect",
+      "status": "verified"
+    },
+    "note": "⚠️ 概念 2026-04-03〈宜翻頁〉已用過，回鍋需差異化"
+  },
+  {
+    "id": "f130",
+    "concept": "聚光燈效應（Spotlight Effect）",
+    "domain": "心理與認知",
+    "title": "沒人看見的污漬",
+    "ts": "2026-06-17T07:38:34.167Z",
+    "enriched": true,
+    "historical": {
+      "figure": "Thomas Gilovich 研究團隊（康乃爾大學）",
+      "era": "2000 年",
+      "fact": "Barry Manilow T 恤實驗：讓學生穿上經前測公認最尷尬的歌手頭像 T 恤走進滿是同學的教室，穿的人以為約一半的人注意到了，實際只有約 23%——想像中的觀眾，是真實觀眾的兩倍大。",
+      "source": "https://www.researchgate.net/publication/12609065_The_Spotlight_Effect_in_Social_Judgment_An_Egocentric_Bias_in_Estimates_of_the_Salience_of_One's_Own_Actions_and_Appearance",
+      "status": "verified"
+    },
+    "used": "2026-07-03"
+  },
+  {
+    "id": "f034",
+    "concept": "可能自我（Possible Selves）",
+    "domain": "心理與認知",
+    "title": "沒人穿的衣服",
+    "ts": "2026-06-17T07:42:14.288Z",
+    "enriched": false
+  },
+  {
+    "id": "f134",
+    "concept": "最速降線問題（Brachistochrone Problem）",
+    "domain": "數學與物理",
+    "title": "彎路先到的信差",
+    "ts": "2026-06-18T05:59:47.714Z",
+    "enriched": false
+  },
+  {
+    "id": "f032",
+    "concept": "鏡中自我（Looking-glass Self）",
+    "domain": "心理與認知",
+    "title": "借來的那張臉",
+    "ts": "2026-06-19T06:16:56.322Z",
+    "enriched": true,
+    "historical": {
+      "figure": "Charles Horton Cooley（查爾斯·霍頓·庫利）",
+      "era": "1902",
+      "fact": "美國社會學家庫利在《人性與社會秩序》提出鏡中自我：自我概念經由「想像自己在他人眼中的樣子→想像對方的評價→據此產生對自己的感受」三步長出——身分需要一個社會性的他者才成立。",
+      "source": "https://en.wikipedia.org/wiki/Looking-glass_self",
+      "status": "verified"
+    }
+  },
+  {
+    "id": "f027",
+    "concept": "目標漸近效應（Goal-Gradient Effect）",
+    "domain": "心理與認知",
+    "title": "越走越快的商隊",
+    "ts": "2026-06-19T06:19:15.586Z",
+    "enriched": true,
+    "historical": {
+      "figure": "Clark L. Hull（克拉克·赫爾）",
+      "era": "1932（假說）／1934（跑道實驗）",
+      "fact": "行為心理學家赫爾 1932 年在《心理學評論》提出目標漸近假說；1934 年在《比較心理學期刊》發表直線跑道實驗：用電子接點分段計時，老鼠越接近終點的食物跑得越快——動機強度隨著與目標的距離縮短而升高。",
+      "source": "https://psycnet.apa.org/record/1932-01362-001",
+      "status": "verified",
+      "source2": "Hull 1934, Journal of Comparative Psychology 17:393–422"
+    },
+    "used": "2026-10-05"
+  },
+  {
+    "id": "f020",
+    "concept": "規劃謬誤（Planning Fallacy）",
+    "domain": "心理與認知",
+    "title": "說好三天的橋",
+    "ts": "2026-06-20T07:46:43.583Z",
+    "enriched": false
+  },
+  {
+    "id": "f106",
+    "concept": "編碼特定性原則（Encoding Specificity Principle）",
+    "domain": "心理與認知",
+    "title": "黃昏的那鍋湯",
+    "ts": "2026-06-20T07:51:27.362Z",
+    "enriched": false
+  },
+  {
+    "id": "f049",
+    "concept": "系統合理化（System Justification）",
+    "domain": "社會與行為",
+    "title": "替繩子說話的人",
+    "ts": "2026-06-20T07:53:05.015Z",
+    "enriched": false
+  },
+  {
+    "id": "f013",
+    "concept": "享樂適應／享樂跑步機（Hedonic Adaptation / Hedonic Treadmill）",
+    "domain": "心理與認知",
+    "title": "永遠差一盞燈",
+    "ts": "2026-06-20T09:09:03.157Z",
+    "enriched": true,
+    "historical": {
+      "figure": "心理學家 Richard Lucas、Ed Diener 等",
+      "era": "2003（德國社會經濟追蹤調查，15 年、逾 2.4 萬人）",
+      "fact": "追蹤結婚前後的生活滿意度：平均在結婚前後上升、婚後約兩年回到原本水準；但個體差異很大，有些人多年後仍比婚前快樂。",
+      "source": "https://doi.org/10.1037/0022-3514.84.3.527",
+      "status": "verified"
+    },
+    "used": "2026-10-07"
+  },
+  {
+    "id": "f199",
+    "concept": "臨界慢化（Critical Slowing Down）",
+    "domain": "數學與物理",
+    "title": "橋還沒塌之前",
+    "ts": "2026-06-22T06:44:25.662Z",
+    "enriched": true,
+    "historical": {
+      "figure": "Marten Scheffer 與 van de Leemput 團隊",
+      "era": "2009／2014",
+      "fact": "謝弗 2009 年《自然》提出臨界轉變預警訊號：系統逼近臨界點時，受擾動後回彈復原的速度會越來越慢；2014 年《PNAS》證實人的情緒同樣適用——憂鬱發作與復原前，心理系統的回彈先變慢。",
+      "source": "https://www.pnas.org/doi/10.1073/pnas.1312114110",
+      "status": "verified"
+    }
   }
- },
- {
-  "id": "f046",
-  "concept": "反事實思考與近錯後悔（Counterfactual Thinking / Near-miss Regret）",
-  "domain": "心理與認知",
-  "title": "差一步的人",
-  "ts": "2026-06-13T13:52:20.874Z",
-  "enriched": true,
-  "historical": {
-   "figure": "1992 巴塞隆納奧運獎牌得主（Medvec, Madey & Gilovich 1995 研究）",
-   "era": "研究 1995／賽事 1992",
-   "fact": "研究分析頒獎台表情：銅牌得主普遍比銀牌得主更快樂。銀牌的反事實是『差點金牌』(往上比、近錯之痛)，銅牌的是『差點沒牌』(往下比、慶幸)。贏得越接近，痛得越深。",
-   "source": "https://pubmed.ncbi.nlm.nih.gov/7473022/",
-   "status": "verified"
-  },
-  "used": "2026-08-02"
- },
- {
-  "id": "f030",
-  "concept": "蔡格尼效應（Zeigarnik Effect）",
-  "domain": "心理與認知",
-  "title": "記不住的帳",
-  "ts": "2026-06-15T06:46:19.500Z",
-  "enriched": true,
-  "historical": {
-   "figure": "Bluma Zeigarnik（布魯瑪·蔡格尼）與其師 Kurt Lewin",
-   "era": "1927",
-   "fact": "Lewin 觀察維也納咖啡館侍者能記住未結帳的點單、結帳即忘；學生蔡格尼以實驗驗證並於 1927 年發表——被中斷任務的記憶度比已完成的高約九成。",
-   "source": "https://en.wikipedia.org/wiki/Zeigarnik_effect",
-   "status": "verified"
-  },
-  "note": "⚠️ 概念 2026-04-03〈宜翻頁〉已用過，回鍋需差異化"
- },
- {
-  "id": "f130",
-  "concept": "聚光燈效應（Spotlight Effect）",
-  "domain": "心理與認知",
-  "title": "沒人看見的污漬",
-  "ts": "2026-06-17T07:38:34.167Z",
-  "enriched": true,
-  "historical": {
-   "figure": "Thomas Gilovich 研究團隊（康乃爾大學）",
-   "era": "2000 年",
-   "fact": "Barry Manilow T 恤實驗：讓學生穿上經前測公認最尷尬的歌手頭像 T 恤走進滿是同學的教室，穿的人以為約一半的人注意到了，實際只有約 23%——想像中的觀眾，是真實觀眾的兩倍大。",
-   "source": "https://www.researchgate.net/publication/12609065_The_Spotlight_Effect_in_Social_Judgment_An_Egocentric_Bias_in_Estimates_of_the_Salience_of_One's_Own_Actions_and_Appearance",
-   "status": "verified"
-  },
-  "used": "2026-07-03"
- },
- {
-  "id": "f034",
-  "concept": "可能自我（Possible Selves）",
-  "domain": "心理與認知",
-  "title": "沒人穿的衣服",
-  "ts": "2026-06-17T07:42:14.288Z",
-  "enriched": false
- },
- {
-  "id": "f134",
-  "concept": "最速降線問題（Brachistochrone Problem）",
-  "domain": "數學與物理",
-  "title": "彎路先到的信差",
-  "ts": "2026-06-18T05:59:47.714Z",
-  "enriched": false
- },
- {
-  "id": "f032",
-  "concept": "鏡中自我（Looking-glass Self）",
-  "domain": "心理與認知",
-  "title": "借來的那張臉",
-  "ts": "2026-06-19T06:16:56.322Z",
-  "enriched": true,
-  "historical": {
-   "figure": "Charles Horton Cooley（查爾斯·霍頓·庫利）",
-   "era": "1902",
-   "fact": "美國社會學家庫利在《人性與社會秩序》提出鏡中自我：自我概念經由「想像自己在他人眼中的樣子→想像對方的評價→據此產生對自己的感受」三步長出——身分需要一個社會性的他者才成立。",
-   "source": "https://en.wikipedia.org/wiki/Looking-glass_self",
-   "status": "verified"
-  }
- },
- {
-  "id": "f027",
-  "concept": "目標漸近效應（Goal-Gradient Effect）",
-  "domain": "心理與認知",
-  "title": "越走越快的商隊",
-  "ts": "2026-06-19T06:19:15.586Z",
-  "enriched": true,
-  "historical": {
-   "figure": "Clark L. Hull（克拉克·赫爾）",
-   "era": "1932（假說）／1934（跑道實驗）",
-   "fact": "行為心理學家赫爾 1932 年在《心理學評論》提出目標漸近假說；1934 年在《比較心理學期刊》發表直線跑道實驗：用電子接點分段計時，老鼠越接近終點的食物跑得越快——動機強度隨著與目標的距離縮短而升高。",
-   "source": "https://psycnet.apa.org/record/1932-01362-001",
-   "status": "verified",
-   "source2": "Hull 1934, Journal of Comparative Psychology 17:393–422"
-  },
-  "used": "2026-10-05"
- },
- {
-  "id": "f020",
-  "concept": "規劃謬誤（Planning Fallacy）",
-  "domain": "心理與認知",
-  "title": "說好三天的橋",
-  "ts": "2026-06-20T07:46:43.583Z",
-  "enriched": false
- },
- {
-  "id": "f106",
-  "concept": "編碼特定性原則（Encoding Specificity Principle）",
-  "domain": "心理與認知",
-  "title": "黃昏的那鍋湯",
-  "ts": "2026-06-20T07:51:27.362Z",
-  "enriched": false
- },
- {
-  "id": "f049",
-  "concept": "系統合理化（System Justification）",
-  "domain": "社會與行為",
-  "title": "替繩子說話的人",
-  "ts": "2026-06-20T07:53:05.015Z",
-  "enriched": false
- },
- {
-  "id": "f013",
-  "concept": "享樂適應／享樂跑步機（Hedonic Adaptation / Hedonic Treadmill）",
-  "domain": "心理與認知",
-  "title": "永遠差一盞燈",
-  "ts": "2026-06-20T09:09:03.157Z",
-  "enriched": false
- },
- {
-  "id": "f199",
-  "concept": "臨界慢化（Critical Slowing Down）",
-  "domain": "數學與物理",
-  "title": "橋還沒塌之前",
-  "ts": "2026-06-22T06:44:25.662Z",
-  "enriched": true,
-  "historical": {
-   "figure": "Marten Scheffer 與 van de Leemput 團隊",
-   "era": "2009／2014",
-   "fact": "謝弗 2009 年《自然》提出臨界轉變預警訊號：系統逼近臨界點時，受擾動後回彈復原的速度會越來越慢；2014 年《PNAS》證實人的情緒同樣適用——憂鬱發作與復原前，心理系統的回彈先變慢。",
-   "source": "https://www.pnas.org/doi/10.1073/pnas.1312114110",
-   "status": "verified"
-  }
- }
 ]
