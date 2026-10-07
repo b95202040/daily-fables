@@ -1,25 +1,26 @@
 {
-  "date": "2026-10-07",
-  "display_date": "10/7",
-  "weekday": "星期三",
-  "lunar": "八月廿七",
-  "term": "秋分後十四日",
-  "wenyan": "宜想見你",
-  "wenyan_full": "宜想見你",
-  "quote": "在我眼裡\n你永遠都是這麼百看不厭的好看",
+  "date": "2026-10-08",
+  "display_date": "10/8",
+  "weekday": "星期四",
+  "lunar": "八月廿八",
+  "term": "寒露",
+  "wenyan": "忌對自己太小氣",
+  "wenyan_full": "忌對自己太小氣",
+  "quote": "如果那筆錢能換來更好的情緒\n更健康的身體、更豐富的人生體驗\n就去花吧！",
   "quote_lines": [
-    "在我眼裡",
-    "你永遠都是這麼百看不厭的好看"
+    "如果那筆錢能換來更好的情緒",
+    "更健康的身體、更豐富的人生體驗",
+    "就去花吧！"
   ],
-  "source": "影集《我可能不會愛你》",
-  "source_work": "影集《我可能不會愛你》",
-  "source_author": "",
+  "source": "作家／丁菱娟《人生漸漸明白，50歲後才是最好的開始》",
+  "source_work": "《人生漸漸明白，50歲後才是最好的開始》",
+  "source_author": "作家／丁菱娟",
   "excerpt": {
-    "hook": "〈週三告白日〉人呀，會慢慢習慣身邊所有的美好；但是關於你的一切，我永遠都不想習慣",
-    "teaser": "你還記得，第一次牽起情人的手的時候嗎？"
+    "hook": "〈週四，我們聊聊人生〉關於金錢焦慮：一筆錢該不該花，常常是由別人替你定義；但花得值不值得，卻只有你自己的人生才能回答",
+    "teaser": "前陣子在社群上看到了一支短影片，是在說"
   },
-  "ig_url": "https://www.instagram.com/p/DeK6gTlErZ_/",
+  "ig_url": "https://www.instagram.com/p/DeNfWzAGYfG/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-07T07:01:11+08:00"
+  "updated": "2026-10-08T07:01:10+08:00"
 }
