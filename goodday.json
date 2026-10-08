@@ -1,26 +1,24 @@
 {
-  "date": "2026-10-08",
-  "display_date": "10/8",
-  "weekday": "星期四",
-  "lunar": "八月廿八",
-  "term": "寒露",
-  "wenyan": "忌對自己太小氣",
-  "wenyan_full": "忌對自己太小氣",
-  "quote": "如果那筆錢能換來更好的情緒\n更健康的身體、更豐富的人生體驗\n就去花吧！",
+  "date": "2026-10-09",
+  "display_date": "10/9",
+  "weekday": "星期五",
+  "lunar": "八月廿九",
+  "term": "寒露後一日",
+  "wenyan": "宜為自己而活",
+  "wenyan_full": "宜為自己而活",
+  "quote": "",
   "quote_lines": [
-    "如果那筆錢能換來更好的情緒",
-    "更健康的身體、更豐富的人生體驗",
-    "就去花吧！"
+    ""
   ],
-  "source": "作家／丁菱娟《人生漸漸明白，50歲後才是最好的開始》",
-  "source_work": "《人生漸漸明白，50歲後才是最好的開始》",
-  "source_author": "作家／丁菱娟",
+  "source": "Corinne Bailey Rae〈Put Your Records On〉",
+  "source_work": "〈Put Your Records On〉",
+  "source_author": "Corinne Bailey Rae",
   "excerpt": {
-    "hook": "〈週四，我們聊聊人生〉關於金錢焦慮：一筆錢該不該花，常常是由別人替你定義；但花得值不值得，卻只有你自己的人生才能回答",
-    "teaser": "前陣子在社群上看到了一支短影片，是在說"
+    "hook": "〈給週五一首歌的時間〉你不必先變成誰的模樣，才配得上想要的生活；用真心喜歡的方式自在地活，那才是最適合你的答案",
+    "teaser": "你會不會也和我一樣"
   },
-  "ig_url": "https://www.instagram.com/p/DeNfWzAGYfG/",
+  "ig_url": "https://www.instagram.com/p/DeQEKn3GXgX/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-08T07:01:10+08:00"
+  "updated": "2026-10-09T07:01:11+08:00"
 }
