@@ -1,24 +1,27 @@
 {
-  "date": "2026-10-09",
-  "display_date": "10/9",
-  "weekday": "星期五",
-  "lunar": "八月廿九",
-  "term": "寒露後一日",
-  "wenyan": "宜為自己而活",
-  "wenyan_full": "宜為自己而活",
-  "quote": "",
+  "date": "2026-10-10",
+  "display_date": "10/10",
+  "weekday": "星期六",
+  "lunar": "九月初一",
+  "term": "寒露後二日",
+  "wenyan": "宜去看看未知的遠方",
+  "wenyan_full": "宜去看看未知的遠方",
+  "quote": "我們曾仰望星空，\n思索我們在群星間的歸宿。\n如今，我們卻只顧著低頭，\n憂心自己在塵土中的立足之地。",
   "quote_lines": [
-    ""
+    "我們曾仰望星空",
+    "思索我們在群星間的歸宿",
+    "如今，我們卻只顧著低頭",
+    "憂心自己在塵土中的立足之地"
   ],
-  "source": "Corinne Bailey Rae〈Put Your Records On〉",
-  "source_work": "〈Put Your Records On〉",
-  "source_author": "Corinne Bailey Rae",
+  "source": "電影《星際效應》",
+  "source_work": "電影《星際效應》",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉你不必先變成誰的模樣，才配得上想要的生活；用真心喜歡的方式自在地活，那才是最適合你的答案",
-    "teaser": "你會不會也和我一樣"
+    "hook": "安穩的日子給你勇氣，偶爾的未知給你心跳；那些想逃跑的熱情，都是你還在成長著的證明",
+    "teaser": "每天規律地起床、吃早餐、上班"
   },
-  "ig_url": "https://www.instagram.com/p/DeQEKn3GXgX/",
+  "ig_url": "https://www.instagram.com/p/DeSo51_mf3h/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-09T07:01:11+08:00"
+  "updated": "2026-10-10T07:01:12+08:00"
 }
