@@ -1,27 +1,26 @@
 {
-  "date": "2026-10-10",
-  "display_date": "10/10",
-  "weekday": "星期六",
-  "lunar": "九月初一",
-  "term": "寒露後二日",
-  "wenyan": "宜去看看未知的遠方",
-  "wenyan_full": "宜去看看未知的遠方",
-  "quote": "我們曾仰望星空，\n思索我們在群星間的歸宿。\n如今，我們卻只顧著低頭，\n憂心自己在塵土中的立足之地。",
+  "date": "2026-10-11",
+  "display_date": "10/11",
+  "weekday": "星期日",
+  "lunar": "九月初二",
+  "term": "寒露後三日",
+  "wenyan": "宜練習喜歡自己",
+  "wenyan_full": "宜練習喜歡自己",
+  "quote": "你不必每個時候都閃閃發光\n但你可以慢慢地\n讓自己變得溫暖、穩定，有力量",
   "quote_lines": [
-    "我們曾仰望星空",
-    "思索我們在群星間的歸宿",
-    "如今，我們卻只顧著低頭",
-    "憂心自己在塵土中的立足之地"
+    "你不必每個時候都閃閃發光",
+    "但你可以慢慢地",
+    "讓自己變得溫暖、穩定，有力量"
   ],
-  "source": "電影《星際效應》",
-  "source_work": "電影《星際效應》",
-  "source_author": "",
+  "source": "主持人／李霈瑜《VOGUE Taiwan 專訪（2025-07-16）》",
+  "source_work": "VOGUE Taiwan 專訪（2025-07-16）",
+  "source_author": "主持人／李霈瑜",
   "excerpt": {
-    "hook": "安穩的日子給你勇氣，偶爾的未知給你心跳；那些想逃跑的熱情，都是你還在成長著的證明",
-    "teaser": "每天規律地起床、吃早餐、上班"
+    "hook": "記得每一項工作、記得朋友生日、記得家人口味的你，今天也請記得多喜歡一下自己吧",
+    "teaser": "如果現在請你腦中想到最好的朋友"
   },
-  "ig_url": "https://www.instagram.com/p/DeSo51_mf3h/",
+  "ig_url": "https://www.instagram.com/p/DeVNtz8mW_8/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-10T07:01:12+08:00"
+  "updated": "2026-10-11T07:01:10+08:00"
 }
