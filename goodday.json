@@ -1,26 +1,24 @@
 {
-  "date": "2026-10-15",
-  "display_date": "10/15",
-  "weekday": "星期四",
-  "lunar": "九月初六",
-  "term": "寒露後七日",
-  "wenyan": "宜把煩惱交給天光",
-  "wenyan_full": "宜把煩惱交給天光",
-  "quote": "就算是在最黑暗的時刻\n你也依然能找到快樂\n只是要記得，你得把燈打開",
+  "date": "2026-10-16",
+  "display_date": "10/16",
+  "weekday": "星期五",
+  "lunar": "九月初七",
+  "term": "寒露後八日",
+  "wenyan": "宜還不錯的一天",
+  "wenyan_full": "宜還不錯的一天",
+  "quote": "",
   "quote_lines": [
-    "就算是在最黑暗的時刻",
-    "你也依然能找到快樂",
-    "只是要記得，你得把燈打開"
+    ""
   ],
-  "source": "阿不思・鄧不利多（邁可・坎邦 飾）電影《哈利波特：阿茲卡班的逃犯》",
-  "source_work": "電影《哈利波特：阿茲卡班的逃犯》",
-  "source_author": "阿不思・鄧不利多（邁可・坎邦 飾）",
+  "source": "Louis Armstrong〈What a Wonderful World〉",
+  "source_work": "〈What a Wonderful World〉",
+  "source_author": "Louis Armstrong",
   "excerpt": {
-    "hook": "〈週四，我們聊聊人生〉一切的問題，都不會因為睡飽了就變比較簡單；但先睡飽飽的你，一定可以比睡不飽的你，更有力氣回答它",
-    "teaser": "最近又進入了頻繁失眠的期間"
+    "hook": "〈給週五一首歌的時間〉正是在覺得一切都很不好的時候，更需要為了自己，試著去重新看見生活裡，哪怕只有一點點的小小美好",
+    "teaser": "我們人類天生"
   },
-  "ig_url": "https://www.instagram.com/p/Defg7J1Geci/",
+  "ig_url": "https://www.instagram.com/p/DeiFtncGdrk/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-15T07:01:09+08:00"
+  "updated": "2026-10-16T07:01:07+08:00"
 }
