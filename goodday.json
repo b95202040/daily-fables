@@ -1,25 +1,26 @@
 {
-  "date": "2026-10-18",
-  "display_date": "10/18",
-  "weekday": "星期日",
-  "lunar": "九月初九",
-  "term": "寒露後十日",
-  "wenyan": "宜本日公休",
-  "wenyan_full": "宜本日公休",
-  "quote": "你可以還是那個全力以赴的人\n但你不需要把自己燃燒殆盡",
+  "date": "2026-10-19",
+  "display_date": "10/19",
+  "weekday": "星期一",
+  "lunar": "九月初十",
+  "term": "寒露後十一日",
+  "wenyan": "宜踏一步",
+  "wenyan_full": "宜踏一步",
+  "quote": "可能不能一下子就過著我想要的生活\n但一點點小小的改變\n就足以給我繼續生活下去的勇氣",
   "quote_lines": [
-    "你可以還是那個全力以赴的人",
-    "但你不需要把自己燃燒殆盡"
+    "可能不能一下子就過著我想要的生活",
+    "但一點點小小的改變",
+    "就足以給我繼續生活下去的勇氣"
   ],
-  "source": "Venus Williams《大威廉絲全力以赴》",
-  "source_work": "《大威廉絲全力以赴》",
-  "source_author": "Venus Williams",
+  "source": "深海晶（新垣結衣 飾）日劇《非獸性男女》",
+  "source_work": "日劇《非獸性男女》",
+  "source_author": "深海晶（新垣結衣 飾）",
   "excerpt": {
-    "hook": "",
-    "teaser": ""
+    "hook": "就算是屬於你的美好，也需要你伸出手，才能把它們帶回身邊喔",
+    "teaser": "最近覺得自己的生活"
   },
-  "ig_url": "https://www.instagram.com/p/DenPR6lmVer/",
+  "ig_url": "https://www.instagram.com/p/Dep0I9cmY8p/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-18T07:01:07+08:00"
+  "updated": "2026-10-19T07:01:10+08:00"
 }
