@@ -1,26 +1,25 @@
 {
-  "date": "2026-10-19",
-  "display_date": "10/19",
-  "weekday": "星期一",
-  "lunar": "九月初十",
-  "term": "寒露後十一日",
-  "wenyan": "宜踏一步",
-  "wenyan_full": "宜踏一步",
-  "quote": "可能不能一下子就過著我想要的生活\n但一點點小小的改變\n就足以給我繼續生活下去的勇氣",
+  "date": "2026-10-20",
+  "display_date": "10/20",
+  "weekday": "星期二",
+  "lunar": "九月十一",
+  "term": "寒露後十二日",
+  "wenyan": "宜謝謝曾經有你",
+  "wenyan_full": "宜謝謝曾經有你",
+  "quote": "無論他們用何種方式進入或離開我的人生\n都讓我變成一個更好的人",
   "quote_lines": [
-    "可能不能一下子就過著我想要的生活",
-    "但一點點小小的改變",
-    "就足以給我繼續生活下去的勇氣"
+    "無論他們用何種方式進入或離開我的人生",
+    "都讓我變成一個更好的人"
   ],
-  "source": "深海晶（新垣結衣 飾）日劇《非獸性男女》",
-  "source_work": "日劇《非獸性男女》",
-  "source_author": "深海晶（新垣結衣 飾）",
+  "source": "作家／女王《謝謝你（不）愛我》",
+  "source_work": "《謝謝你（不）愛我》",
+  "source_author": "作家／女王",
   "excerpt": {
-    "hook": "就算是屬於你的美好，也需要你伸出手，才能把它們帶回身邊喔",
-    "teaser": "最近覺得自己的生活"
+    "hook": "〈週二樹洞信箱〉如果沒有任何人可以給你答案，那就自己給自己一個吧",
+    "teaser": "「親愛的樹洞，謝謝你聽我說"
   },
-  "ig_url": "https://www.instagram.com/p/Dep0I9cmY8p/",
+  "ig_url": "https://www.instagram.com/p/DesY2wwmf2l/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-19T07:01:10+08:00"
+  "updated": "2026-10-20T07:01:15+08:00"
 }
