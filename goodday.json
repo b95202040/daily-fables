@@ -1,26 +1,24 @@
 {
-  "date": "2026-10-22",
-  "display_date": "10/22",
-  "weekday": "星期四",
-  "lunar": "九月十三",
-  "term": "寒露後十四日",
-  "wenyan": "宜看見自己的重要",
-  "wenyan_full": "宜看見自己的重要",
-  "quote": "即使有人說，你真是個討厭的人\n那也不過是那個人的評價\n自己的價值不會因此而降低",
+  "date": "2026-10-23",
+  "display_date": "10/23",
+  "weekday": "星期五",
+  "lunar": "九月十四",
+  "term": "霜降",
+  "wenyan": "宜人生的大冒險",
+  "wenyan_full": "宜人生的大冒險",
+  "quote": "",
   "quote_lines": [
-    "即使有人說，你真是個討厭的人",
-    "那也不過是那個人的評價",
-    "自己的價值不會因此而降低"
+    ""
   ],
-  "source": "岸見一郎《自在感的練習》",
-  "source_work": "《自在感的練習》",
-  "source_author": "岸見一郎",
+  "source": "松本梨香《めざせポケモンマスター 目標是寶可夢大師》",
+  "source_work": "《めざせポケモンマスター 目標是寶可夢大師》",
+  "source_author": "松本梨香",
   "excerpt": {
-    "hook": "〈週四，我們聊聊人生〉有人喜歡，就一定會有人討厭；所以別把太多時間花在別人的觀點上了，留給你能修正的事實吧",
-    "teaser": "前一陣子在社群上"
+    "hook": "〈給週五一首歌的時間 x 好日曆徵才中〉\n那些你做不到的事，請交給我；而我做不到的事，就交給你吧",
+    "teaser": "你小時候最喜歡的卡通是什麼呢？"
   },
-  "ig_url": "https://www.instagram.com/p/DexifVwmSMg/",
+  "ig_url": "https://www.instagram.com/p/De0HOBFEiEc/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-22T07:01:11+08:00"
+  "updated": "2026-10-23T07:01:09+08:00"
 }
