@@ -1,24 +1,25 @@
 {
-  "date": "2026-10-23",
-  "display_date": "10/23",
-  "weekday": "星期五",
-  "lunar": "九月十四",
-  "term": "霜降",
-  "wenyan": "宜人生的大冒險",
-  "wenyan_full": "宜人生的大冒險",
-  "quote": "",
+  "date": "2026-10-24",
+  "display_date": "10/24",
+  "weekday": "星期六",
+  "lunar": "九月十五",
+  "term": "霜降後一日",
+  "wenyan": "宜在矛盾中平靜前行",
+  "wenyan_full": "宜在矛盾中平靜前行",
+  "quote": "我還不確定自己要怎麼過這一生\n但我知道，我會好好活在每一刻",
   "quote_lines": [
-    ""
+    "我還不確定自己要怎麼過這一生",
+    "但我知道，我會好好活在每一刻"
   ],
-  "source": "松本梨香《めざせポケモンマスター 目標是寶可夢大師》",
-  "source_work": "《めざせポケモンマスター 目標是寶可夢大師》",
-  "source_author": "松本梨香",
+  "source": "皮克斯動畫電影《靈魂急轉彎》",
+  "source_work": "皮克斯動畫電影《靈魂急轉彎》",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間 x 好日曆徵才中〉\n那些你做不到的事，請交給我；而我做不到的事，就交給你吧",
-    "teaser": "你小時候最喜歡的卡通是什麼呢？"
+    "hook": "有一顆漂亮的初心很好，但是哪怕初心一點都不動人，你也一定能在前進的半路上，找到想留在身邊的寶藏",
+    "teaser": "如果沒有人羨慕"
   },
-  "ig_url": "https://www.instagram.com/p/De0HOBFEiEc/",
+  "ig_url": "https://www.instagram.com/p/De2sFFnmbv5/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-23T07:01:09+08:00"
+  "updated": "2026-10-24T07:01:11+08:00"
 }
