@@ -1,25 +1,26 @@
 {
-  "date": "2026-10-25",
-  "display_date": "10/25",
-  "weekday": "星期日",
-  "lunar": "九月十六",
-  "term": "霜降後二日",
-  "wenyan": "忌活在數字裡",
-  "wenyan_full": "忌活在數字裡",
-  "quote": "節儉和存錢是為了過得更幸福\n不能為了節儉而節儉，為了存錢而存錢",
+  "date": "2026-10-26",
+  "display_date": "10/26",
+  "weekday": "星期一",
+  "lunar": "九月十七",
+  "term": "霜降後三日",
+  "wenyan": "宜開始變好",
+  "wenyan_full": "宜開始變好",
+  "quote": "不要害怕自己要去經歷一些什麼\n因為你要相信自己\n你可以成為你想要的樣子",
   "quote_lines": [
-    "節儉和存錢是為了過得更幸福",
-    "不能為了節儉而節儉，為了存錢而存錢"
+    "不要害怕自己要去經歷一些什麼",
+    "因為你要相信自己",
+    "你可以成為你想要的樣子"
   ],
-  "source": "作家／原田比香",
+  "source": "演員／劉品言",
   "source_work": "",
-  "source_author": "作家／原田比香",
+  "source_author": "演員／劉品言",
   "excerpt": {
-    "hook": "〈週日閱讀 × 文末贈書〉你把最多錢花在什麼地方，那裡，其實就是你的人生喔",
-    "teaser": "收入，或者說薪水對我來說"
+    "hook": "就算今年只剩下 67 天，你一定也還來得及，讓人生開始變好",
+    "teaser": "你有聽過這個在國外社群上正熱門的"
   },
-  "ig_url": "https://www.instagram.com/p/De5Q50hGVZ5/",
+  "ig_url": "https://www.instagram.com/p/De71tEimQUa/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-25T07:01:12+08:00"
+  "updated": "2026-10-26T07:01:07+08:00"
 }
