@@ -1,25 +1,24 @@
 {
-  "date": "2026-10-29",
-  "display_date": "10/29",
-  "weekday": "星期四",
-  "lunar": "九月二十",
-  "term": "霜降後六日",
-  "wenyan": "宜偏愛今天的自己",
-  "wenyan_full": "宜偏愛今天的自己",
-  "quote": "每一個瞬間\n都是一片獨一無二的人生拼圖",
+  "date": "2026-10-30",
+  "display_date": "10/30",
+  "weekday": "星期五",
+  "lunar": "九月廿一",
+  "term": "霜降後七日",
+  "wenyan": "宜先看向好的那一邊",
+  "wenyan_full": "宜先看向好的那一邊",
+  "quote": "",
   "quote_lines": [
-    "每一個瞬間",
-    "都是一片獨一無二的人生拼圖"
+    ""
   ],
-  "source": "日劇《First Love 初戀》",
-  "source_work": "日劇《First Love 初戀》",
-  "source_author": "",
+  "source": "盧廣仲〈善良的眼鏡〉",
+  "source_work": "〈善良的眼鏡〉",
+  "source_author": "盧廣仲",
   "excerpt": {
-    "hook": "〈週四，我們聊聊人生〉為自己多收集一點快樂吧！過去的美好，都會在將來剛剛好的時候，成為你最需要的力量喔！",
-    "teaser": "在累了一整天、提不起勁的時候"
+    "hook": "〈給週五一首歌的時間〉那些讓你想皺眉的冷淡和急躁，背後很可能，也只是一個正努力想把今天過好的人而已",
+    "teaser": "今天想和你分享的歌是"
   },
-  "ig_url": "https://www.instagram.com/p/DfDj-u7ksvv/",
+  "ig_url": "https://www.instagram.com/p/DfGI11Hmdy0/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-29T07:01:12+08:00"
+  "updated": "2026-10-30T07:01:09+08:00"
 }
