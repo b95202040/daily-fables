@@ -1,24 +1,25 @@
 {
-  "date": "2026-10-30",
-  "display_date": "10/30",
-  "weekday": "星期五",
-  "lunar": "九月廿一",
-  "term": "霜降後七日",
-  "wenyan": "宜先看向好的那一邊",
-  "wenyan_full": "宜先看向好的那一邊",
-  "quote": "",
+  "date": "2026-10-31",
+  "display_date": "10/31",
+  "weekday": "星期六",
+  "lunar": "九月廿二",
+  "term": "霜降後八日",
+  "wenyan": "宜找回生活重心",
+  "wenyan_full": "宜找回生活重心",
+  "quote": "你是為了工作而活\n我們為了生活而工作",
   "quote_lines": [
-    ""
+    "你是為了工作而活",
+    "我們為了生活而工作"
   ],
-  "source": "盧廣仲〈善良的眼鏡〉",
-  "source_work": "〈善良的眼鏡〉",
-  "source_author": "盧廣仲",
+  "source": "影集《艾蜜莉在巴黎》",
+  "source_work": "影集《艾蜜莉在巴黎》",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉那些讓你想皺眉的冷淡和急躁，背後很可能，也只是一個正努力想把今天過好的人而已",
-    "teaser": "今天想和你分享的歌是"
+    "hook": "在工作中感到倦怠，很可能不是工作本身的問題，只是你太想要在同樣的一份工作中，獲得所有渴望的一切",
+    "teaser": "「如果生活沒有攝影，我在這工作就是七分；如果有時間跟心力去攝影，加了三分，就剛剛好十分。」"
   },
-  "ig_url": "https://www.instagram.com/p/DfGI11Hmdy0/",
+  "ig_url": "https://www.instagram.com/p/DfItkd6mT5u/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-10-30T07:01:09+08:00"
+  "updated": "2026-10-31T07:01:10+08:00"
 }
