@@ -1,25 +1,26 @@
 {
-  "date": "2026-11-01",
-  "display_date": "11/1",
-  "weekday": "星期日",
-  "lunar": "九月廿三",
-  "term": "霜降後九日",
-  "wenyan": "宜安心耍廢",
-  "wenyan_full": "宜安心耍廢",
-  "quote": "當你開始覺得自己沒空休息\n就是你最該強迫自己休息的時候",
+  "date": "2026-11-02",
+  "display_date": "11/2",
+  "weekday": "星期一",
+  "lunar": "九月廿四",
+  "term": "霜降後十日",
+  "wenyan": "宜心裡有光",
+  "wenyan_full": "宜心裡有光",
+  "quote": "願你永遠選擇成為一個善良的人。\n那些給出去的愛與關懷，最終都將繞回來，\n成為療癒自己的力量。",
   "quote_lines": [
-    "當你開始覺得自己沒空休息",
-    "就是你最該強迫自己休息的時候"
+    "願你永遠選擇成為一個善良的人",
+    "那些給出去的愛與關懷，最終都將繞回來",
+    "成為療癒自己的力量"
   ],
   "source": "好日曆",
   "source_work": "",
   "source_author": "好日曆",
   "excerpt": {
-    "hook": "不管接下來是要原地躺著、還是拍拍屁股站起來重新出發，你都得先把電充飽了，才會有力氣決定",
-    "teaser": "最近有越來越多時候"
+    "hook": "〈好日曆 6 歲生日 × 留言領你的生日頁〉\n你堅持下來的每一個時刻，都會在你的生命中，留下比你想像還要大的力量",
+    "teaser": "嗨！我是好日曆"
   },
-  "ig_url": "https://www.instagram.com/p/DfLSa-wGUDa/",
+  "ig_url": "https://www.instagram.com/p/DfN3OHYkrM3/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-01T07:01:11+08:00"
+  "updated": "2026-11-02T07:01:09+08:00"
 }
