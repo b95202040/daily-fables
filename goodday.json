@@ -1,25 +1,26 @@
 {
-  "date": "2026-11-03",
-  "display_date": "11/3",
-  "weekday": "星期二",
-  "lunar": "九月廿五",
-  "term": "霜降後十一日",
-  "wenyan": "忌滿分",
-  "wenyan_full": "忌滿分",
-  "quote": "就算做不到完美\n你也可以讓它變得更好",
+  "date": "2026-11-05",
+  "display_date": "11/5",
+  "weekday": "星期四",
+  "lunar": "九月廿七",
+  "term": "霜降後十三日",
+  "wenyan": "宜越磨越合",
+  "wenyan_full": "宜越磨越合",
+  "quote": "如果靈魂伴侶真的存在\n那也不會是找到的\n靈魂伴侶，是兩個人一起造就的",
   "quote_lines": [
-    "就算做不到完美",
-    "你也可以讓它變得更好"
+    "如果靈魂伴侶真的存在",
+    "那也不會是找到的",
+    "靈魂伴侶，是兩個人一起造就的"
   ],
-  "source": "電影《芭比 Barbie》",
-  "source_work": "電影《芭比 Barbie》",
+  "source": "影集《良善之地》",
+  "source_work": "影集《良善之地》",
   "source_author": "",
   "excerpt": {
-    "hook": "〈週二樹洞信箱〉感覺生活卡住的時候，先別朝著前方硬闖；退一步回來整理自己，養精蓄銳、把方向看清楚，然後再用著自己的步調，勇敢重新出發",
-    "teaser": "「親愛的樹洞，謝謝你聽我說"
+    "hook": "〈週四，我們聊聊人生〉在愛情裡，沒有不吵架的兩個人；所以比起怎麼不吵架，不如一起學學，吵完後要怎麼更好地回到彼此身邊吧",
+    "teaser": "你最近一次和另一半吵架"
   },
-  "ig_url": "https://www.instagram.com/p/DfQcDbemYki/",
+  "ig_url": "https://www.instagram.com/p/DfVljkJGTA6/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-03T07:01:13+08:00"
+  "updated": "2026-11-05T07:01:12+08:00"
 }
