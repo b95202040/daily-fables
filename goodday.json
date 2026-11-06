@@ -1,26 +1,25 @@
 {
-  "date": "2026-11-06",
-  "display_date": "11/6",
-  "weekday": "星期五",
-  "lunar": "九月廿八",
-  "term": "霜降後十四日",
-  "wenyan": "忌流淚 宜流汗",
-  "wenyan_full": "忌流淚 宜流汗",
-  "quote": "一起去跑步 請不要說不\n我們的節奏 是吸兩口再吐\n用這樣的速度 把地球的忙碌 都拋在半路",
+  "date": "2026-11-07",
+  "display_date": "11/7",
+  "weekday": "星期六",
+  "lunar": "九月廿九",
+  "term": "立冬",
+  "wenyan": "宜踏出一小步",
+  "wenyan_full": "宜踏出一小步",
+  "quote": "當一個人看不清未來的時候\n能做的，就只有下一件對的事",
   "quote_lines": [
-    "一起去跑步 請不要說不",
-    "我們的節奏 是吸兩口再吐",
-    "用這樣的速度 把地球的忙碌 都拋在半路"
+    "當一個人看不清未來的時候",
+    "能做的，就只有下一件對的事"
   ],
-  "source": "宇宙人〈一起去跑步〉",
-  "source_work": "〈一起去跑步〉",
-  "source_author": "宇宙人",
+  "source": "電影《冰雪奇緣 2》",
+  "source_work": "電影《冰雪奇緣 2》",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉如果一直一直想不通的話，那就先別繼續想了；今天下班後，換上運動鞋，出門流點汗吧",
-    "teaser": "最近的氣溫"
+    "hook": "現在對你來說理所當然的事，都曾經是你還不會的事；所以現在眼前正面臨的這一件，你一定也可以的！",
+    "teaser": "好快又來到了一年之末"
   },
-  "ig_url": "https://www.instagram.com/p/DfYKXopGUdl/",
+  "ig_url": "https://www.instagram.com/p/DfavK2wGWdS/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-06T07:01:07+08:00"
+  "updated": "2026-11-07T07:01:12+08:00"
 }
