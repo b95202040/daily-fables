@@ -1,26 +1,25 @@
 {
-  "date": "2026-11-08",
-  "display_date": "11/8",
-  "weekday": "星期日",
-  "lunar": "九月三十",
-  "term": "立冬後一日",
-  "wenyan": "宜成為彼此的禮物",
-  "wenyan_full": "宜成為彼此的禮物",
-  "quote": "每一個生命都會碰觸到另一個生命\n你所付出的愛，絕對不會白費\n你所遇到的人，都會以某種方式再回到生命裡",
+  "date": "2026-11-09",
+  "display_date": "11/9",
+  "weekday": "星期一",
+  "lunar": "十月初一",
+  "term": "立冬後二日",
+  "wenyan": "宜獨自升級中",
+  "wenyan_full": "宜獨自升級中",
+  "quote": "失敗並不是軟弱的象徵\n它代表了你還活著，而且正在成長",
   "quote_lines": [
-    "每一個生命都會碰觸到另一個生命",
-    "你所付出的愛，絕對不會白費",
-    "你所遇到的人，都會以某種方式再回到生命裡"
+    "失敗並不是軟弱的象徵",
+    "它代表了你還活著，而且正在成長"
   ],
-  "source": "作家／米奇・艾爾邦《在天堂遇見的五個人》",
-  "source_work": "《在天堂遇見的五個人》",
-  "source_author": "作家／米奇・艾爾邦",
+  "source": "太空人／Buzz Aldrin回憶錄《No Dream Is Too High》（TIME 摘錄，2016-04-01）",
+  "source_work": "回憶錄《No Dream Is Too High》（TIME 摘錄，2016-04-01）",
+  "source_author": "太空人／Buzz Aldrin",
   "excerpt": {
-    "hook": "就算已經是大人了，我們依然可以為自己許願；你需要先相信，然後才會看見",
-    "teaser": "你知道在現實生活中"
+    "hook": "那些認真走過的日子，都不會是白費的；它們會成為你的經驗和你的血肉，陪著你一起走進下一個新世界",
+    "teaser": "最近這幾年"
   },
-  "ig_url": "https://www.instagram.com/p/DfdT9mKGR21/",
+  "ig_url": "https://www.instagram.com/p/Dff4ugQmerM/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-08T07:01:11+08:00"
+  "updated": "2026-11-09T07:01:09+08:00"
 }
