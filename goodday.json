@@ -1,25 +1,26 @@
 {
-  "date": "2026-11-09",
-  "display_date": "11/9",
-  "weekday": "星期一",
-  "lunar": "十月初一",
-  "term": "立冬後二日",
-  "wenyan": "宜獨自升級中",
-  "wenyan_full": "宜獨自升級中",
-  "quote": "失敗並不是軟弱的象徵\n它代表了你還活著，而且正在成長",
+  "date": "2026-11-10",
+  "display_date": "11/10",
+  "weekday": "星期二",
+  "lunar": "十月初二",
+  "term": "立冬後三日",
+  "wenyan": "宜我們都還在長大",
+  "wenyan_full": "宜我們都還在長大",
+  "quote": "沒有最好的媽媽，只有不同種類的媽媽\n不同的媽媽，會給孩子不同收穫\n放心當好「妳這樣的媽媽」就好",
   "quote_lines": [
-    "失敗並不是軟弱的象徵",
-    "它代表了你還活著，而且正在成長"
+    "沒有最好的媽媽，只有不同種類的媽媽",
+    "不同的媽媽，會給孩子不同收穫",
+    "放心當好「妳這樣的媽媽」就好"
   ],
-  "source": "太空人／Buzz Aldrin回憶錄《No Dream Is Too High》（TIME 摘錄，2016-04-01）",
-  "source_work": "回憶錄《No Dream Is Too High》（TIME 摘錄，2016-04-01）",
-  "source_author": "太空人／Buzz Aldrin",
+  "source": "作家、教師／陳怡嘉",
+  "source_work": "",
+  "source_author": "作家、教師／陳怡嘉",
   "excerpt": {
-    "hook": "那些認真走過的日子，都不會是白費的；它們會成為你的經驗和你的血肉，陪著你一起走進下一個新世界",
-    "teaser": "最近這幾年"
+    "hook": "〈週二樹洞信箱〉不只你的寶寶需要一個健康快樂的你；你自己，也同樣需要一個健康快樂的你喔",
+    "teaser": "「親愛的樹洞，謝謝你聽我說"
   },
-  "ig_url": "https://www.instagram.com/p/Dff4ugQmerM/",
+  "ig_url": "https://www.instagram.com/p/DfidjcLmVvO/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-09T07:01:09+08:00"
+  "updated": "2026-11-10T07:01:12+08:00"
 }
