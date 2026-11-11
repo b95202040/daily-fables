@@ -1,25 +1,25 @@
 {
-  "date": "2026-11-11",
-  "display_date": "11/11",
-  "weekday": "星期三",
-  "lunar": "十月初三",
-  "term": "立冬後四日",
-  "wenyan": "宜飛奔向你",
-  "wenyan_full": "宜飛奔向你",
-  "quote": "只要你的心呼喚我\n我就會來到你身邊",
+  "date": "2026-11-12",
+  "display_date": "11/12",
+  "weekday": "星期四",
+  "lunar": "十月初四",
+  "term": "立冬後五日",
+  "wenyan": "宜清醒地活著",
+  "wenyan_full": "宜清醒地活著",
+  "quote": "人生不是選出來的，是活出來的。\nYou don't choose a life. You live one.",
   "quote_lines": [
-    "只要你的心呼喚我",
-    "我就會來到你身邊"
+    "人生不是選出來的，是活出來的",
+    "You don't choose a life. You live one."
   ],
-  "source": "韓劇《走進你的時間》",
-  "source_work": "韓劇《走進你的時間》",
+  "source": "電影《朝聖之路》",
+  "source_work": "電影《朝聖之路》",
   "source_author": "",
   "excerpt": {
-    "hook": "〈週三告白日〉愛情，是明明自己一個人也能夠好好地過，卻還是費盡心思，只想要和你一起走過兩個人的紛紛擾擾",
-    "teaser": "你知道嗎，在 11/11 雙十一的這天"
+    "hook": "〈週四，我們聊聊人生〉你在日子裡，留下了多少不一樣的回憶，你的人生，就有多長、多精彩",
+    "teaser": "你會不會覺得"
   },
-  "ig_url": "https://www.instagram.com/p/DflCZFtGWy4/",
+  "ig_url": "https://www.instagram.com/p/DfnnMkFmZ2p/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-11T07:01:12+08:00"
+  "updated": "2026-11-12T07:01:11+08:00"
 }
