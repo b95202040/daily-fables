@@ -1,25 +1,27 @@
 {
-  "date": "2026-11-12",
-  "display_date": "11/12",
-  "weekday": "星期四",
-  "lunar": "十月初四",
-  "term": "立冬後五日",
-  "wenyan": "宜清醒地活著",
-  "wenyan_full": "宜清醒地活著",
-  "quote": "人生不是選出來的，是活出來的。\nYou don't choose a life. You live one.",
+  "date": "2026-11-13",
+  "display_date": "11/13",
+  "weekday": "星期五",
+  "lunar": "十月初五",
+  "term": "立冬後六日",
+  "wenyan": "宜有你真好",
+  "wenyan_full": "宜有你真好",
+  "quote": "你不是樹枝上的孤鳥\n我會一直在你身旁\n陪著你歌唱\n陪著你張開翅膀",
   "quote_lines": [
-    "人生不是選出來的，是活出來的",
-    "You don't choose a life. You live one."
+    "你不是樹枝上的孤鳥",
+    "我會一直在你身旁",
+    "陪著你歌唱",
+    "陪著你張開翅膀"
   ],
-  "source": "電影《朝聖之路》",
-  "source_work": "電影《朝聖之路》",
-  "source_author": "",
+  "source": "魏如萱〈陪著你〉",
+  "source_work": "〈陪著你〉",
+  "source_author": "魏如萱",
   "excerpt": {
-    "hook": "〈週四，我們聊聊人生〉你在日子裡，留下了多少不一樣的回憶，你的人生，就有多長、多精彩",
-    "teaser": "你會不會覺得"
+    "hook": "〈給週五一首歌的時間〉再怎麼堅強的你，偶爾累了，還是需要有個肩膀靠一下的",
+    "teaser": "最近的你，一切都還好嗎？"
   },
-  "ig_url": "https://www.instagram.com/p/DfnnMkFmZ2p/",
+  "ig_url": "https://www.instagram.com/p/DfqL9UzGbbI/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-12T07:01:11+08:00"
+  "updated": "2026-11-13T07:01:12+08:00"
 }
