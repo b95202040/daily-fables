@@ -1,27 +1,26 @@
 {
-  "date": "2026-11-13",
-  "display_date": "11/13",
-  "weekday": "星期五",
-  "lunar": "十月初五",
-  "term": "立冬後六日",
-  "wenyan": "宜有你真好",
-  "wenyan_full": "宜有你真好",
-  "quote": "你不是樹枝上的孤鳥\n我會一直在你身旁\n陪著你歌唱\n陪著你張開翅膀",
+  "date": "2026-11-14",
+  "display_date": "11/14",
+  "weekday": "星期六",
+  "lunar": "十月初六",
+  "term": "立冬後七日",
+  "wenyan": "忌偷偷嫌棄自己",
+  "wenyan_full": "忌偷偷嫌棄自己",
+  "quote": "奇妙的矛盾是\n當我接納自己本來的樣子\n我才有可能改變",
   "quote_lines": [
-    "你不是樹枝上的孤鳥",
-    "我會一直在你身旁",
-    "陪著你歌唱",
-    "陪著你張開翅膀"
+    "奇妙的矛盾是",
+    "當我接納自己本來的樣子",
+    "我才有可能改變"
   ],
-  "source": "魏如萱〈陪著你〉",
-  "source_work": "〈陪著你〉",
-  "source_author": "魏如萱",
+  "source": "心理學家／卡爾・羅傑斯《成為一個人》",
+  "source_work": "《成為一個人》",
+  "source_author": "心理學家／卡爾・羅傑斯",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉再怎麼堅強的你，偶爾累了，還是需要有個肩膀靠一下的",
-    "teaser": "最近的你，一切都還好嗎？"
+    "hook": "比起清點還沒完成的，為了自己，先數數那些已經做到的吧",
+    "teaser": "距離 2026 年結束只剩下 47 天"
   },
-  "ig_url": "https://www.instagram.com/p/DfqL9UzGbbI/",
+  "ig_url": "https://www.instagram.com/p/DfswxOEmcEv/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-13T07:01:12+08:00"
+  "updated": "2026-11-14T07:01:11+08:00"
 }
