@@ -1,25 +1,25 @@
 {
-  "date": "2026-11-15",
-  "display_date": "11/15",
-  "weekday": "星期日",
-  "lunar": "十月初七",
-  "term": "立冬後八日",
-  "wenyan": "宜先把今天過好",
-  "wenyan_full": "宜先把今天過好",
-  "quote": "無論我們喜歡、不喜歡\n結束，是人生的一部分",
+  "date": "2026-11-16",
+  "display_date": "11/16",
+  "weekday": "星期一",
+  "lunar": "十月初八",
+  "term": "立冬後九日",
+  "wenyan": "宜昂首闊步",
+  "wenyan_full": "宜昂首闊步",
+  "quote": "伴隨每一道曙光而來的，都是嶄新的一天\n一個全新的開始。期盼今天能比昨天更好",
   "quote_lines": [
-    "無論我們喜歡、不喜歡",
-    "結束，是人生的一部分"
+    "伴隨每一道曙光而來的，都是嶄新的一天",
+    "一個全新的開始。期盼今天能比昨天更好"
   ],
-  "source": "臨床心理學家／亨利．克勞德《收尾學》",
-  "source_work": "《收尾學》",
-  "source_author": "臨床心理學家／亨利．克勞德",
+  "source": "動畫電影《古魯家族》",
+  "source_work": "動畫電影《古魯家族》",
+  "source_author": "",
   "excerpt": {
-    "hook": "〈週日的收假類型小測驗〉找找最適合你的方式，讓週日的今天過得輕鬆一點吧～",
-    "teaser": "雖然不像連假結束那麼令人煩躁"
+    "hook": "自信是草地上的小徑，需要你在一次又一次的相信自己中，一步一步踏出來",
+    "teaser": "不管你昨天或上個星期"
   },
-  "ig_url": "https://www.instagram.com/p/DfvVho8mTtM/",
+  "ig_url": "https://www.instagram.com/p/Dfx6ZaBmZdF/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-15T07:01:10+08:00"
+  "updated": "2026-11-16T07:01:07+08:00"
 }
