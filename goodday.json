@@ -1,26 +1,25 @@
 {
-  "date": "2026-11-19",
-  "display_date": "11/19",
-  "weekday": "星期四",
-  "lunar": "十月十一",
-  "term": "立冬後十二日",
-  "wenyan": "宜謝謝還在身邊的你",
-  "wenyan_full": "宜謝謝還在身邊的你",
-  "quote": "一個人最難相處的時候\n常常也正是他最痛苦的時候\n在推開他之前，先多看他一眼吧",
+  "date": "2026-11-20",
+  "display_date": "11/20",
+  "weekday": "星期五",
+  "lunar": "十月十二",
+  "term": "立冬後十三日",
+  "wenyan": "宜約吃飯",
+  "wenyan_full": "宜約吃飯",
+  "quote": "想念一個人，就讓他知道吧\n你以為的打擾，可能是他今天最開心的事",
   "quote_lines": [
-    "一個人最難相處的時候",
-    "常常也正是他最痛苦的時候",
-    "在推開他之前，先多看他一眼吧"
+    "想念一個人，就讓他知道吧",
+    "你以為的打擾，可能是他今天最開心的事"
   ],
-  "source": "伊甸基金會 x 好日曆",
+  "source": "@calendar.tw",
   "source_work": "",
-  "source_author": "伊甸基金會 x 好日曆",
+  "source_author": "@calendar.tw",
   "excerpt": {
-    "hook": "每一隻刺刺的恐龍裡，其實，都住著一個也很害怕的人喔",
-    "teaser": "今天的文章，由好日曆與 @edentaiwan"
+    "hook": "〈給週五一首歌的時間〉好朋友，都不是咻一下子消失的；他們只會在你太過忙碌的日子裡，一點一點慢慢走遠",
+    "teaser": "要和一個人成為好朋友"
   },
-  "ig_url": "https://www.instagram.com/p/Df5ovcCGUao/",
+  "ig_url": "https://www.instagram.com/p/Df8Neq7mSvD/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-19T07:01:10+08:00"
+  "updated": "2026-11-20T07:01:10+08:00"
 }
