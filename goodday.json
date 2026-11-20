@@ -1,25 +1,25 @@
 {
-  "date": "2026-11-20",
-  "display_date": "11/20",
-  "weekday": "星期五",
-  "lunar": "十月十二",
-  "term": "立冬後十三日",
-  "wenyan": "宜約吃飯",
-  "wenyan_full": "宜約吃飯",
-  "quote": "想念一個人，就讓他知道吧\n你以為的打擾，可能是他今天最開心的事",
+  "date": "2026-11-21",
+  "display_date": "11/21",
+  "weekday": "星期六",
+  "lunar": "十月十三",
+  "term": "立冬後十四日",
+  "wenyan": "忌成為刻薄的大人",
+  "wenyan_full": "忌成為刻薄的大人",
+  "quote": "最可厭的人，如果你細加研究，\n結果總發現他不過是個可憐人。",
   "quote_lines": [
-    "想念一個人，就讓他知道吧",
-    "你以為的打擾，可能是他今天最開心的事"
+    "最可厭的人，如果你細加研究",
+    "結果總發現他不過是個可憐人"
   ],
-  "source": "@calendar.tw",
+  "source": "作家／張愛玲",
   "source_work": "",
-  "source_author": "@calendar.tw",
+  "source_author": "作家／張愛玲",
   "excerpt": {
-    "hook": "〈給週五一首歌的時間〉好朋友，都不是咻一下子消失的；他們只會在你太過忙碌的日子裡，一點一點慢慢走遠",
-    "teaser": "要和一個人成為好朋友"
+    "hook": "如果曾經被誤解過的你，能學會比誰都更捨不得去誤解別人，那這個世界，一定會更溫柔許多",
+    "teaser": "有些話，說的人早已忘記"
   },
-  "ig_url": "https://www.instagram.com/p/Df8Neq7mSvD/",
+  "ig_url": "https://www.instagram.com/p/Df-yVx8mQjF/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-20T07:01:10+08:00"
+  "updated": "2026-11-21T07:01:11+08:00"
 }
