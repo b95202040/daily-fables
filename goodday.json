@@ -1,25 +1,25 @@
 {
-  "date": "2026-11-22",
-  "display_date": "11/22",
-  "weekday": "星期日",
-  "lunar": "十月十四",
-  "term": "小雪",
-  "wenyan": "宜賴在被窩裡",
-  "wenyan_full": "宜賴在被窩裡",
-  "quote": "花什麼時候開，就交給季節\n現在的你，只要負責好好過冬",
+  "date": "2026-11-23",
+  "display_date": "11/23",
+  "weekday": "星期一",
+  "lunar": "十月十五",
+  "term": "小雪後一日",
+  "wenyan": "忌內心小劇場",
+  "wenyan_full": "忌內心小劇場",
+  "quote": "當你真的要飛的時候\n就不要害怕墜落",
   "quote_lines": [
-    "花什麼時候開，就交給季節",
-    "現在的你，只要負責好好過冬"
+    "當你真的要飛的時候",
+    "就不要害怕墜落"
   ],
-  "source": "@calendar.tw",
-  "source_work": "",
-  "source_author": "@calendar.tw",
+  "source": "李美賢（韓孝周 飾）韓劇《MOVING 異能》",
+  "source_work": "韓劇《MOVING 異能》",
+  "source_author": "李美賢（韓孝周 飾）",
   "excerpt": {
-    "hook": "就算這陣子你覺得自己像是停在原地，那也沒關係；因為停下來，本來就是成長的一部分喔",
-    "teaser": "今天早上在床上睜開眼後"
+    "hook": "煩惱存在腦中越久，就會長得越大越沉重；趁著新一週開始，今天就動手對付它吧",
+    "teaser": "你是不是也有過那種很黏的煩惱呢？"
   },
-  "ig_url": "https://www.instagram.com/p/DgBXF8NmZ_x/",
+  "ig_url": "https://www.instagram.com/p/DgD73gsGc5L/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-22T07:01:11+08:00"
+  "updated": "2026-11-23T07:01:12+08:00"
 }
