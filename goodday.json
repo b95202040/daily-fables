@@ -1,27 +1,26 @@
 {
-  "date": "2026-11-26",
-  "display_date": "11/26",
-  "weekday": "星期四",
-  "lunar": "十月十八",
-  "term": "小雪後四日",
-  "wenyan": "宜我相信你",
-  "wenyan_full": "宜我相信你",
-  "quote": "夢想家需要現實主義者\n才能避免飛得太靠近太陽\n而現實主義者呢？沒有夢想家\n他們可能永遠飛不起來",
+  "date": "2026-11-27",
+  "display_date": "11/27",
+  "weekday": "星期五",
+  "lunar": "十月十九",
+  "term": "小雪後五日",
+  "wenyan": "宜相信",
+  "wenyan_full": "宜相信",
+  "quote": "黑暗不會因為你的盼望就馬上散去\n但正因為依然抱持著希望\n你才能好好活到太陽出來那天",
   "quote_lines": [
-    "夢想家需要現實主義者",
-    "才能避免飛得太靠近太陽",
-    "而現實主義者呢？沒有夢想家",
-    "他們可能永遠飛不起來"
+    "黑暗不會因為你的盼望就馬上散去",
+    "但正因為依然抱持著希望",
+    "你才能好好活到太陽出來那天"
   ],
-  "source": "影集《摩登家庭》",
-  "source_work": "影集《摩登家庭》",
-  "source_author": "",
+  "source": "@calendar.tw",
+  "source_work": "",
+  "source_author": "@calendar.tw",
   "excerpt": {
-    "hook": "〈週四，我們聊聊人生〉敢在一個人身邊什麼都不管，那是最放心的任性，也是你對他，最安心的相信",
-    "teaser": "前陣子有一個很流行的影片主題"
+    "hook": "〈給週五一首歌的時間〉即使你現在正處在最深的黑暗中，也請不要放棄希望；請一定要相信，隧道盡頭的光，一定會來",
+    "teaser": "最近的生活狀態"
   },
-  "ig_url": "https://www.instagram.com/p/DgLqSHXGfDT/",
+  "ig_url": "https://www.instagram.com/p/DgOPBzUGeux/",
   "ig_matched": true,
   "is_today": true,
-  "updated": "2026-11-26T07:01:11+08:00"
+  "updated": "2026-11-27T07:01:11+08:00"
 }
